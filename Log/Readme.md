@@ -1,5 +1,5 @@
 # 19-11-2024 Planning 
-While waiting for our PCBs to arrive, we are creating a schedule to start working on our vertical farm. We aim to divide the assignment into smaller subtasks and assign them to all team members. The planner we'd like to use is **Trello**.
+While waiting for our PCBs to arrive, we are creating a schedule to start working on our vertical farm. We aim to divide the assignment into smaller subtasks and assign them to all team members.
 
 # 22-10-2024 Working on the old system
 We gathered to work on the previous system. The plan was to get it running again and examine the causes of failure a bit more.
