@@ -1,6 +1,6 @@
 # Watersysteem
 ## Plan
-![Schematische tekening van het watersysteem](/assets/Schema_Watersysteem.png)
+![Schematische tekening van het watersysteem](./assets/Schema_Watersysteem.png)
 
 ## Sensoren and Actuatoren
 
