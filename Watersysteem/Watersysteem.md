@@ -2,6 +2,35 @@
 ## Plan
 ![Schematische tekening van het watersysteem](./assets/Schema_Watersysteem.png)
 
+Het systeem bestaat uit onderstaande componenten, aan elkaar gekoppeld:
+
+- **Reservoirs**:
+1 waterreservoir & 1 voedingsstofreservoir. Uiteindelijk wordt het gerecycleerde water uit het systeem teruggebracht in dit waterreservoir.  
+Beide reservoirs worden aangevuld door een klep te openen aan de kast en hebben een sensor om de hoogte van de vloeistof op te meten.
+
+- **Pompen**:
+1 pomp voor het water omhoog te pompen en 1 pomp voor de voedingsstof omhoog te pompen.
+
+- **Mengreservoir**:
+Hierin worden de voedingsstoffen gemengt met het water.  
+Dit reservoir bevat dus een mixer, eventuele sensoren om de concentratie voedingsstoffen te meten en een sensor om de hoogte van de vloeistof op te meten.
+
+- **Ventielsysteem**:
+Dit bevat zoveel ventielen als er bevestigingsplaatsen zijn voor de plantenmodules. Het laat toe om per module water te voorzien, eventueel telkens met eigen verhoudingen van voedingsstoffen.
+
+- **Common connector**:
+Deze aansluitingen zijn de verbinding tussen het interne watersysteem en de plantenmodules. Hiermee wordt eveneens de stroom doorgegeven.  
+Er is een verbinding om het water naar de plantenmodule te brengen. Ook is er een retourverbinding om de wateroverschot te recycleren.
+
+- **UV-filter**:
+Het gerecycleerde water passeert door een UV-filter om algengroei te voorkomen. Hierna stroomt het verder naar het waterreservoir.
+
+
+## Reservoirs
+![Reservoir](./assets/reservoir.JPEG)
+We hergebruiken enkele van de bloembakken als reservoir. Deze zijn ruim genoeg en kunnen makkelijk geïntegreerd worden in het ontwerp.
+
+
 ## Sensoren and Actuatoren
 
 ### Waterpomp
