@@ -1,3 +1,7 @@
+# 17-12-2024 Presentation and feedback
+We presented our progress and collected the feedback in the ClickUp notes.
+
+
 # 19-11-2024 Planning 
 While waiting for our PCBs to arrive, we are creating a schedule to start working on our vertical farm. We aim to divide the assignment into smaller subtasks and assign them to all team members.
 
