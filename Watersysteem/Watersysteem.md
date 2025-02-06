@@ -47,7 +47,7 @@ Het [magneetventiel](https://www.tinytronics.nl/nl/mechanica-en-actuatoren/solen
 
 ### Mixer
 
-TBD
+Zie word document voor opties.
 
 ### NO3- Sensor
 
@@ -73,7 +73,9 @@ Deze moet een golflengte hebben tussen de 254-265nm.
 
 ### Waterhoogte
 
-[Deze soort](https://www.tinytronics.nl/en/sensors/liquid/water-level-sensor) waterhoogte sensoren kunnen gebruik worden, maar er moet opgepast worden aangezien de concentratie ionen en pH invloed hebben op de geleidbaarheid van het water. Hierdoor hangt de gelezen waarde niet enkel van de hoogte af, maar ook van de concentratie ionen en de pH van het water.
+[Capacitieve waterhoogte sensoren](https://www.tinytronics.nl/en/sensors/liquid/water-level-sensor) kunnen gebruik worden, maar er moet opgepast worden aangezien de concentratie ionen en pH invloed hebben op de geleidbaarheid van het water. Hierdoor hangt de gelezen waarde niet enkel van de hoogte af, maar ook van de concentratie ionen en de pH van het water.
+
+Zie word document voor meerdere opties
 
 ## Common Connector
 
