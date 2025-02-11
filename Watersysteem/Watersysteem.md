@@ -119,6 +119,8 @@ Zie onderstaande links voor verschillende sensoren:
 - [DFRobot Contactloze Sensor](https://www.tinytronics.nl/nl/sensoren/vloeistof/dfrobot-gravity-contactloze-vloeistofniveau-schakelaar-sensor)
 - [Ultrasone Sensor](https://www.tinytronics.nl/en/sensors/distance/ultrasonic-sensor-hc-sr04)
 
+We kozen voor de ultrasone sensor. De waterniveausensor was ook een goede keuze maar leek ons toch net niet helemaal geschikt. Beiden hebben nadelen en voordelen.
+
 ## Common Connector
 
 ![Common Connector](./assets/Common_connector.png)
@@ -127,6 +129,17 @@ De common connector heeft 2 wateraansluitingen: WATER IN en WATER UIT. Deze word
 
 # Randmateriaal
 
-- Tubes
+## Tubes
+
+Overal hebben we aansluitingen met een binnendiameter van 6mm. We maken een inschatting van de lengte tube eens we de kast hebben opgemeten hebben.
+
+## Aansluitmateriaal
+
 - Teflon
-- Klemring
+- Klemring: 2 per common connector, 2 per pompje, 2 per ventiel
+
+
+# TODO's
+
+- UV-lamp verder onderzoeken
+- Implementatie kast onderzoeken
