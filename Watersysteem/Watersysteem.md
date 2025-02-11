@@ -43,6 +43,8 @@ De [waterpomp](https://www.tinytronics.nl/nl/mechanica-en-actuatoren/motoren/pom
 
 Het [magneetventiel](https://www.tinytronics.nl/nl/mechanica-en-actuatoren/solenoids/magneetventielen/magneetventiel-normaal-gesloten-12v-dc-nylon-6mm) heeft een maximale spanning van 13VDC (12VDC aangeraden) met een gemiddeld stroomverbruik van ~300mA (= 3,6W). Deze is geschikt voor slangen met 6mm binnendiameter en is normaal gesloten (NC).
 
+Aandachtspunt: De spoel moet altijd naar boven gericht zijn, zie datasheet!
+
 ### Mixer
 
 Er zijn verschillende opties voor watercirculatie:
@@ -58,6 +60,10 @@ Er zijn verschillende opties voor watercirculatie:
 - **Mechanische mixer**  
   - Voordelen: Efficiënt mengen zonder veel turbulentie  
   - Nadelen: Mechanisch => onderhoud nodig  
+
+We kozen voor een luchtpompje bij de reservoirs beneden. Dankzij een luchtsteen zal het water voldoende gecirculeerd worden.
+
+Voor het reservoir kozen we een aquariumpompje. Dit heeft niet veel water nodig om een voldoende turbulente stroom te voorzien die het water mengt. Dit pompje sturen we aan op basis van de hoogte in dit bovenste reservoir.
 
 ### NO3- Sensor
 
@@ -77,12 +83,20 @@ De [Ca2+ Sensor](http://www.measureteq.com/electrode-and-sensor/ion-selective-el
 
 De [K+ Sensor](http://www.measureteq.com/electrode-and-sensor/ion-selective-electrode/ise-2920-potassium-ion-selective-electrode.html) wordt aangesloten met een BNC-connector.
 
+### Uitlezen van de chemische sensoren
+Dit gebeurt met een ADC die vorig jaar reeds ontworpen is. We moeten nog op zoek naar het ontwerp van dit bordje.
+
 ### UV licht
 
 Een gebruiksklare oplossing is zeer duur en niet direct beschikbaar. We zouden een eigen UV-filter kunnen maken door de tube langsheen een UV-ledstrip te laten gaan.  
-De effectiviteit van deze filter zou zelfs beter kunnen zijn als we de leds ook boven het waterreservoir hangen. Op deze manier komt het water gedurende een langere periode in contact met het UV-licht.  
-Voorbeeld: [UV LED-strip](https://www.amazon.com.be/-/nl/MASUNN-ultraviolet-violet-zwart-lichtstrip/dp/B077G5TS62)  
+De effectiviteit van deze filter zou zelfs beter kunnen zijn als we de leds ook boven het waterreservoir hangen. Op deze manier komt het water gedurende een langere periode in contact met het UV-licht.   
+
 Deze moet een golflengte hebben tussen de 254-265nm.
+
+We vonden ook enkele interessante lampen met G23 connectors. Bijvoorbeeld een UVC Phillips 9W TC-S G23 zou hiervoor geschikt zijn. We voeren nog wat onderzoek uit hiernaar.
+
+Er zijn ook oplossingen beschikbaar door zelf een zandfilter te maken. Deze moet wel regelmatig vervangen worden en kost mogelijks veel geld.
+
 
 ### Waterniveau Sensor
 
@@ -110,3 +124,9 @@ Zie onderstaande links voor verschillende sensoren:
 ![Common Connector](./assets/Common_connector.png)
 
 De common connector heeft 2 wateraansluitingen: WATER IN en WATER UIT. Deze worden elk voorzien met Quick-disconnects om makkelijk nieuwe plantenbakmodules aan te sluiten of te verwijderen.
+
+# Randmateriaal
+
+- Tubes
+- Teflon
+- Klemring
