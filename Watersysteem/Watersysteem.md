@@ -1,22 +1,23 @@
 # Watersysteem
 ## Plan
-![Schematische tekening van het watersysteem](./assets/Schema_Watersysteem.png)
+![Schematische tekening van het watersysteem](./assets/keukenmodel.jpg)
 
 Het systeem bestaat uit onderstaande componenten, aan elkaar gekoppeld:
 
 - **Reservoirs**:
 1 waterreservoir & 1 voedingsstofreservoir. Uiteindelijk wordt het gerecycleerde water uit het systeem teruggebracht in dit waterreservoir.  
 Beide reservoirs worden aangevuld door een klep te openen aan de kast en hebben een sensor om de hoogte van de vloeistof op te meten.
+We zoeken ook voor een oplossing om het water en de voedingstoffen voldoende te circuleren zodat het niet blijft stilstaan en er geen geurtjes zullen ontwikkelen.
 
 - **Pompen**:
-1 pomp voor het water omhoog te pompen en 1 pomp voor de voedingsstof omhoog te pompen.
+2 pompen om het water en de voedingstoffen naar het mengreservoir over te brengen.
 
 - **Mengreservoir**:
 Hierin worden de voedingsstoffen gemengd met het water.  
 Dit reservoir bevat dus een mixer, eventuele sensoren om de concentratie voedingsstoffen te meten en een sensor om de hoogte van de vloeistof op te meten.
 
-- **Ventielsysteem**:
-Dit bevat zoveel ventielen als er bevestigingsplaatsen zijn voor de plantenmodules. Het laat toe om per module water te voorzien, eventueel telkens met eigen verhoudingen van voedingsstoffen.
+- **Pompsysteem**
+Nadat het water gemixt is in het mengreservoir wordt het omhoog gepompt naar de gewenste plantenlade. We gebruiken per lade een pompje. Dit lijkt voordeliger dan een verdeelblok en ventielen op deze kleine schaal.
 
 - **Common connector**:
 Deze aansluitingen zijn de verbinding tussen het interne watersysteem en de plantenmodules. Hiermee wordt eveneens de stroom doorgegeven.  
@@ -38,6 +39,7 @@ We hergebruiken enkele van de bloembakken als reservoir. Deze zijn ruim genoeg e
 De [waterpomp](https://www.tinytronics.nl/nl/mechanica-en-actuatoren/motoren/pompen/waterpomp-12v) heeft een maximale spanning van 12VDC en gebruikt ~400mA (= 4,8W). Het heeft een maximale opvoerhoogte van 3m en aanzuighoogte van 1,5m. Deze is geschikt voor slangen met ongeveer 6mm binnendiameter.
 
 ### Magneetventiel
+(Deze zullen we niet meer gebruiken in het keukenmodel)
 
 ![Magneetventiel](./assets/Magneetventiel.jpg)
 
@@ -97,6 +99,7 @@ We vonden ook enkele interessante lampen met G23 connectors. Bijvoorbeeld een UV
 
 Er zijn ook oplossingen beschikbaar door zelf een zandfilter te maken. Deze moet wel regelmatig vervangen worden en kost mogelijks veel geld.
 
+Uiteindelijk vonden we enkele UV-lampen die in aquariums worden gebruikt. Deze kunnen we makkelijk toepassen in ons watersysteem.
 
 ### Waterniveau Sensor
 
@@ -143,3 +146,4 @@ Overal hebben we aansluitingen met een binnendiameter van 6mm. We maken een insc
 
 - UV-lamp verder onderzoeken
 - Implementatie kast onderzoeken
+- ADC onderzoeken
