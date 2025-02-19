@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "${KIPRJMOD}/SamacSys_Parts.pretty")(options "")(descr ""))
+  (lib (name "Watersysteem_Footprints_Library")(type "KiCad")(uri "${KIPRJMOD}/Watersysteem_Footprints_Library.pretty")(options "")(descr ""))
+)
