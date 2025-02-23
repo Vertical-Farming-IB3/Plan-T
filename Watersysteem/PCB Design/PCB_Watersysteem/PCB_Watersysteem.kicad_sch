@@ -831,6 +831,169 @@
 				)
 			)
 		)
+		(symbol "Device:D"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:D_Schottky"
 			(pin_numbers hide)
 			(pin_names
@@ -3160,6 +3323,12 @@
 		)
 	)
 	(junction
+		(at 201.93 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "077c6c11-a309-4885-b793-61ade17a1c25")
+	)
+	(junction
 		(at 113.03 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3178,10 +3347,28 @@
 		(uuid "385e0b9b-ff55-4e5e-9762-0983377113bc")
 	)
 	(junction
+		(at 254 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e6f8897-a235-4377-bd6c-899424353147")
+	)
+	(junction
+		(at 254 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43fa0ca1-bf14-4211-981b-6661a93f8a19")
+	)
+	(junction
 		(at 76.2 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "445bf723-9a28-4998-9b54-643968286d54")
+	)
+	(junction
+		(at 201.93 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54b19d37-8350-41f8-93b8-2519a4701552")
 	)
 	(junction
 		(at 53.34 186.69)
@@ -3214,10 +3401,22 @@
 		(uuid "7729e39c-7ef7-4c83-8c89-fa79adea3f64")
 	)
 	(junction
+		(at 254 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e80c28-b986-47c2-bdcd-25efc17347e0")
+	)
+	(junction
 		(at 77.47 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5b1da02-d725-4666-b29a-1d07aa496476")
+	)
+	(junction
+		(at 236.22 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8dbcaf7-3bd3-4dd6-9425-7c48df5d5453")
 	)
 	(junction
 		(at 76.2 39.37)
@@ -3226,10 +3425,22 @@
 		(uuid "d0e856c4-f19d-483f-9e55-39263d0bb151")
 	)
 	(junction
+		(at 201.93 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d79f240f-70d4-4bdc-95c7-9b69b92f81ad")
+	)
+	(junction
 		(at 71.12 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7e7cbfe-a1e6-4af4-a584-62b43114f7a3")
+	)
+	(junction
+		(at 201.93 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e66e9a63-3934-4e05-b03e-03ac37a22fc9")
 	)
 	(junction
 		(at 53.34 177.8)
@@ -3295,6 +3506,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 93.98) (xy 251.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0171f87c-1e31-4baf-b645-84802aa5432c")
+	)
+	(wire
+		(pts
 			(xy 137.16 22.86) (xy 142.24 22.86)
 		)
 		(stroke
@@ -3325,6 +3546,36 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 67.31) (xy 199.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e1ca10-3a68-4067-9957-17f7742f187a")
+	)
+	(wire
+		(pts
+			(xy 186.69 106.68) (xy 201.93 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16cca497-9cd8-498f-8339-42d20d156396")
+	)
+	(wire
+		(pts
+			(xy 186.69 54.61) (xy 201.93 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "186ab72c-693c-4752-9420-b984536bc782")
+	)
+	(wire
+		(pts
 			(xy 88.9 177.8) (xy 93.98 177.8)
 		)
 		(stroke
@@ -3345,6 +3596,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 81.28) (xy 218.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20bd2db3-683b-4865-aa20-394593a186d6")
+	)
+	(wire
+		(pts
 			(xy 73.66 177.8) (xy 77.47 177.8)
 		)
 		(stroke
@@ -3355,6 +3616,86 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 27.94) (xy 186.69 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27f15614-1ba4-4051-9093-c5d22d244b6f")
+	)
+	(wire
+		(pts
+			(xy 236.22 105.41) (xy 236.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "287cef9c-de46-4752-aec5-412865835d4d")
+	)
+	(wire
+		(pts
+			(xy 199.39 40.64) (xy 201.93 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d04e1c7-d45d-4b0d-b360-29854bfec31a")
+	)
+	(wire
+		(pts
+			(xy 238.76 81.28) (xy 254 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "349905ce-2c91-46dc-99bd-b44f7675f802")
+	)
+	(wire
+		(pts
+			(xy 166.37 81.28) (xy 166.37 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "350d8546-6537-49e3-9fea-79f02c0f2bd8")
+	)
+	(wire
+		(pts
+			(xy 166.37 106.68) (xy 179.07 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3676c134-5593-4128-85f8-6642a99b6aa6")
+	)
+	(wire
+		(pts
+			(xy 201.93 93.98) (xy 199.39 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "386bf225-985f-4a40-b5dd-f102f5898f7d")
+	)
+	(wire
+		(pts
+			(xy 201.93 119.38) (xy 199.39 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3947e441-c8b7-488a-a4f7-a38eb6110e8d")
+	)
+	(wire
+		(pts
 			(xy 29.21 184.15) (xy 29.21 180.34)
 		)
 		(stroke
@@ -3362,6 +3703,56 @@
 			(type default)
 		)
 		(uuid "3a95b73c-036b-4609-ac19-efab2994430e")
+	)
+	(wire
+		(pts
+			(xy 179.07 81.28) (xy 166.37 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d241e4e-aa3c-4d7e-879f-c0c1e6b4cfa3")
+	)
+	(wire
+		(pts
+			(xy 231.14 81.28) (xy 218.44 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d71b529-87f9-482d-bd3d-e730a9a7a278")
+	)
+	(wire
+		(pts
+			(xy 254 67.31) (xy 251.46 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43a25d8d-8adc-4b83-bf47-8713e9b0bd89")
+	)
+	(wire
+		(pts
+			(xy 254 81.28) (xy 254 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bca01dd-2ff9-4431-a591-0638461d0860")
+	)
+	(wire
+		(pts
+			(xy 201.93 106.68) (xy 201.93 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e1d3579-5e8e-4eda-8186-0beb97f17329")
 	)
 	(wire
 		(pts
@@ -3382,6 +3773,36 @@
 			(type default)
 		)
 		(uuid "5832eee2-4798-4716-ac9f-7811d3ffc769")
+	)
+	(wire
+		(pts
+			(xy 222.25 105.41) (xy 236.22 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b27a03a-1b84-456c-abde-c08e72b18e61")
+	)
+	(wire
+		(pts
+			(xy 179.07 54.61) (xy 166.37 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c903a90-7219-4ecc-9683-ebb52bfb39d1")
+	)
+	(wire
+		(pts
+			(xy 238.76 54.61) (xy 254 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f64d61f-1ec4-4ec9-855c-f7bfb8ba50b1")
 	)
 	(wire
 		(pts
@@ -3415,6 +3836,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 27.94) (xy 218.44 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab34ffd-2ffa-4805-a561-508e0b044cc9")
+	)
+	(wire
+		(pts
 			(xy 85.09 38.1) (xy 85.09 39.37)
 		)
 		(stroke
@@ -3445,6 +3876,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 54.61) (xy 201.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd4e49f-f5f9-464a-b021-8a98b50e9c0f")
+	)
+	(wire
+		(pts
 			(xy 109.22 177.8) (xy 113.03 177.8)
 		)
 		(stroke
@@ -3452,6 +3893,16 @@
 			(type default)
 		)
 		(uuid "87ce2e35-b15c-44b8-94cb-23e03f6a7d70")
+	)
+	(wire
+		(pts
+			(xy 254 40.64) (xy 254 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a156188-ecda-4458-af4c-1030f88b6315")
 	)
 	(wire
 		(pts
@@ -3465,6 +3916,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 54.61) (xy 218.44 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8baad54f-7107-45f8-ae66-16d3a871c632")
+	)
+	(wire
+		(pts
 			(xy 101.6 29.21) (xy 101.6 26.67)
 		)
 		(stroke
@@ -3472,6 +3933,46 @@
 			(type default)
 		)
 		(uuid "94023364-d4d5-4ac6-aba1-3393c5451179")
+	)
+	(wire
+		(pts
+			(xy 186.69 81.28) (xy 201.93 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9503f43e-6be1-4bc0-bb2c-f585c652dc23")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 166.37 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "990646ea-1769-438e-b468-45270c513f96")
+	)
+	(wire
+		(pts
+			(xy 201.93 81.28) (xy 201.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a45b89f-17aa-41a6-91bb-d9229046b2b6")
+	)
+	(wire
+		(pts
+			(xy 254 27.94) (xy 238.76 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c999cd1-5272-4c1e-8c8e-6c804e111616")
 	)
 	(wire
 		(pts
@@ -3525,6 +4026,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 54.61) (xy 254 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb0a6bb2-0f49-4cc2-a856-be72a663e6b9")
+	)
+	(wire
+		(pts
 			(xy 110.49 38.1) (xy 110.49 39.37)
 		)
 		(stroke
@@ -3532,6 +4043,46 @@
 			(type default)
 		)
 		(uuid "ca26ceec-8710-4e38-b72d-852a718ae19b")
+	)
+	(wire
+		(pts
+			(xy 166.37 116.84) (xy 166.37 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca8b742a-4ccf-4fe7-b6d3-c7cdb56276ab")
+	)
+	(wire
+		(pts
+			(xy 218.44 27.94) (xy 218.44 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cad5ece7-f7f0-4895-b991-b0ec72bf4eaf")
+	)
+	(wire
+		(pts
+			(xy 218.44 54.61) (xy 218.44 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29c1284-f8c8-4f35-a26b-7eb7a192615b")
+	)
+	(wire
+		(pts
+			(xy 166.37 27.94) (xy 166.37 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2aaa922-6b31-4e1f-a724-4ce80318310d")
 	)
 	(wire
 		(pts
@@ -3555,6 +4106,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 40.64) (xy 201.93 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee451f05-4574-4ed7-badc-cf50c4dcb8c6")
+	)
+	(wire
+		(pts
 			(xy 50.8 177.8) (xy 53.34 177.8)
 		)
 		(stroke
@@ -3562,6 +4123,16 @@
 			(type default)
 		)
 		(uuid "f2b6935a-9e26-4d8b-b630-cef02836b0ab")
+	)
+	(wire
+		(pts
+			(xy 166.37 27.94) (xy 179.07 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f505c306-4cd4-4b0c-be5a-d41f8ec930d5")
 	)
 	(wire
 		(pts
@@ -3582,6 +4153,16 @@
 			(type default)
 		)
 		(uuid "f7ba451e-9c12-4d40-8b82-eba75927fb6d")
+	)
+	(wire
+		(pts
+			(xy 251.46 40.64) (xy 254 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8c34f1-0347-48d3-948f-476f69915c5a")
 	)
 	(wire
 		(pts
@@ -4120,6 +4701,72 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
+		(at 214.63 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "025914ed-aceb-4fe0-85e1-93425b759c0a")
+		(property "Reference" "#PWR038"
+			(at 214.63 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 214.63 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 214.63 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9cc9e106-2b88-4702-87e3-5e574af93264")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
 		(at 101.6 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4388,8 +5035,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 218.44 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0aaad8e2-bc3e-4894-a0b7-825bbd22c211")
+		(property "Reference" "#PWR037"
+			(at 218.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "5V"
+			(at 218.44 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 218.44 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b749272-f953-42ac-a0f4-1c0b06b20f04")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Analog_ADC:ADS1115IDGS")
-		(at 236.22 109.22 0)
+		(at 236.22 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4398,7 +5111,7 @@
 		(fields_autoplaced yes)
 		(uuid "0aba9de5-0021-40f1-99ad-858eb4ea6231")
 		(property "Reference" "U4"
-			(at 238.4141 93.98 0)
+			(at 238.4141 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4407,7 +5120,7 @@
 			)
 		)
 		(property "Value" "ADS1115IDGS"
-			(at 238.4141 96.52 0)
+			(at 238.4141 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4416,7 +5129,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
-			(at 236.22 121.92 0)
+			(at 236.22 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4425,7 +5138,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ads1113.pdf"
-			(at 234.95 132.08 0)
+			(at 234.95 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,7 +5147,7 @@
 			)
 		)
 		(property "Description" "Ultra-Small, Low-Power, I2C-Compatible, 860-SPS, 16-Bit ADCs With Internal Reference, Oscillator, and Programmable Comparator, VSSOP-10"
-			(at 236.22 109.22 0)
+			(at 236.22 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4746,6 +5459,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 234.95 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e479a49-29bf-4c96-b5bf-f58318920ebd")
+		(property "Reference" "D9"
+			(at 234.95 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 234.95 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 234.95 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76595fd8-c378-484e-b777-7fa0532672d3")
+		)
+		(pin "2"
+			(uuid "4fcc3c83-02f2-4de7-98c0-edae111f423a")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 257.81 158.75 90)
 		(unit 1)
@@ -4805,6 +5604,384 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 234.95 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fa607a7-c0a4-4a10-a886-b0500a57123b")
+		(property "Reference" "D5"
+			(at 234.95 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 234.95 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "441e2e45-fbfa-46ee-914e-d51a097545c6")
+		)
+		(pin "2"
+			(uuid "96d145cc-5eb9-4766-9e5e-3e6a5271cd90")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
+		(at 166.37 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20678719-0482-48a8-a4d5-c3826689159a")
+		(property "Reference" "K7"
+			(at 182.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AHQSS105DM2FA0G"
+			(at 182.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AHQSS105DM2FA0G"
+			(at 195.58 211.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
+			(at 195.58 311.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
+			(at 166.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.3"
+			(at 195.58 511.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 195.58 611.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
+			(at 195.58 711.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
+			(at 195.58 811.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
+			(at 195.58 911.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 195.58 1011.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 195.58 1111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17f3a91e-8b1e-464b-bd14-3a68b003d07d")
+		)
+		(pin "2"
+			(uuid "3afc8940-824b-4c9a-8736-0473b2ad334a")
+		)
+		(pin "4"
+			(uuid "dca03797-9a85-4b79-87b4-a2d1d480ec0d")
+		)
+		(pin "3"
+			(uuid "70a483dc-ff8a-4958-824d-99d14091f25b")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "K7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
+		(at 166.37 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2474c49e-7796-4f7e-9608-7026f8b24d49")
+		(property "Reference" "K5"
+			(at 182.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AHQSS105DM2FA0G"
+			(at 182.88 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AHQSS105DM2FA0G"
+			(at 195.58 186.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
+			(at 195.58 286.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
+			(at 166.37 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.3"
+			(at 195.58 486.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 195.58 586.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
+			(at 195.58 686.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
+			(at 195.58 786.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
+			(at 195.58 886.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 195.58 986.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 195.58 1086.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a6e147e-cc07-4874-b5c4-7b9ea3220a37")
+		)
+		(pin "2"
+			(uuid "abd1eeec-124d-4a23-8da5-a0e90d332fdb")
+		)
+		(pin "4"
+			(uuid "85c6173d-1cb5-4b17-b04b-9187b1f966a4")
+		)
+		(pin "3"
+			(uuid "e7a8b02a-a913-4540-9c61-c13c1d9302b1")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "K5")
 					(unit 1)
 				)
 			)
@@ -4877,6 +6054,152 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
+		(at 218.44 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "296bb75f-c1eb-487f-83d6-3c0324a11800")
+		(property "Reference" "K6"
+			(at 234.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AHQSS105DM2FA0G"
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AHQSS105DM2FA0G"
+			(at 247.65 186.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
+			(at 247.65 286.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
+			(at 218.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.3"
+			(at 247.65 486.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 247.65 586.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
+			(at 247.65 686.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
+			(at 247.65 786.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
+			(at 247.65 886.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 247.65 986.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 247.65 1086.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47fec510-babe-4db4-bc3b-3e6f91391b94")
+		)
+		(pin "2"
+			(uuid "128b0526-1141-4039-8e2e-9b2fe68ed400")
+		)
+		(pin "4"
+			(uuid "6fbf01f6-b6d0-4cc8-9d29-56de38281cd1")
+		)
+		(pin "3"
+			(uuid "45cbeb2f-67e5-4d08-a7e2-d3940eb5490f")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "K6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 88.9 181.61 0)
 		(unit 1)
@@ -4940,6 +6263,72 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33c44a41-9591-43c3-adab-0222917b1d81")
+		(property "Reference" "#PWR045"
+			(at 236.22 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c76d0e15-6c4c-4b35-b5f5-2ac891f16d4b")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -5483,17 +6872,82 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
-		(at 218.44 22.86 0)
+		(lib_id "power:GND")
+		(at 201.93 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "53fb7b3c-9e58-4b83-8c6c-35c39ab54116")
+		(property "Reference" "#PWR040"
+			(at 201.93 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ce74351-2e69-42df-9833-1d4dc6bfaa1d")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
+		(at 166.37 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "5450d509-75c2-44af-b602-31736daa21b0")
 		(property "Reference" "K1"
-			(at 234.95 15.24 0)
+			(at 182.88 31.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5501,7 +6955,7 @@
 			)
 		)
 		(property "Value" "AHQSS105DM2FA0G"
-			(at 234.95 17.78 0)
+			(at 182.88 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,7 +6963,7 @@
 			)
 		)
 		(property "Footprint" "AHQSS105DM2FA0G"
-			(at 247.65 117.78 0)
+			(at 195.58 133.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +6973,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
-			(at 247.65 217.78 0)
+			(at 195.58 233.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,7 +6983,7 @@
 			)
 		)
 		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
-			(at 218.44 22.86 0)
+			(at 166.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5538,7 +6992,7 @@
 			)
 		)
 		(property "Height" "15.3"
-			(at 247.65 417.78 0)
+			(at 195.58 433.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5548,7 +7002,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol"
-			(at 247.65 517.78 0)
+			(at 195.58 533.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5558,7 +7012,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
-			(at 247.65 617.78 0)
+			(at 195.58 633.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +7022,7 @@
 			)
 		)
 		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
-			(at 247.65 717.78 0)
+			(at 195.58 733.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5578,7 +7032,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
-			(at 247.65 817.78 0)
+			(at 195.58 833.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5588,7 +7042,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 247.65 917.78 0)
+			(at 195.58 933.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5598,7 +7052,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 247.65 1017.78 0)
+			(at 195.58 1033.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,6 +7147,158 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 201.93 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56bc7336-a17e-44f6-b463-ece0555ebdfe")
+		(property "Reference" "#PWR035"
+			(at 201.93 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a04e7782-74d6-4961-b07d-8ae954309f04")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 182.88 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58d37589-c1d6-4ffb-bd0d-f79e4e69a1f5")
+		(property "Reference" "D6"
+			(at 182.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 182.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 182.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5ca333e-17e9-4fd0-a31a-f591b52afeef")
+		)
+		(pin "2"
+			(uuid "e26085fb-0ef2-4282-bbde-f4e173749113")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5897,6 +7503,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 201.93 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "631a11cc-f122-4c4d-a053-3b7ab28bf333")
+		(property "Reference" "#PWR042"
+			(at 201.93 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb64ddb2-0097-4638-a4fb-6676757be5a1")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 86.36 52.07 0)
 		(unit 1)
@@ -5961,6 +7633,92 @@
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 182.88 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ab5a8a9-c87c-4fb9-b010-37190935d5c2")
+		(property "Reference" "D4"
+			(at 182.88 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 182.88 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 182.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39778f0c-4d10-4ad6-9985-a57c3e4e4d19")
+		)
+		(pin "2"
+			(uuid "13d51fa9-189f-4df7-a013-6a6986a3d0f9")
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -6093,6 +7851,244 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 182.88 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e79ec57-6f43-499c-b810-7534bbcf651b")
+		(property "Reference" "D10"
+			(at 182.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 182.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62f9d268-bd1f-4187-817c-9350f3695f13")
+		)
+		(pin "2"
+			(uuid "e0bf9c27-a851-4390-a799-d4bce47a44fa")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70849591-ed60-4819-8e54-938bd6922955")
+		(property "Reference" "#PWR039"
+			(at 254 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fb545ce-b756-4fa8-8640-a617c6b49c4e")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 182.88 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71092c86-cb4d-4810-9d35-2bc5b1c164d7")
+		(property "Reference" "D8"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 182.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3884febf-3f1f-4cae-b4c8-0b97d5b474b4")
+		)
+		(pin "2"
+			(uuid "41d62fb4-02dd-4eef-a7c8-b56ac5e6d824")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -6499,6 +8495,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 161.29 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87d7f376-78f0-457f-bfec-90a8f46668ea")
+		(property "Reference" "#PWR036"
+			(at 161.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 161.29 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 161.29 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "203fe169-dcfd-4f07-a5c5-4a8539626c29")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 102.87 81.28 0)
 		(unit 1)
@@ -6570,6 +8632,72 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
+		(at 166.37 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c7c788d-4592-403c-b779-05cb9a5b9398")
+		(property "Reference" "#PWR034"
+			(at 166.37 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "5V"
+			(at 166.37 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 166.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d694c80b-d5a6-4cba-af6d-8c2dfca99586")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
 		(at 102.87 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6629,6 +8757,92 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 234.95 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f4aa0f4-b62b-430a-bfdc-40e223743688")
+		(property "Reference" "D7"
+			(at 234.95 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 234.95 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 234.95 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 234.95 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 234.95 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24a80304-bc4e-44a6-9184-52acb7d8e136")
+		)
+		(pin "2"
+			(uuid "46cb1067-1aa3-45ee-8f8e-3db1937a65b5")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6773,16 +8987,15 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
-		(at 218.44 53.34 0)
+		(at 166.37 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a00008d7-d48d-4fb3-a60c-4f0430ad009f")
 		(property "Reference" "K3"
-			(at 234.95 45.72 0)
+			(at 182.88 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,7 +9003,7 @@
 			)
 		)
 		(property "Value" "AHQSS105DM2FA0G"
-			(at 234.95 48.26 0)
+			(at 182.88 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6798,7 +9011,7 @@
 			)
 		)
 		(property "Footprint" "AHQSS105DM2FA0G"
-			(at 247.65 148.26 0)
+			(at 195.58 159.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6808,7 +9021,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
-			(at 247.65 248.26 0)
+			(at 195.58 259.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6818,7 +9031,7 @@
 			)
 		)
 		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
-			(at 218.44 53.34 0)
+			(at 166.37 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6827,7 +9040,7 @@
 			)
 		)
 		(property "Height" "15.3"
-			(at 247.65 448.26 0)
+			(at 195.58 459.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6837,7 +9050,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol"
-			(at 247.65 548.26 0)
+			(at 195.58 559.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6847,7 +9060,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
-			(at 247.65 648.26 0)
+			(at 195.58 659.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6857,7 +9070,7 @@
 			)
 		)
 		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
-			(at 247.65 748.26 0)
+			(at 195.58 759.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6867,7 +9080,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
-			(at 247.65 848.26 0)
+			(at 195.58 859.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6877,7 +9090,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 247.65 948.26 0)
+			(at 195.58 959.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6887,7 +9100,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 247.65 1048.26 0)
+			(at 195.58 1059.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6990,10 +9203,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4917744-ab9c-4114-8d16-2a4d26a365ed")
 		(property "Reference" "K2"
-			(at 234.95 30.48 0)
+			(at 234.95 31.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7001,7 +9213,7 @@
 			)
 		)
 		(property "Value" "AHQSS105DM2FA0G"
-			(at 234.95 33.02 0)
+			(at 234.95 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7123,6 +9335,76 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 222.25 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4ed42bd-a81b-46ac-8867-f4f2a6cfd708")
+		(property "Reference" "C9"
+			(at 226.06 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 226.06 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.2152 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f0a51c2-02eb-4a38-8884-0925ee9f49b9")
+		)
+		(pin "2"
+			(uuid "19c2b50e-7112-40a4-b563-c568f2b7f366")
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7457,6 +9739,72 @@
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 236.22 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba17b0b6-12e1-44bd-8396-d9a4659c501a")
+		(property "Reference" "#PWR047"
+			(at 236.22 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 236.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 236.22 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ead7b0ec-666d-46b8-9407-a0654b2e9f9e")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -7948,6 +10296,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 201.93 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db38058b-ec4c-4e55-88f3-85db751bf5e6")
+		(property "Reference" "#PWR044"
+			(at 201.93 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78fbd343-15bb-445f-9e5e-29d9c9429574")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 77.47 181.61 0)
 		(unit 1)
@@ -8219,6 +10633,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 254 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8757e92-3593-4497-81c6-5c07befd9793")
+		(property "Reference" "#PWR041"
+			(at 254 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd483cb3-60d3-4d19-8524-ed66042f15a4")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 44.45 181.61 0)
 		(unit 1)
@@ -8282,6 +10762,72 @@
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb74b4c5-a94c-4c4d-9f66-0cbde6bb1b20")
+		(property "Reference" "#PWR043"
+			(at 254 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c773f741-d0c6-4a98-bf58-d98e1e94fd01")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -8357,16 +10903,15 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
-		(at 218.44 68.58 0)
+		(at 218.44 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ed03d711-fbd3-444f-a5bb-cd9931ef567a")
 		(property "Reference" "K4"
-			(at 234.95 60.96 0)
+			(at 234.95 57.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8374,7 +10919,7 @@
 			)
 		)
 		(property "Value" "AHQSS105DM2FA0G"
-			(at 234.95 63.5 0)
+			(at 234.95 60.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8382,7 +10927,7 @@
 			)
 		)
 		(property "Footprint" "AHQSS105DM2FA0G"
-			(at 247.65 163.5 0)
+			(at 247.65 159.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8392,7 +10937,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.farnell.com/cad/3816025.pdf"
-			(at 247.65 263.5 0)
+			(at 247.65 259.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8402,7 +10947,7 @@
 			)
 		)
 		(property "Description" "General Purpose Relays Commercial RelayRated Carrying Current :16AType of Sealing : Case Sealed TypeNumber of pole : one poleCoil Voltage : 5VCoil Type : Standard DC CoilContact Form : Form A Coil Insulation System : F- Class F (155C)"
-			(at 218.44 68.58 0)
+			(at 218.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8411,7 +10956,7 @@
 			)
 		)
 		(property "Height" "15.3"
-			(at 247.65 463.5 0)
+			(at 247.65 459.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,7 +10966,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol"
-			(at 247.65 563.5 0)
+			(at 247.65 559.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8431,7 +10976,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AHQSS105DM2FA0G"
-			(at 247.65 663.5 0)
+			(at 247.65 659.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8441,7 +10986,7 @@
 			)
 		)
 		(property "Mouser Part Number" "523-AHQSS105DM2FA0G"
-			(at 247.65 763.5 0)
+			(at 247.65 759.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +10996,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/AHQSS105DM2FA0G?qs=vvQtp7zwQdMcHeqcpOr95g%3D%3D"
-			(at 247.65 863.5 0)
+			(at 247.65 859.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8461,7 +11006,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 247.65 963.5 0)
+			(at 247.65 959.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8471,7 +11016,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 247.65 1063.5 0)
+			(at 247.65 1059.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9027,6 +11572,72 @@
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f701cedb-76a9-4078-9da6-a6942c719846")
+		(property "Reference" "#PWR046"
+			(at 222.25 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eaa941a8-9a61-462c-8cc3-3c95eff31323")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
