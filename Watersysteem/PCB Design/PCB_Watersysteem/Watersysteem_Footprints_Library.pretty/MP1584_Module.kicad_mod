@@ -1,7 +1,7 @@
 (footprint "MP1584_Module"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -13 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "84f4f975-df35-4058-8658-ae0cc0453a7b")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 -12.5 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "3fef83b1-a84d-46a9-bf14-63266eb1863d")
 		(effects
 			(font
 				(size 1 1)
@@ -74,7 +61,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "ae09eab0-e7b1-4d4c-abe8-07404887c801")
 	)
@@ -154,4 +141,5 @@
 		(remove_unused_layers no)
 		(uuid "ff55922e-35cc-4bad-8be0-db4c29bdcd16")
 	)
+	(embedded_fonts no)
 )
