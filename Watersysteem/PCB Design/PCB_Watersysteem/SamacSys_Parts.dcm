@@ -12,4 +12,10 @@ K
 F https://www.farnell.com/cad/3816025.pdf
 $ENDCMP
 #
+$CMP SK36A
+D Schottky Diodes & Rectifiers 3A, 60V, Schottky Rectifier
+K
+F https://www.smc-diodes.com/propdf/SK36A%20N0104%20REV.A.pdf
+$ENDCMP
+#
 #End Doc Library

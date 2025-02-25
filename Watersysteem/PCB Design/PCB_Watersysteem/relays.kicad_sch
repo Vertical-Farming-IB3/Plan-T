@@ -494,6 +494,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SamacSys_Parts:AHQSS105DM2FA0G"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -702,7 +869,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:PN2222A"
+		(symbol "Transistor_BJT:BC817"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -719,7 +886,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PN2222A"
+			(property "Value" "BC817"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -728,7 +895,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -739,7 +906,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -749,7 +916,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -767,7 +934,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -776,10 +943,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "PN2222A_0_1"
+			(symbol "BC817_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.635 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -791,7 +958,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
@@ -799,18 +966,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 -1.651) (xy 1.651 -1.143) (xy 2.159 -2.159) (xy 1.143 -1.651) (xy 1.143 -1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(circle
@@ -824,47 +979,47 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.413 -2.413) (xy 1.905 -1.905) (xy 1.905 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 0.635 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "PN2222A_1_1"
+			(symbol "BC817_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin input line
 					(at -5.08 0 0)
-					(length 5.08)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -872,7 +1027,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -908,7 +1063,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1332,26 +1487,6 @@
 		)
 		(uuid "87dd1f96-5a0b-4c78-89fd-6559c8781319")
 	)
-	(text_box "BJT is arbitrair gekozen\n=> nog vervangen door juiste component"
-		(exclude_from_sim no)
-		(at 60.96 19.05 0)
-		(size 33.02 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "bc0be3cf-b61a-4248-a488-aecbc167a0bf")
-	)
 	(junction
 		(at 50.8 81.28)
 		(diameter 0)
@@ -1359,10 +1494,10 @@
 		(uuid "070caa59-8f49-4ffd-95dd-e53d8f80f442")
 	)
 	(junction
-		(at 93.98 153.67)
+		(at 142.24 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1505f98f-5851-429b-bff8-e7af17af8edc")
+		(uuid "0be5342b-e2e7-483e-8dae-da563ab2e5e7")
 	)
 	(junction
 		(at 203.2 29.21)
@@ -1377,12 +1512,6 @@
 		(uuid "19f43bbd-f1ab-4efe-9659-112839c3f9b0")
 	)
 	(junction
-		(at 240.03 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1de3df5b-f843-4be8-a8f0-1f96c20e5b02")
-	)
-	(junction
 		(at 78.74 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1395,10 +1524,10 @@
 		(uuid "2729ce84-6afa-4bfe-bc1a-5fdf782bca73")
 	)
 	(junction
-		(at 240.03 96.52)
+		(at 240.03 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2cfa524b-1210-4903-8a0d-eea6f96e1306")
+		(uuid "34ba34fb-1cda-4183-9221-893c4df16d7c")
 	)
 	(junction
 		(at 57.15 143.51)
@@ -1425,28 +1554,16 @@
 		(uuid "4e7681a7-e556-4221-ae7c-998756e33bed")
 	)
 	(junction
-		(at 87.63 52.07)
+		(at 93.98 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "55387839-f492-43b0-a4b6-175d7b3db00b")
-	)
-	(junction
-		(at 142.24 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b087d3d-ef4d-40f9-89a1-2fa9e7405f94")
+		(uuid "5a4c0182-bd44-4c45-a360-9c7473f5e8fc")
 	)
 	(junction
 		(at 105.41 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60fb0a3b-c5ad-4b4f-956c-8ae0302dd44f")
-	)
-	(junction
-		(at 87.63 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75fe8495-9cf5-4a06-a88e-e9f58c6c3d7e")
 	)
 	(junction
 		(at 142.24 66.04)
@@ -1473,10 +1590,22 @@
 		(uuid "a77a238e-1835-4876-a3e2-b9087ed6fa4a")
 	)
 	(junction
+		(at 87.63 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af8bc79a-94d1-434d-b959-f3f214457df0")
+	)
+	(junction
 		(at 203.2 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d108674d-2332-4b70-a87a-11b73d969a90")
+	)
+	(junction
+		(at 240.03 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e67488ae-a225-4480-affb-e87d436fa376")
 	)
 	(junction
 		(at 231.14 44.45)
@@ -1503,6 +1632,12 @@
 		(uuid "f5d3c831-5c7c-414d-a91f-e87e6320a51c")
 	)
 	(junction
+		(at 142.24 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7e8139b-fc7d-436f-ac49-c1301d191c35")
+	)
+	(junction
 		(at 50.8 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1515,10 +1650,10 @@
 		(uuid "ff1e9c83-7f4f-4f32-9df5-c93cd71f9980")
 	)
 	(junction
-		(at 142.24 52.07)
+		(at 87.63 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff769681-9e18-4bba-b648-cf40835092b9")
+		(uuid "ff3223e9-e146-4ee1-87e6-6595c586a444")
 	)
 	(wire
 		(pts
@@ -1529,16 +1664,6 @@
 			(type default)
 		)
 		(uuid "00b7ae42-1c13-4dc8-a256-8654e2448247")
-	)
-	(wire
-		(pts
-			(xy 133.35 96.52) (xy 134.62 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a360eca-5767-4396-8bf3-69e0ed24a9c3")
 	)
 	(wire
 		(pts
@@ -1769,6 +1894,16 @@
 			(type default)
 		)
 		(uuid "5ef08fc7-2186-471e-8b6c-603e4bc2d6d3")
+	)
+	(wire
+		(pts
+			(xy 134.62 96.52) (xy 133.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62cd8964-c459-4822-9a76-63d380dd655a")
 	)
 	(wire
 		(pts
@@ -2909,82 +3044,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 85.09 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f2d16cf-d6cb-4dda-a2e9-10b4dfe7ac7e")
-		(property "Reference" "Q3"
-			(at 90.17 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PN2222A"
-			(at 90.17 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 90.17 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1d69538c-4dac-46e0-9260-8629d0228b91")
-		)
-		(pin "3"
-			(uuid "d0e7acc2-a44c-429c-8eb1-4267b5815e6b")
-		)
-		(pin "1"
-			(uuid "7f2b3336-0fe8-48e3-abb0-a73340005724")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 124.46 52.07 0)
 		(unit 1)
@@ -3553,6 +3612,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 237.49 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "300a6a88-440c-45c0-b9ce-4996dc76f3d9")
+		(property "Reference" "Q6"
+			(at 242.57 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 242.57 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 242.57 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 237.49 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 237.49 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "521b0bcf-e765-41f6-a0e2-6cda8fbd0e59")
+		)
+		(pin "2"
+			(uuid "d7dad50b-0ea7-4e3e-b2a0-8ac7c00f105c")
+		)
+		(pin "1"
+			(uuid "7d076332-1f91-4c38-ab77-fb01409627a2")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 31.75 78.74 0)
 		(unit 1)
@@ -3679,6 +3814,82 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 91.44 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37afda95-e939-4da5-9869-635545fa73d9")
+		(property "Reference" "Q5"
+			(at 96.52 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 96.52 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 96.52 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 91.44 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 91.44 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7ba1023e-7ae4-451d-acd8-2df93fd43da3")
+		)
+		(pin "2"
+			(uuid "49f33248-f737-45da-819c-475472783915")
+		)
+		(pin "1"
+			(uuid "9d394b9a-2514-4625-afe8-c17aaf5959bc")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -3900,6 +4111,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 85.09 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a843749-a55d-4583-a20a-b715243ba057")
+		(property "Reference" "Q1"
+			(at 90.17 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 90.17 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 90.17 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1d19cf39-56a2-4c2c-9242-47d6057e51ce")
+		)
+		(pin "2"
+			(uuid "a4a60c98-6c98-4ecd-987e-1e17ff00bd29")
+		)
+		(pin "1"
+			(uuid "96ee66f8-f9c8-4898-8960-ab41b4cfb73a")
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
 		(at 207.01 29.21 0)
 		(unit 1)
@@ -4039,82 +4326,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "K8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 237.49 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "414fb50a-a881-4ac7-bbc4-925f4a9049ea")
-		(property "Reference" "Q7"
-			(at 242.57 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PN2222A"
-			(at 242.57 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 242.57 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 237.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 237.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8c247d97-5904-41e4-9172-d8fc453a5733")
-		)
-		(pin "3"
-			(uuid "1c6bd6b6-f623-46e8-b6a9-249f9b6bd354")
-		)
-		(pin "1"
-			(uuid "4dae43a0-37e1-428b-b62e-2fe57c2e5e67")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -4447,82 +4658,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 139.7 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "558fa668-1155-4a54-8942-1cf0ab7eb122")
-		(property "Reference" "Q2"
-			(at 144.78 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PN2222A"
-			(at 144.78 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 144.78 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 139.7 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 139.7 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4710b211-faac-45ec-8cba-c6230ef7b19a")
-		)
-		(pin "3"
-			(uuid "4eb5247a-a9ad-431d-9a2c-4dacb2d3f536")
-		)
-		(pin "1"
-			(uuid "abc49b94-8b78-4bb2-a7b6-636e20e8e3d2")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6241,56 +6376,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 91.44 158.75 0)
+		(lib_id "Diode:1N4148W")
+		(at 66.04 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e1fb279-b816-4c07-b81d-276d741faa5a")
-		(property "Reference" "Q5"
-			(at 96.52 157.4799 0)
+		(uuid "9c6f3af6-551f-4db7-b1a9-97f127ae2052")
+		(property "Reference" "D7"
+			(at 66.04 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "PN2222A"
-			(at 96.52 160.0199 0)
+		(property "Value" "1N4148W"
+			(at 66.04 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 96.52 160.655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 91.44 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 91.44 158.75 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 66.04 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6298,19 +6410,52 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "f6d6bb72-2137-449f-ab13-71d037c647ff")
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 66.04 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "a26a6972-9ab4-4ebc-ba51-7e3c5f133974")
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 66.04 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 66.04 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 66.04 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "ae7a5052-1aeb-4cb6-b42b-eb016f95eba1")
+			(uuid "e4194c11-c151-457b-b4c9-04d166599b1e")
+		)
+		(pin "2"
+			(uuid "a1e6dea1-7158-4bda-9863-bd7d729e85f6")
 		)
 		(instances
-			(project "PCB_Watersysteem"
+			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q5")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6660,6 +6805,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 237.49 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b43b90e8-2de6-4f7d-9445-29f7030e7623")
+		(property "Reference" "Q7"
+			(at 242.57 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 242.57 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 242.57 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e1a34b22-3175-414d-9687-dd5040f9f751")
+		)
+		(pin "2"
+			(uuid "b0b7c4a5-c5bb-4d80-aef7-48aa72d28ff3")
+		)
+		(pin "1"
+			(uuid "96a02be1-ff6c-45e9-86a9-361120e9f97d")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 105.41 81.28 0)
 		(unit 1)
@@ -6792,82 +7013,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 85.09 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c4b79dc1-5ecf-4deb-8989-bb5775e56656")
-		(property "Reference" "Q1"
-			(at 90.17 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PN2222A"
-			(at 90.17 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 90.17 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 85.09 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 85.09 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "36a3cf4c-3415-4739-9989-1f940a341ae4")
-		)
-		(pin "3"
-			(uuid "ba24fd74-4711-4048-90f9-2c54b1fd9e1a")
-		)
-		(pin "1"
-			(uuid "40e326b2-af5a-44a0-8142-052e60926428")
-		)
-		(instances
-			(project ""
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 87.63 105.41 0)
 		(unit 1)
@@ -6928,6 +7073,82 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 139.7 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "caf67cfa-340e-4661-96cd-4355b16bd812")
+		(property "Reference" "Q3"
+			(at 144.78 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 144.78 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 144.78 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "94179257-74e5-4f93-aa87-41a8b740c6db")
+		)
+		(pin "2"
+			(uuid "4373f883-ce5c-41b7-87a8-9f64958d2c0e")
+		)
+		(pin "1"
+			(uuid "f88c3029-e54e-46ca-bf4a-825f9d9f5551")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7080,17 +7301,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 237.49 44.45 0)
+		(lib_id "Transistor_BJT:BC817")
+		(at 85.09 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e3d305cd-69de-473f-89a8-8b2b5956e2eb")
-		(property "Reference" "Q6"
-			(at 242.57 43.1799 0)
+		(uuid "d3fc23de-9caa-487e-90ec-f90d6c81efc3")
+		(property "Reference" "Q2"
+			(at 90.17 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7098,8 +7319,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PN2222A"
-			(at 242.57 45.7199 0)
+		(property "Value" "BC817"
+			(at 90.17 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,8 +7328,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 242.57 46.355 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 90.17 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7118,8 +7339,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 237.49 44.45 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 85.09 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,8 +7349,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 237.49 44.45 0)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 85.09 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7137,19 +7358,19 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "ce1cf62f-d907-457b-96d7-b1a78e30b4d1")
-		)
 		(pin "3"
-			(uuid "6cc3f905-55ba-4380-8853-6961e88fa4a9")
+			(uuid "4eeed984-cc17-4f27-811f-52ce8bb60c92")
+		)
+		(pin "2"
+			(uuid "c89352c2-b6d1-4098-ba31-6b4f842e512e")
 		)
 		(pin "1"
-			(uuid "51005a4f-9786-42d1-9122-67be99dff329")
+			(uuid "f3c19f4b-e22a-4c99-8ecd-a289783b814d")
 		)
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q6")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7420,82 +7641,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:PN2222A")
-		(at 139.7 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2a9fb29-5e40-4461-a6d4-45de88c873d6")
-		(property "Reference" "Q4"
-			(at 144.78 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PN2222A"
-			(at 144.78 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 144.78 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
-			(at 139.7 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
-			(at 139.7 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "537a6b70-616c-48fe-ae7c-38db7a7566db")
-		)
-		(pin "3"
-			(uuid "771bd785-ce21-4e4f-8368-c21411445d13")
-		)
-		(pin "1"
-			(uuid "fb3746a9-54f2-4497-aa8d-89be9f926590")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 50.8 41.91 0)
 		(unit 1)
@@ -7711,6 +7856,82 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 139.7 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa3b199d-a7ae-4073-83e2-fa1d4d9b1a23")
+		(property "Reference" "Q4"
+			(at 144.78 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 144.78 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 144.78 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 139.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 139.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d8364d23-5a49-4004-a580-25bacd41d55e")
+		)
+		(pin "2"
+			(uuid "4fc4f8e8-e853-49e2-94c6-f16ac7c12d11")
+		)
+		(pin "1"
+			(uuid "029a3e86-d105-479c-87dd-37725ae47313")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
