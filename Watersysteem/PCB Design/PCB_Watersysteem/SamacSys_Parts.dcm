@@ -18,4 +18,10 @@ K
 F https://www.smc-diodes.com/propdf/SK36A%20N0104%20REV.A.pdf
 $ENDCMP
 #
+$CMP 434111043826
+D WURTH ELEKTRONIK - 434111043826 - Tactile Switch, WS-TASV Series, Top Actuated, Surface Mount, Rectangular Button, 260 gf
+K
+F https://www.we-online.de/katalog/datasheet/434111043826.pdf
+$ENDCMP
+#
 #End Doc Library

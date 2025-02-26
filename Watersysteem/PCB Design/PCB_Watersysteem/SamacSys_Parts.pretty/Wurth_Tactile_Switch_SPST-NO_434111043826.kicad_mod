@@ -1,0 +1,233 @@
+(footprint "Wurth_Tactile_Switch_SPST-NO_434111043826"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "434111043826-2")
+	(tags "Switch")
+	(property "Reference" "S**"
+		(at -0.4 0 0)
+		(layer "F.SilkS")
+		(uuid "ea0f7577-d7e0-4104-b8ff-fbc91c944b96")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "Wurth_Tactile_Switch_SPST-NO_434111043826"
+		(at -0.4 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "005ab95c-c21a-452d-93da-76f11b1d98d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9aee8e2-d091-4182-abfc-0d5084c7019e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ece0b935-733a-4d31-8870-785a98cff129")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.3 0)
+		(end -5.3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2f5f9dbc-4fa0-432b-bb0c-435d01dd0dee")
+	)
+	(fp_line
+		(start -5.1 0)
+		(end -5.1 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aca69d5b-eaa4-4761-9411-576669727e53")
+	)
+	(fp_line
+		(start -3 -1.75)
+		(end 3 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e5c2b06d-57f1-4c99-b746-fe2987b73cdf")
+	)
+	(fp_line
+		(start -3 1.75)
+		(end 3 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "408fdb31-09a4-4c25-81f5-00bdc5c924a4")
+	)
+	(fp_arc
+		(start -5.3 0)
+		(mid -5.2 -0.1)
+		(end -5.1 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "69d0ac08-0e84-48fd-9af1-d2bf02a7c1de")
+	)
+	(fp_arc
+		(start -5.1 0)
+		(mid -5.2 0.1)
+		(end -5.3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "23602cc5-8f28-4609-8583-3d1f20533afe")
+	)
+	(fp_line
+		(start -6.3 -2.75)
+		(end 5.5 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cf2eb9fb-0e67-4fa8-b44a-b780614cc06f")
+	)
+	(fp_line
+		(start -6.3 2.75)
+		(end -6.3 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ece878cf-4242-4e83-bc1b-8031dcac67f1")
+	)
+	(fp_line
+		(start 5.5 -2.75)
+		(end 5.5 2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "88463392-9623-4bc7-8674-b1100fe8f2e1")
+	)
+	(fp_line
+		(start 5.5 2.75)
+		(end -6.3 2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "739804a3-c936-44b2-b3bc-c5bbb0a9721d")
+	)
+	(fp_line
+		(start -3 -1.75)
+		(end 3 -1.75)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "97cd76bd-0c59-45cf-af5d-31360932097f")
+	)
+	(fp_line
+		(start -3 1.75)
+		(end -3 -1.75)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc01479d-a326-4500-9676-1fed001b998c")
+	)
+	(fp_line
+		(start 3 -1.75)
+		(end 3 1.75)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d8565358-d94e-48a8-8a29-da1fe201699b")
+	)
+	(fp_line
+		(start 3 1.75)
+		(end -3 1.75)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c284a562-7f92-4689-adc7-d59aba30cc37")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.4 0 0)
+		(layer "F.Fab")
+		(uuid "9c553e33-513b-4eb1-9725-3721658e343e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.35 0 90)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "66fab45e-846e-4700-bcd7-07541b800acb")
+	)
+	(pad "2" smd rect
+		(at 3.35 0 90)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d220970-e782-4a46-9019-32081921bf6c")
+	)
+	(embedded_fonts no)
+	(model "C:\\Users\\sande\\Documents\\GitHubC\\Plan-T\\Watersysteem\\PCB Design\\PCB_Watersysteem\\SamacSys_Parts.3dshapes\\434111043826.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
