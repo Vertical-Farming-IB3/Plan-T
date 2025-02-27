@@ -8211,7 +8211,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 276.86 144.78 0)
 			(effects
 				(font
@@ -12889,7 +12889,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 276.86 158.75 0)
 			(effects
 				(font
@@ -14099,7 +14099,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 276.86 132.08 0)
 			(effects
 				(font
@@ -14452,7 +14452,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 276.86 119.38 0)
 			(effects
 				(font
