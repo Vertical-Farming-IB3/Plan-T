@@ -202,130 +202,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:1N4148W"
 			(pin_numbers
 				(hide yes)
@@ -701,9 +577,8 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC817"
+		(symbol "Transistor_FET:BSS138"
 			(pin_names
-				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -718,7 +593,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC817"
+			(property "Value" "BSS138"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -738,8 +613,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -748,7 +623,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -757,7 +632,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Transistor"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -775,34 +650,11 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC817_0_1"
+			(symbol "BSS138_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 0.635 0)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -811,11 +663,9 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "BC817_1_1"
 				(polyline
 					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
+						(xy 0.254 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -827,7 +677,43 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -839,7 +725,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -849,10 +735,93 @@
 						(type outline)
 					)
 				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BSS138_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "B"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -870,7 +839,7 @@
 				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "C"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -888,7 +857,7 @@
 				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "E"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1326,10 +1295,10 @@
 		(uuid "070caa59-8f49-4ffd-95dd-e53d8f80f442")
 	)
 	(junction
-		(at 142.24 52.07)
+		(at 93.98 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0be5342b-e2e7-483e-8dae-da563ab2e5e7")
+		(uuid "0bbac053-736a-49d9-8362-e82a6b0fcdf6")
 	)
 	(junction
 		(at 203.2 29.21)
@@ -1338,34 +1307,16 @@
 		(uuid "16bcdaed-92fb-4f70-825d-a083b741d4d0")
 	)
 	(junction
-		(at 78.74 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19f43bbd-f1ab-4efe-9659-112839c3f9b0")
-	)
-	(junction
-		(at 78.74 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f0a6b43-f560-40d5-aa2f-71a3b46de544")
-	)
-	(junction
-		(at 240.03 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2729ce84-6afa-4bfe-bc1a-5fdf782bca73")
-	)
-	(junction
 		(at 198.12 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ac5a199-54dd-49a7-a89f-1131b7be9e0c")
 	)
 	(junction
-		(at 240.03 39.37)
+		(at 87.63 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34ba34fb-1cda-4183-9221-893c4df16d7c")
+		(uuid "2ee93cc8-7e42-4450-b2e9-46f86008012f")
 	)
 	(junction
 		(at 57.15 143.51)
@@ -1374,28 +1325,16 @@
 		(uuid "351927d2-c312-45fb-9ac8-23d57b8d241d")
 	)
 	(junction
-		(at 133.35 96.52)
+		(at 142.24 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "429c3fe9-fa1a-4577-b0e1-deb02cf3422c")
+		(uuid "4259181a-f1d5-4fbc-a321-f283c24a746d")
 	)
 	(junction
-		(at 231.14 101.6)
+		(at 142.24 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "454cdf48-0c57-4cef-a512-01037d78dbc0")
-	)
-	(junction
-		(at 240.03 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e7681a7-e556-4221-ae7c-998756e33bed")
-	)
-	(junction
-		(at 93.98 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5a4c0182-bd44-4c45-a360-9c7473f5e8fc")
+		(uuid "5793b487-42bc-41d8-9704-c7f6cdf222f8")
 	)
 	(junction
 		(at 105.41 41.91)
@@ -1404,46 +1343,16 @@
 		(uuid "60fb0a3b-c5ad-4b4f-956c-8ae0302dd44f")
 	)
 	(junction
-		(at 142.24 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8045b291-55a5-4379-96c2-7a8f47c36982")
-	)
-	(junction
-		(at 93.98 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8c49db3b-2dcd-46fc-b0ea-4b11633f0c59")
-	)
-	(junction
-		(at 85.09 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9247f6ef-3051-4911-9c24-49a9204b4aad")
-	)
-	(junction
-		(at 87.63 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a77a238e-1835-4876-a3e2-b9087ed6fa4a")
-	)
-	(junction
 		(at 87.63 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "af8bc79a-94d1-434d-b959-f3f214457df0")
+		(uuid "8c4a3379-ca78-4064-a7a1-8859cc7b652d")
 	)
 	(junction
 		(at 240.03 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e67488ae-a225-4480-affb-e87d436fa376")
-	)
-	(junction
-		(at 231.14 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e81ef65d-02d4-4c73-89cc-653651e1a11f")
+		(uuid "be40e44f-7a32-41c4-910f-5cff4a9d45f0")
 	)
 	(junction
 		(at 105.41 81.28)
@@ -1452,40 +1361,16 @@
 		(uuid "ecd6e5c6-9b6a-4b93-a6ff-9d72258a80af")
 	)
 	(junction
-		(at 142.24 105.41)
+		(at 240.03 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f0784967-3a61-498e-bf2c-350cb3237bb2")
-	)
-	(junction
-		(at 133.35 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5d3c831-5c7c-414d-a91f-e87e6320a51c")
-	)
-	(junction
-		(at 142.24 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7e8139b-fc7d-436f-ac49-c1301d191c35")
+		(uuid "f57670f1-2836-4df2-97b2-4dd3c9da08d4")
 	)
 	(junction
 		(at 50.8 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa70f5d3-4c7c-400b-b52f-01610f671743")
-	)
-	(junction
-		(at 87.63 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff1e9c83-7f4f-4f32-9df5-c93cd71f9980")
-	)
-	(junction
-		(at 87.63 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff3223e9-e146-4ee1-87e6-6595c586a444")
 	)
 	(wire
 		(pts
@@ -1496,16 +1381,6 @@
 			(type default)
 		)
 		(uuid "0c202874-370d-4d9a-9dd9-83d6b77712eb")
-	)
-	(wire
-		(pts
-			(xy 87.63 62.23) (xy 87.63 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e5b3f1c-db46-4171-abf9-2ef059b4b5fe")
 	)
 	(wire
 		(pts
@@ -1599,36 +1474,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 97.79) (xy 133.35 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "361ab59c-5289-4348-be13-02b6ca6ed0bd")
-	)
-	(wire
-		(pts
-			(xy 85.09 158.75) (xy 86.36 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "366488aa-583c-444e-b7e8-346ff7f0f271")
-	)
-	(wire
-		(pts
-			(xy 133.35 58.42) (xy 133.35 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37eb46ea-ebc2-4fe7-9752-963576862f3b")
-	)
-	(wire
-		(pts
 			(xy 69.85 91.44) (xy 87.63 91.44)
 		)
 		(stroke
@@ -1636,56 +1481,6 @@
 			(type default)
 		)
 		(uuid "3a0fd3dd-440b-471b-adea-b7e9335bc64f")
-	)
-	(wire
-		(pts
-			(xy 78.74 57.15) (xy 80.01 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bbba881-853c-4b39-8c39-dc4ce907a109")
-	)
-	(wire
-		(pts
-			(xy 133.35 105.41) (xy 142.24 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e32f1fd-2ada-48a2-b43f-bad6263452f7")
-	)
-	(wire
-		(pts
-			(xy 133.35 66.04) (xy 142.24 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3eba841f-cd34-4922-8c37-83129913e234")
-	)
-	(wire
-		(pts
-			(xy 231.14 44.45) (xy 232.41 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f4ed02c-b20a-4c37-81e0-36e73045ad02")
-	)
-	(wire
-		(pts
-			(xy 85.09 167.64) (xy 93.98 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4359e048-6f82-4fb9-b67d-10ec155712a0")
 	)
 	(wire
 		(pts
@@ -1729,16 +1524,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 102.87) (xy 231.14 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dd91504-b756-494d-9b64-d3ca051533f4")
-	)
-	(wire
-		(pts
 			(xy 87.63 91.44) (xy 87.63 83.82)
 		)
 		(stroke
@@ -1746,16 +1531,6 @@
 			(type default)
 		)
 		(uuid "5ef08fc7-2186-471e-8b6c-603e4bc2d6d3")
-	)
-	(wire
-		(pts
-			(xy 134.62 96.52) (xy 133.35 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62cd8964-c459-4822-9a76-63d380dd655a")
 	)
 	(wire
 		(pts
@@ -1776,36 +1551,6 @@
 			(type default)
 		)
 		(uuid "68d46b69-9b82-4723-8fc4-abf12fce4a4e")
-	)
-	(wire
-		(pts
-			(xy 142.24 101.6) (xy 142.24 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bdc5955-4954-44d8-8da1-04c6f5d36d11")
-	)
-	(wire
-		(pts
-			(xy 78.74 97.79) (xy 78.74 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ef504ac-1820-43fb-be94-f08d8a952a20")
-	)
-	(wire
-		(pts
-			(xy 133.35 57.15) (xy 134.62 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7035dbf8-b88d-4baf-a03d-802a16c1616d")
 	)
 	(wire
 		(pts
@@ -1849,26 +1594,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 53.34) (xy 240.03 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fc227c9-3885-4742-adeb-c0fb4db91f22")
-	)
-	(wire
-		(pts
-			(xy 87.63 101.6) (xy 87.63 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8457cff1-835a-43fe-aef7-5382c08faaaa")
-	)
-	(wire
-		(pts
 			(xy 179.07 100.33) (xy 180.34 100.33)
 		)
 		(stroke
@@ -1899,16 +1624,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 105.41) (xy 87.63 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "996730c6-8662-47f5-8954-c140944129e3")
-	)
-	(wire
-		(pts
 			(xy 240.03 96.52) (xy 240.03 88.9)
 		)
 		(stroke
@@ -1919,16 +1634,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 62.23) (xy 142.24 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0c989a3-b721-4798-8862-b3a0d6ad0fc8")
-	)
-	(wire
-		(pts
 			(xy 105.41 52.07) (xy 105.41 41.91)
 		)
 		(stroke
@@ -1936,26 +1641,6 @@
 			(type default)
 		)
 		(uuid "a1e7859e-ecf9-4a1c-b440-8eb5bcd28879")
-	)
-	(wire
-		(pts
-			(xy 85.09 160.02) (xy 85.09 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a38ca6b4-728b-4585-a8c1-0b0eef287e0d")
-	)
-	(wire
-		(pts
-			(xy 93.98 163.83) (xy 93.98 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a644a7c6-4660-413b-aac0-25f8f5e74dd5")
 	)
 	(wire
 		(pts
@@ -2029,16 +1714,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 80.01 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb1d7911-b889-4dc5-9dbf-c3900db8bf55")
-	)
-	(wire
-		(pts
 			(xy 50.8 81.28) (xy 54.61 81.28)
 		)
 		(stroke
@@ -2046,16 +1721,6 @@
 			(type default)
 		)
 		(uuid "cd32b781-3e95-47d2-a83b-2b7fee9b05d9")
-	)
-	(wire
-		(pts
-			(xy 240.03 49.53) (xy 240.03 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ceb0ed73-0591-4a58-a913-daf00dc94544")
 	)
 	(wire
 		(pts
@@ -2069,26 +1734,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 110.49) (xy 240.03 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dae74ab6-f266-41d7-b7d5-f14d88bdfb29")
-	)
-	(wire
-		(pts
-			(xy 240.03 106.68) (xy 240.03 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db1f1b97-a18b-42f3-b18a-7463cb2af92a")
-	)
-	(wire
-		(pts
 			(xy 142.24 52.07) (xy 142.24 44.45)
 		)
 		(stroke
@@ -2096,26 +1741,6 @@
 			(type default)
 		)
 		(uuid "df65a713-6d05-4c3d-9422-38419c591842")
-	)
-	(wire
-		(pts
-			(xy 231.14 45.72) (xy 231.14 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2730130-b295-4c3b-95fc-e551de378ae6")
-	)
-	(wire
-		(pts
-			(xy 78.74 66.04) (xy 87.63 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec7ee4b8-435a-4d3c-961d-6a74a415d07d")
 	)
 	(wire
 		(pts
@@ -2127,29 +1752,9 @@
 		)
 		(uuid "f248ea49-4339-4bee-866a-73768a798bb4")
 	)
-	(wire
-		(pts
-			(xy 231.14 101.6) (xy 232.41 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46ce8be-0184-4d13-9ddf-1a48d0d13a81")
-	)
-	(wire
-		(pts
-			(xy 78.74 58.42) (xy 78.74 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5275a2c-6a28-4a76-83a9-4ce79e9240e4")
-	)
 	(global_label "RELAY_PUMP4"
 		(shape input)
-		(at 125.73 96.52 180)
+		(at 134.62 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2159,7 +1764,7 @@
 		)
 		(uuid "0160c375-9de2-4133-a746-ec76b6df4845")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.6215 96.52 0)
+			(at 118.5115 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2325,7 +1930,7 @@
 	)
 	(global_label "RELAY_AIR"
 		(shape input)
-		(at 77.47 158.75 180)
+		(at 86.36 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2335,7 +1940,7 @@
 		)
 		(uuid "73c20555-e957-4726-9f31-d03591916781")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.9295 158.75 0)
+			(at 73.8195 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2347,7 +1952,7 @@
 	)
 	(global_label "RELAY_PUMP2"
 		(shape input)
-		(at 125.73 57.15 180)
+		(at 134.62 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2357,7 +1962,7 @@
 		)
 		(uuid "74454303-a4f0-4334-a410-893623103420")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.6215 57.15 0)
+			(at 118.5115 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2369,7 +1974,7 @@
 	)
 	(global_label "RELAY_PUMP3"
 		(shape input)
-		(at 71.12 96.52 180)
+		(at 80.01 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2379,7 +1984,7 @@
 		)
 		(uuid "7ddce817-6523-42ca-ba06-4a820fc96cea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.0115 96.52 0)
+			(at 63.9015 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +2018,7 @@
 	)
 	(global_label "RELAY_UV"
 		(shape input)
-		(at 223.52 101.6 180)
+		(at 232.41 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2423,7 +2028,7 @@
 		)
 		(uuid "b159103c-a397-4ec1-bbcd-25eb9bc60716")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.5238 101.6 0)
+			(at 220.4138 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,7 +2084,7 @@
 	)
 	(global_label "RELAY_MIXER"
 		(shape input)
-		(at 223.52 44.45 180)
+		(at 232.41 44.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2489,7 +2094,7 @@
 		)
 		(uuid "d39b6fa7-ca99-4cf8-a98c-aaebe2956e2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.2582 44.45 0)
+			(at 217.1482 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2567,7 +2172,7 @@
 	)
 	(global_label "RELAY_PUMP1"
 		(shape input)
-		(at 71.12 57.15 180)
+		(at 80.01 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2577,7 +2182,7 @@
 		)
 		(uuid "ed8fe4ab-5573-4801-a8f7-4d13d3177b8f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.0115 57.15 0)
+			(at 63.9015 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2654,74 +2259,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 74.93 57.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0df3aeae-6312-4061-88e3-8760b12d1fd7")
-		(property "Reference" "R16"
-			(at 74.93 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 74.93 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 74.93 55.372 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "360f652b-dd6d-4e13-803e-28ade173be01")
-		)
-		(pin "1"
-			(uuid "a19541c4-cd9f-4e51-ab8a-ca6ab8baf8a2")
-		)
-		(instances
-			(project ""
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 27.94 142.24 180)
 		(unit 1)
@@ -2784,76 +2321,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "J18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 231.14 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13481cb4-9390-496b-8b7b-bf7cb131f831")
-		(property "Reference" "R29"
-			(at 233.68 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 233.68 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 229.362 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 231.14 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "49c43f68-493c-4242-8137-0c5095cde32c")
-		)
-		(pin "1"
-			(uuid "e4d89b62-106a-453c-802e-715cb51f92e4")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -2946,8 +2413,160 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 237.49 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "141793ca-6d7a-456b-a96b-b6703f330ca4")
+		(property "Reference" "Q7"
+			(at 243.84 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 243.84 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 242.57 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 242.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 237.49 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c8aded2-47fc-45f5-9377-16981eaf9d3d")
+		)
+		(pin "2"
+			(uuid "b8927074-781c-45de-87cb-25e919a08c48")
+		)
+		(pin "3"
+			(uuid "25b3d969-35fb-43f8-a104-a567dbb16f6f")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 139.7 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14d7cf92-4067-49c3-855c-5a1e9a72783d")
+		(property "Reference" "Q4"
+			(at 146.05 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 146.05 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 144.78 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 144.78 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 139.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "628bb5ed-5544-4a3b-86c9-adf9244ae014")
+		)
+		(pin "2"
+			(uuid "84290316-69cb-4a9a-816b-d3dcd1ef502e")
+		)
+		(pin "3"
+			(uuid "adbe6794-5f09-47bc-a0e0-8cbcbccd6fc5")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 240.03 53.34 0)
+		(at 240.03 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2956,7 +2575,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b345db7-cdb9-4e7b-8b8d-71b0c9030a19")
 		(property "Reference" "#PWR042"
-			(at 240.03 59.69 0)
+			(at 240.03 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,7 +2584,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 58.42 0)
+			(at 240.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2973,7 +2592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 53.34 0)
+			(at 240.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2982,7 +2601,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 53.34 0)
+			(at 240.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,7 +2610,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 53.34 0)
+			(at 240.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,74 +2759,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 129.54 57.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29454ddb-4ccd-40cc-a0ac-61214c418dab")
-		(property "Reference" "R18"
-			(at 129.54 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 129.54 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 129.54 55.372 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "09fed567-ab82-4eec-be13-2f2026d75fa8")
-		)
-		(pin "1"
-			(uuid "ae1ec944-a805-499f-8f23-7c5a54a476fc")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -3427,76 +2978,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 133.35 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dbf5167-9238-45ec-af1f-52c99da8a9c7")
-		(property "Reference" "R23"
-			(at 135.89 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 135.89 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 131.572 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 133.35 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0082cbb2-4043-4053-9392-0d56a9fb3b23")
-		)
-		(pin "1"
-			(uuid "480e5810-b203-4786-bc1d-567b11386b4e")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 207.01 31.75 0)
 		(unit 1)
@@ -3557,82 +3038,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 237.49 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "300a6a88-440c-45c0-b9ce-4996dc76f3d9")
-		(property "Reference" "Q6"
-			(at 242.57 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 242.57 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 242.57 46.355 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 237.49 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 237.49 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "521b0bcf-e765-41f6-a0e2-6cda8fbd0e59")
-		)
-		(pin "2"
-			(uuid "d7dad50b-0ea7-4e3e-b2a0-8ac7c00f105c")
-		)
-		(pin "1"
-			(uuid "7d076332-1f91-4c38-ab77-fb01409627a2")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -3857,82 +3262,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 91.44 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37afda95-e939-4da5-9869-635545fa73d9")
-		(property "Reference" "Q5"
-			(at 96.52 157.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 96.52 160.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 96.52 160.655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 91.44 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 91.44 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "7ba1023e-7ae4-451d-acd8-2df93fd43da3")
-		)
-		(pin "2"
-			(uuid "49f33248-f737-45da-819c-475472783915")
-		)
-		(pin "1"
-			(uuid "9d394b9a-2514-4625-afe8-c17aaf5959bc")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:AHQSS105DM2FA0G")
 		(at 54.61 41.91 0)
 		(unit 1)
@@ -4072,152 +3401,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "K1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 78.74 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39935992-1c89-4d0e-a50b-7f48ef742f8c")
-		(property "Reference" "R21"
-			(at 81.28 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 81.28 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 76.962 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 78.74 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b447adb2-d670-4deb-8ad5-6498ddfdcdf0")
-		)
-		(pin "1"
-			(uuid "f2f56247-680b-4cc7-a656-0a65280d4ee3")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 85.09 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a843749-a55d-4583-a20a-b715243ba057")
-		(property "Reference" "Q1"
-			(at 90.17 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 90.17 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 90.17 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 85.09 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 85.09 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1d19cf39-56a2-4c2c-9242-47d6057e51ce")
-		)
-		(pin "2"
-			(uuid "a4a60c98-6c98-4ecd-987e-1e17ff00bd29")
-		)
-		(pin "1"
-			(uuid "96ee66f8-f9c8-4898-8960-ab41b4cfb73a")
-		)
-		(instances
-			(project ""
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4676,7 +3859,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 66.04 0)
+		(at 142.24 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4685,7 +3868,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c48c330-0800-4963-bd92-f1ae9a54333e")
 		(property "Reference" "#PWR037"
-			(at 142.24 72.39 0)
+			(at 142.24 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +3877,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 71.12 0)
+			(at 142.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4702,7 +3885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 66.04 0)
+			(at 142.24 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4711,7 +3894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 66.04 0)
+			(at 142.24 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4720,7 +3903,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 66.04 0)
+			(at 142.24 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,7 +3925,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 110.49 0)
+		(at 240.03 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4751,7 +3934,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f30a5c1-54e5-4731-a386-90851ca1d9b0")
 		(property "Reference" "#PWR043"
-			(at 240.03 116.84 0)
+			(at 240.03 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4760,7 +3943,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 115.57 0)
+			(at 240.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,7 +3951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 110.49 0)
+			(at 240.03 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4777,7 +3960,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 110.49 0)
+			(at 240.03 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,7 +3969,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 110.49 0)
+			(at 240.03 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,6 +4188,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 85.09 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "663ab216-e8f8-48c4-b84f-4f4e60b4c74b")
+		(property "Reference" "Q3"
+			(at 91.44 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 91.44 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 90.17 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 90.17 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 85.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3a42d9e-88ff-476b-a3d2-0ca120a46129")
+		)
+		(pin "2"
+			(uuid "7aef40dd-3cb6-477b-b1ee-46f73c65a9cd")
+		)
+		(pin "3"
+			(uuid "45801414-64e6-4c40-ac0b-33c64c68b9a8")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 26.67 43.18 180)
 		(unit 1)
@@ -5141,76 +4400,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 74.93 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e69fe18-5b0f-49ca-a914-d9d19b7f9b9d")
-		(property "Reference" "R20"
-			(at 74.93 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 74.93 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 74.93 94.742 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0187a1a6-c25e-44c6-9c0f-bf951cfbf738")
-		)
-		(pin "1"
-			(uuid "9ebf3871-477a-4759-bbbc-e81b294306dc")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 93.98 167.64 0)
+		(at 93.98 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5219,7 +4410,7 @@
 		(fields_autoplaced yes)
 		(uuid "8284b0d1-eb24-41e3-84a4-9df8711004fc")
 		(property "Reference" "#PWR040"
-			(at 93.98 173.99 0)
+			(at 93.98 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +4419,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 172.72 0)
+			(at 93.98 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5236,7 +4427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 167.64 0)
+			(at 93.98 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5245,7 +4436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 167.64 0)
+			(at 93.98 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +4445,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 167.64 0)
+			(at 93.98 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5420,76 +4611,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 78.74 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8528552a-8569-4b41-8948-85d281099d71")
-		(property "Reference" "R17"
-			(at 81.28 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 81.28 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 76.962 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 78.74 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "39336060-e66d-4c9e-adbe-e497170c019a")
-		)
-		(pin "1"
-			(uuid "589bf0b8-a807-45ad-b768-7f1f824a96f5")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 203.2 29.21 0)
 		(unit 1)
@@ -5556,76 +4677,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 129.54 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86c2c7d5-291d-4acf-8d10-40d95ee953c9")
-		(property "Reference" "R22"
-			(at 129.54 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 129.54 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 129.54 94.742 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "275b1c64-00fb-4107-a518-c77b4153bafe")
-		)
-		(pin "1"
-			(uuid "90637f26-d2cb-43e1-ad48-0c08d2304b0e")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 142.24 105.41 0)
+		(at 142.24 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5634,7 +4687,7 @@
 		(fields_autoplaced yes)
 		(uuid "885211f7-83be-4b01-aeb1-6adf16c5be2e")
 		(property "Reference" "#PWR039"
-			(at 142.24 111.76 0)
+			(at 142.24 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5643,7 +4696,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 110.49 0)
+			(at 142.24 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5651,7 +4704,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 105.41 0)
+			(at 142.24 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5660,7 +4713,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 105.41 0)
+			(at 142.24 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5669,7 +4722,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 105.41 0)
+			(at 142.24 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5684,76 +4737,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 231.14 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90604ca4-170d-40f2-bc16-4a5969031f93")
-		(property "Reference" "R27"
-			(at 233.68 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 233.68 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 229.362 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 231.14 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a1977eb3-ff20-42b9-8391-28a68d6367de")
-		)
-		(pin "1"
-			(uuid "2c99568c-d172-4530-bf00-b4431f342766")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -5828,142 +4811,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 227.33 101.6 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91103fa4-bc6d-4f73-a0c3-4b555c22cc55")
-		(property "Reference" "R28"
-			(at 227.33 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 227.33 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 227.33 99.822 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 227.33 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8ac6d0d8-115d-464f-9be5-35980014cae4")
-		)
-		(pin "1"
-			(uuid "12faa746-fe7d-4a77-a62d-949d0b87921b")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 81.28 158.75 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99b3acb4-08b6-4403-be8d-a652ec26473f")
-		(property "Reference" "R24"
-			(at 81.28 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 81.28 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 81.28 156.972 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 81.28 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8803d8c2-65f3-4c80-a099-c8cfb8233fa8")
-		)
-		(pin "1"
-			(uuid "b2690ff2-5c88-4de0-8367-31cfc818ce46")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 105.41 41.91 0)
 		(unit 1)
@@ -6024,76 +4871,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR078")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 133.35 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ab0ee51-c8bf-41a8-9e8b-5abcf45faae3")
-		(property "Reference" "R19"
-			(at 135.89 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 135.89 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 131.572 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 133.35 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3e1b82cf-3516-4154-8a06-646914cd914a")
-		)
-		(pin "1"
-			(uuid "24d9b1d6-9de9-49ef-9a9e-5ed6036a0bea")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -6398,7 +5175,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 66.04 0)
+		(at 87.63 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6407,7 +5184,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ee911d1-0e86-495f-b0d9-add87da62074")
 		(property "Reference" "#PWR035"
-			(at 87.63 72.39 0)
+			(at 87.63 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +5193,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 71.12 0)
+			(at 87.63 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6424,7 +5201,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 66.04 0)
+			(at 87.63 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6433,7 +5210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 66.04 0)
+			(at 87.63 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6442,7 +5219,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 66.04 0)
+			(at 87.63 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6457,6 +5234,82 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 139.7 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2a4fcfc-6576-404b-b977-7c9fd1c33074")
+		(property "Reference" "Q2"
+			(at 146.05 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 146.05 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 144.78 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db5b56f1-4b95-4559-83bf-8a5b450371d1")
+		)
+		(pin "2"
+			(uuid "8ed9c6cb-83a7-4558-acb1-2d42e1f2fac9")
+		)
+		(pin "3"
+			(uuid "1a9fcbab-cecc-40f7-adcf-0bdcbc83286f")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6674,7 +5527,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC817")
+		(lib_id "Transistor_FET:BSS138")
 		(at 237.49 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6682,9 +5535,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b43b90e8-2de6-4f7d-9445-29f7030e7623")
-		(property "Reference" "Q7"
-			(at 242.57 100.3299 0)
+		(uuid "b460531e-4091-4c03-8257-c8ef8c248165")
+		(property "Reference" "Q6"
+			(at 243.84 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6692,8 +5545,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC817"
-			(at 242.57 102.8699 0)
+		(property "Value" "BSS138"
+			(at 243.84 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,8 +5565,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 237.49 101.6 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 242.57 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6722,7 +5575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
 			(at 237.49 101.6 0)
 			(effects
 				(font
@@ -6731,19 +5584,19 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "e1a34b22-3175-414d-9687-dd5040f9f751")
+		(pin "1"
+			(uuid "44e08b1c-04f3-4b1c-a8d3-c9336cfcfa03")
 		)
 		(pin "2"
-			(uuid "b0b7c4a5-c5bb-4d80-aef7-48aa72d28ff3")
+			(uuid "255727a2-9583-4335-b0d7-f71e1fdecc8e")
 		)
-		(pin "1"
-			(uuid "96a02be1-ff6c-45e9-86a9-361120e9f97d")
+		(pin "3"
+			(uuid "8f5301e3-a827-4126-8c02-c0047c34d39c")
 		)
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q7")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -6902,6 +5755,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 85.09 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba2ad4a5-e0c4-4e33-9d38-40e4c2c226ec")
+		(property "Reference" "Q1"
+			(at 91.44 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 91.44 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 90.17 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 90.17 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b326090-0dff-48f5-8975-6f4a07f28ec0")
+		)
+		(pin "2"
+			(uuid "fde6e78b-bf8b-4a7f-9d1b-24c599959ef9")
+		)
+		(pin "3"
+			(uuid "0c5d4f7a-579e-416a-8873-123c3972f32a")
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 66.04 91.44 0)
 		(unit 1)
@@ -7054,8 +5983,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 91.44 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6603b62-7c1d-4acc-ac38-c06576c31bd5")
+		(property "Reference" "Q5"
+			(at 97.79 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 97.79 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 96.52 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 96.52 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 91.44 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a190772e-b188-4ead-8e70-a46f2ecd17ee")
+		)
+		(pin "2"
+			(uuid "76c98903-29e2-4d82-8a3c-ad43f1beb746")
+		)
+		(pin "3"
+			(uuid "31da788b-de41-4b97-9159-b735ae1127b4")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 87.63 105.41 0)
+		(at 87.63 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7064,7 +6069,7 @@
 		(fields_autoplaced yes)
 		(uuid "c81e0583-8ab6-4c1d-8078-194a8681d252")
 		(property "Reference" "#PWR038"
-			(at 87.63 111.76 0)
+			(at 87.63 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +6078,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 110.49 0)
+			(at 87.63 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7081,7 +6086,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 105.41 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7090,7 +6095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 105.41 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7099,7 +6104,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 105.41 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7114,82 +6119,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 139.7 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "caf67cfa-340e-4661-96cd-4355b16bd812")
-		(property "Reference" "Q3"
-			(at 144.78 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 144.78 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 144.78 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 139.7 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 139.7 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "94179257-74e5-4f93-aa87-41a8b740c6db")
-		)
-		(pin "2"
-			(uuid "4373f883-ce5c-41b7-87a8-9f64958d2c0e")
-		)
-		(pin "1"
-			(uuid "f88c3029-e54e-46ca-bf4a-825f9d9f5551")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7404,82 +6333,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 85.09 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3fc23de-9caa-487e-90ec-f90d6c81efc3")
-		(property "Reference" "Q2"
-			(at 90.17 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 90.17 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 90.17 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4eeed984-cc17-4f27-811f-52ce8bb60c92")
-		)
-		(pin "2"
-			(uuid "c89352c2-b6d1-4098-ba31-6b4f842e512e")
-		)
-		(pin "1"
-			(uuid "f3c19f4b-e22a-4c99-8ecd-a289783b814d")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7810,220 +6663,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 85.09 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6cc7c9b-662e-4a1b-8736-67a5c933dba9")
-		(property "Reference" "R25"
-			(at 87.63 162.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 87.63 165.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 83.312 163.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 85.09 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dc8d3c2c-e7e4-4505-ac0a-59d4de0e2282")
-		)
-		(pin "1"
-			(uuid "3517b082-35f6-468a-b7bd-2ccf42a0fb33")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC817")
-		(at 139.7 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa3b199d-a7ae-4073-83e2-fa1d4d9b1a23")
-		(property "Reference" "Q4"
-			(at 144.78 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC817"
-			(at 144.78 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 144.78 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
-			(at 139.7 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 139.7 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d8364d23-5a49-4004-a580-25bacd41d55e")
-		)
-		(pin "2"
-			(uuid "4fc4f8e8-e853-49e2-94c6-f16ac7c12d11")
-		)
-		(pin "1"
-			(uuid "029a3e86-d105-479c-87dd-37725ae47313")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 227.33 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fae67417-5e97-41de-b122-b6f3201b2851")
-		(property "Reference" "R26"
-			(at 227.33 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 227.33 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 227.33 42.672 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 227.33 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e7869929-c835-4a5e-91d4-72a3a4d0142d")
-		)
-		(pin "1"
-			(uuid "8f9decf6-0584-4ae7-a4b4-9845009436db")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd/9d362e6d-9323-41d2-ab33-f0630b5b7c79"
-					(reference "R26")
 					(unit 1)
 				)
 			)
