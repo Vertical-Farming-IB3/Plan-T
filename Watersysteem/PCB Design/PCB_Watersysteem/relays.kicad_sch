@@ -1116,7 +1116,7 @@
 	)
 	(rectangle
 		(start 20.32 116.84)
-		(end 120.65 187.96)
+		(end 120.65 173.99)
 		(stroke
 			(width 0)
 			(type default)
@@ -1267,26 +1267,6 @@
 			(justify left top)
 		)
 		(uuid "383b938c-42b8-4e9d-ae04-bad6bc6a30d3")
-	)
-	(text_box "Pompjes, Luchtpomp en Mixer worden gevoed vanuit PCB"
-		(exclude_from_sim no)
-		(at 245.11 153.67 0)
-		(size 33.02 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "87dd1f96-5a0b-4c78-89fd-6559c8781319")
 	)
 	(junction
 		(at 50.8 81.28)

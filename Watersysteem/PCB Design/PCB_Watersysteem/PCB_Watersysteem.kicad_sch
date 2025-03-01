@@ -4980,6 +4980,10 @@
 		(uuid "09c18c92-7209-4ec6-a13f-93ccd8b356ad")
 	)
 	(no_connect
+		(at 139.7 115.57)
+		(uuid "0d839fd6-8b3e-4b7a-947a-8c8dba26ec0e")
+	)
+	(no_connect
 		(at 104.14 123.19)
 		(uuid "0decc171-3d63-4a21-8f8c-4c2814eff55e")
 	)
@@ -4988,12 +4992,36 @@
 		(uuid "0f036db0-41bb-4d1e-810b-ef6b26ffccb9")
 	)
 	(no_connect
+		(at 139.7 113.03)
+		(uuid "0fffb811-e188-48ff-bf93-2bb60c0f5c6d")
+	)
+	(no_connect
+		(at 139.7 107.95)
+		(uuid "11883c34-b39b-4a78-8fca-7af248caed1f")
+	)
+	(no_connect
+		(at 139.7 105.41)
+		(uuid "11ffe05b-2975-4009-bda0-e53119f67757")
+	)
+	(no_connect
+		(at 139.7 146.05)
+		(uuid "1eb02472-c1da-44c0-bd53-1ab7cd1b75be")
+	)
+	(no_connect
 		(at 63.5 68.58)
 		(uuid "41ad56e0-6fd1-499d-a462-45a7dd2ac325")
 	)
 	(no_connect
+		(at 139.7 110.49)
+		(uuid "4e90b104-b182-4bab-a8e2-372ed00826bb")
+	)
+	(no_connect
 		(at 261.62 52.07)
 		(uuid "510f2ccc-182e-4417-917e-41c62b7f3723")
+	)
+	(no_connect
+		(at 63.5 63.5)
+		(uuid "529350ba-f306-433e-941e-563b8f8f0bf1")
 	)
 	(no_connect
 		(at 33.02 86.36)
@@ -5008,16 +5036,40 @@
 		(uuid "83a1531a-03d8-482e-af99-6901eca0ff4c")
 	)
 	(no_connect
+		(at 63.5 101.6)
+		(uuid "85f6034f-e787-4653-9586-28e49baa8276")
+	)
+	(no_connect
+		(at 63.5 104.14)
+		(uuid "a5228f9f-2e7e-489b-bf73-cc07db4c5e31")
+	)
+	(no_connect
+		(at 139.7 123.19)
+		(uuid "bc7a4fcf-93f1-4b2e-9dea-f045ca88edea")
+	)
+	(no_connect
 		(at 104.14 120.65)
 		(uuid "bf1d7949-f09f-4d84-93b0-aaf55ae68c0f")
+	)
+	(no_connect
+		(at 63.5 86.36)
+		(uuid "c2b96106-eaee-48e4-b15f-5cf3e53b5e06")
 	)
 	(no_connect
 		(at 33.02 78.74)
 		(uuid "dd01e9f5-00ee-4ea6-ba43-d236465e5e31")
 	)
 	(no_connect
+		(at 139.7 120.65)
+		(uuid "e562e12e-7a28-45f9-864d-e69c716d8d9f")
+	)
+	(no_connect
 		(at 33.02 50.8)
 		(uuid "f20bda8f-14c7-4cd4-84fa-277bd42be19e")
+	)
+	(no_connect
+		(at 139.7 118.11)
+		(uuid "f287d166-88b9-4a5f-a3ad-d5559587b84c")
 	)
 	(no_connect
 		(at 33.02 76.2)
@@ -6119,7 +6171,7 @@
 	)
 	(global_label "TRIG_WATER"
 		(shape input)
-		(at 66.04 91.44 0)
+		(at 63.5 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6129,7 +6181,7 @@
 		)
 		(uuid "2f58b71e-72fa-4a7c-92d1-5514d85f23e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.0318 91.44 0)
+			(at 77.4918 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,7 +6193,7 @@
 	)
 	(global_label "ENDSTOP2"
 		(shape input)
-		(at 64.77 110.49 0)
+		(at 63.5 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6151,7 +6203,7 @@
 		)
 		(uuid "3c16f1f3-4e78-4e58-ae72-c5410c83e9d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.4918 110.49 0)
+			(at 76.2218 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6273,7 +6325,7 @@
 	)
 	(global_label "ECHO_MIX"
 		(shape input)
-		(at 66.04 104.14 0)
+		(at 63.5 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6283,7 +6335,7 @@
 		)
 		(uuid "598fded4-7085-43d3-ab05-55b1e39a88a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.3385 104.14 0)
+			(at 75.7985 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6317,7 +6369,7 @@
 	)
 	(global_label "ENDSTOP1"
 		(shape input)
-		(at 64.77 107.95 0)
+		(at 63.5 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6327,7 +6379,7 @@
 		)
 		(uuid "5d9ea3db-4417-49b2-bd70-680db4512ee6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.4918 107.95 0)
+			(at 76.2218 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6427,7 +6479,7 @@
 	)
 	(global_label "TRIG_NUT"
 		(shape input)
-		(at 66.04 96.52 0)
+		(at 63.5 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6437,7 +6489,7 @@
 		)
 		(uuid "791b1994-d51a-4300-acbb-ad6eed01a3e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.7338 96.52 0)
+			(at 75.1938 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6493,7 +6545,7 @@
 	)
 	(global_label "LED NUTR"
 		(shape input)
-		(at 64.77 119.38 0)
+		(at 63.5 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6503,7 +6555,7 @@
 		)
 		(uuid "83aa0615-c2f5-4380-ac0d-276998105ca4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.0685 119.38 0)
+			(at 75.7985 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6647,7 +6699,7 @@
 	)
 	(global_label "ECHO_NUT"
 		(shape input)
-		(at 66.04 99.06 0)
+		(at 63.5 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6657,7 +6709,7 @@
 		)
 		(uuid "b50f5cdf-9c2a-4960-89e9-b5ffbfd79f47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.7014 99.06 0)
+			(at 76.1614 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6691,7 +6743,7 @@
 	)
 	(global_label "TRIG_MIX"
 		(shape input)
-		(at 66.04 101.6 0)
+		(at 63.5 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6701,7 +6753,7 @@
 		)
 		(uuid "baa17c29-92cd-48a5-b515-8df7eeeaa98c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.3709 101.6 0)
+			(at 74.8309 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6735,7 +6787,7 @@
 	)
 	(global_label "ENDSTOP3"
 		(shape input)
-		(at 64.77 113.03 0)
+		(at 63.5 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6745,7 +6797,7 @@
 		)
 		(uuid "bdb0e04c-d663-435b-b487-99c33cfd48ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.4918 113.03 0)
+			(at 76.2218 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6889,7 +6941,7 @@
 	)
 	(global_label "ECHO_WATER"
 		(shape input)
-		(at 66.04 93.98 0)
+		(at 63.5 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6899,7 +6951,7 @@
 		)
 		(uuid "ce42d95b-5fd9-4fe7-807d-beb25dc3cfb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.9994 93.98 0)
+			(at 78.4594 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +7073,7 @@
 	)
 	(global_label "LED WATER"
 		(shape input)
-		(at 64.77 116.84 0)
+		(at 63.5 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7031,7 +7083,7 @@
 		)
 		(uuid "e6e1e1b3-c39a-48e7-8c31-79c8290f3f5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.0965 116.84 0)
+			(at 76.8265 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7486,6 +7538,73 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 29.21 184.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a73a689-8e87-42c7-8a4d-7d214508e136")
+		(property "Reference" "TP15"
+			(at 34.29 182.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 34.29 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 29.21 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 29.21 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b684de7a-91d2-47c3-9ce5-a1d0e4fc63c4")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -8671,7 +8790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 190.5 78.7399 0)
 			(effects
 				(font
@@ -8680,7 +8799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 187.6552 81.28 0)
 			(effects
 				(font
@@ -8858,7 +8977,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 33.02 177.8 180)
+		(at 33.02 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8866,7 +8985,7 @@
 		(dnp no)
 		(uuid "379cabc4-b295-49e7-b624-32a3a236a277")
 		(property "Reference" "#FLG02"
-			(at 33.02 179.705 0)
+			(at 33.02 175.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8875,7 +8994,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 34.29 181.864 0)
+			(at 31.75 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10629,7 +10748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 223.52 57.1499 0)
 			(effects
 				(font
@@ -10638,7 +10757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 220.6752 59.69 0)
 			(effects
 				(font
@@ -12543,7 +12662,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 223.52 80.0099 0)
 			(effects
 				(font
@@ -12552,7 +12671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 220.6752 82.55 0)
 			(effects
 				(font
@@ -12613,7 +12732,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 191.77 55.8799 0)
 			(effects
 				(font
@@ -12622,7 +12741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 188.9252 58.42 0)
 			(effects
 				(font
@@ -14384,7 +14503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 150.8252 106.68 0)
 			(effects
 				(font
@@ -16257,8 +16376,8 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 24.13 174.498 0)
+		(property "Value" "12V ingang"
+			(at 20.828 174.498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
