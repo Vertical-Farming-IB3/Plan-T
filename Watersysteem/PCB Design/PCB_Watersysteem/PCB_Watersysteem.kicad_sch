@@ -886,6 +886,176 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
@@ -4595,6 +4765,16 @@
 		)
 		(uuid "92d26e30-b6d4-4814-8f6b-e99781b9bf98")
 	)
+	(text "M4"
+		(exclude_from_sim no)
+		(at 268.224 112.522 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "94557979-faf0-4dc4-ac20-1a2e743d8c15")
+	)
 	(text "MicroProcessor"
 		(exclude_from_sim no)
 		(at 49.022 27.432 0)
@@ -4606,6 +4786,16 @@
 			)
 		)
 		(uuid "94ff2af4-6be8-46bb-8278-047683c3bed5")
+	)
+	(text "50 ohm"
+		(exclude_from_sim no)
+		(at 173.228 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b80651ba-8960-4330-b2b4-061c894d637c")
 	)
 	(text "IO Expander (Relays)"
 		(exclude_from_sim no)
@@ -4756,16 +4946,16 @@
 		(uuid "62fd96cf-26d5-4838-98ca-d45c208e1ccb")
 	)
 	(junction
-		(at 182.88 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "009c7ec5-255e-43b2-b667-b315e148a979")
-	)
-	(junction
 		(at 128.27 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d2be823-b481-4a72-985e-c84f0d1f0333")
+	)
+	(junction
+		(at 209.55 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16c1bbe6-5c39-4664-8244-0de91342ac38")
 	)
 	(junction
 		(at 44.45 177.8)
@@ -4846,28 +5036,22 @@
 		(uuid "7729e39c-7ef7-4c83-8c89-fa79adea3f64")
 	)
 	(junction
-		(at 214.63 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c5dd599-b88b-4f78-9bd6-d21d646f6b16")
-	)
-	(junction
 		(at 186.69 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cc1092e-36ba-4cd7-a545-a64b4d2e0630")
 	)
 	(junction
+		(at 177.8 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "826af329-3ab9-4dad-adfb-ee723a8c749f")
+	)
+	(junction
 		(at 219.71 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "847416e4-b6e0-4a43-a2d5-c986251e1185")
-	)
-	(junction
-		(at 214.63 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9644ec7a-74ec-46be-8666-fd229210fc82")
 	)
 	(junction
 		(at 92.71 154.94)
@@ -4894,16 +5078,16 @@
 		(uuid "b684c7c1-e7d9-40ea-a175-fd95c681d133")
 	)
 	(junction
-		(at 181.61 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b75ae42f-72d6-454a-b216-6615c5638a68")
-	)
-	(junction
 		(at 92.71 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8dcdc2e-3486-4aed-8e3d-3528b696df9b")
+	)
+	(junction
+		(at 176.53 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd6c8ff1-6683-42c5-8715-5268045bff65")
 	)
 	(junction
 		(at 87.63 45.72)
@@ -4964,6 +5148,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8a9a3a8-5bc5-4f4e-8d34-9e4ae761bcfd")
+	)
+	(junction
+		(at 209.55 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb5ada60-75a8-4922-a3be-6e4e360cbd05")
 	)
 	(junction
 		(at 73.66 177.8)
@@ -5077,7 +5267,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 59.69) (xy 219.71 59.69)
+			(xy 209.55 59.69) (xy 219.71 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5104,16 +5294,6 @@
 			(type default)
 		)
 		(uuid "098378a0-dbf8-4550-8f6e-f613063405fb")
-	)
-	(wire
-		(pts
-			(xy 214.63 82.55) (xy 214.63 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ba7b935-d725-4669-9d47-128e06bded9b")
 	)
 	(wire
 		(pts
@@ -5197,16 +5377,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 59.69) (xy 214.63 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25faf3e3-62a9-4c39-876c-cbcd25d4f7f7")
-	)
-	(wire
-		(pts
 			(xy 82.55 177.8) (xy 77.47 177.8)
 		)
 		(stroke
@@ -5224,6 +5394,36 @@
 			(type default)
 		)
 		(uuid "3a95b73c-036b-4609-ac19-efab2994430e")
+	)
+	(wire
+		(pts
+			(xy 177.8 58.42) (xy 177.8 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c41aa6-3d6b-4154-b097-52367f1f631a")
+	)
+	(wire
+		(pts
+			(xy 209.55 80.01) (xy 209.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4db5813e-86ea-4f1e-b08a-8e8817cf01df")
+	)
+	(wire
+		(pts
+			(xy 209.55 57.15) (xy 209.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f04d0d-f0c3-4d3d-b259-81ab4c63d2e6")
 	)
 	(wire
 		(pts
@@ -5347,7 +5547,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 82.55) (xy 219.71 82.55)
+			(xy 209.55 82.55) (xy 219.71 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5394,6 +5594,16 @@
 			(type default)
 		)
 		(uuid "765c6b9d-6da8-46ee-a91c-915ccf2f2a7c")
+	)
+	(wire
+		(pts
+			(xy 176.53 78.74) (xy 176.53 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e56bf9-0370-4d47-b2fd-f62eca15ee3d")
 	)
 	(wire
 		(pts
@@ -5547,16 +5757,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 81.28) (xy 181.61 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a92ed4ea-319e-4ff0-a074-2d36dec31227")
-	)
-	(wire
-		(pts
 			(xy 187.96 49.53) (xy 187.96 50.8)
 		)
 		(stroke
@@ -5647,16 +5847,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 58.42) (xy 187.96 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c34f311e-81e6-4001-b47a-54178825bb95")
-	)
-	(wire
-		(pts
 			(xy 186.69 73.66) (xy 189.23 73.66)
 		)
 		(stroke
@@ -5714,6 +5904,16 @@
 			(type default)
 		)
 		(uuid "cf32a647-36e2-40e9-96cf-6b0e485838f5")
+	)
+	(wire
+		(pts
+			(xy 177.8 58.42) (xy 187.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0e9cb48-0930-4141-8ab8-6be5c86e0b7f")
 	)
 	(wire
 		(pts
@@ -5797,7 +5997,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 81.28) (xy 186.69 81.28)
+			(xy 176.53 81.28) (xy 186.69 81.28)
 		)
 		(stroke
 			(width 0)
@@ -5834,16 +6034,6 @@
 			(type default)
 		)
 		(uuid "ec988a2a-7ee7-4a64-94b6-ea28345247f3")
-	)
-	(wire
-		(pts
-			(xy 182.88 58.42) (xy 182.88 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f20c6575-9ebf-488a-bced-f3ca7e6b5c88")
 	)
 	(wire
 		(pts
@@ -7973,74 +8163,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 209.55 52.07 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e4d9889-c1ec-47f4-8863-a91a9547a2aa")
-		(property "Reference" "J4"
-			(at 209.55 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Voedingstoffen 2"
-			(at 209.55 48.768 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 209.55 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fe9c55e-df5b-4b59-8dac-9adbe938ebc1")
-		)
-		(pin "2"
-			(uuid "e562a2ee-1645-4d0f-9533-6237cf45f32c")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 34.29 148.59 0)
 		(unit 1)
@@ -9517,7 +9639,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 82.55 0)
+		(at 209.55 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9526,7 +9648,7 @@
 		(fields_autoplaced yes)
 		(uuid "412e1a18-0e81-4510-aaae-1108b1c76fd3")
 		(property "Reference" "#PWR054"
-			(at 214.63 88.9 0)
+			(at 209.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9535,7 +9657,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 87.63 0)
+			(at 209.55 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9543,7 +9665,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 82.55 0)
+			(at 209.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9552,7 +9674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 82.55 0)
+			(at 209.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9561,7 +9683,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 82.55 0)
+			(at 209.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9851,7 +9973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector:Conn_Coaxial")
 		(at 176.53 73.66 0)
 		(mirror y)
 		(unit 1)
@@ -9859,24 +9981,25 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4a98a32d-274c-4724-9b0a-64b3f8b0c47f")
-		(property "Reference" "J21"
-			(at 176.53 68.58 0)
+		(fields_autoplaced yes)
+		(uuid "4cee6350-1e08-463c-bb49-cf4352527cd8")
+		(property "Reference" "J24"
+			(at 176.8474 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Voedingstoffen 1"
-			(at 176.53 70.358 0)
+		(property "Value" "Voedingsstoffen 1"
+			(at 176.8474 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal"
 			(at 176.53 73.66 0)
 			(effects
 				(font
@@ -9894,7 +10017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
 			(at 176.53 73.66 0)
 			(effects
 				(font
@@ -9904,15 +10027,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4f87a47f-9c36-4f2a-b2ae-179923ab9a48")
+			(uuid "7132f371-2a61-4c3f-868d-11ca5c283aab")
 		)
 		(pin "2"
-			(uuid "2adafa03-a8f2-4a2a-9930-14b1a56a4bf2")
+			(uuid "76eed55a-d916-4391-a4d2-cd38f5ac277b")
 		)
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J21")
+					(reference "J24")
 					(unit 1)
 				)
 			)
@@ -9920,7 +10043,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 58.42 0)
+		(at 177.8 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9929,7 +10052,7 @@
 		(fields_autoplaced yes)
 		(uuid "530dd228-2588-4005-9b13-187e3db0a11e")
 		(property "Reference" "#PWR053"
-			(at 182.88 64.77 0)
+			(at 177.8 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9938,7 +10061,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 63.5 0)
+			(at 177.8 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9946,7 +10069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 58.42 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9955,7 +10078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 58.42 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9964,7 +10087,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 58.42 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10115,74 +10238,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 209.55 74.93 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "581975d2-cb3f-4029-9c02-2d02c1162bb0")
-		(property "Reference" "J5"
-			(at 209.55 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Voedingstoffen 3"
-			(at 209.55 71.628 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 209.55 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b3d7616-8b8c-49f8-9bf0-6af3f44ef5db")
-		)
-		(pin "2"
-			(uuid "0facd4e4-8f2e-4439-8766-f316e4e0975f")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -10801,7 +10856,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 181.61 81.28 0)
+		(at 176.53 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10810,7 +10865,7 @@
 		(fields_autoplaced yes)
 		(uuid "647f8250-cc77-4161-b23a-65353746e2f3")
 		(property "Reference" "#PWR076"
-			(at 181.61 87.63 0)
+			(at 176.53 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10819,7 +10874,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 86.36 0)
+			(at 176.53 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10827,7 +10882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 81.28 0)
+			(at 176.53 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10836,7 +10891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 81.28 0)
+			(at 176.53 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10845,7 +10900,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 81.28 0)
+			(at 176.53 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11128,74 +11183,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 177.8 50.8 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6cd37f5b-dd6b-484b-a376-9e26c9290b7e")
-		(property "Reference" "J3"
-			(at 177.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ReferentieProbe"
-			(at 177.8 47.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 177.8 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dbf8991b-d67f-4ce2-9249-463d83bb1afe")
-		)
-		(pin "2"
-			(uuid "af8e4dc2-41a4-42d0-8d1f-8184f36b3d03")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -11539,6 +11526,75 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 177.8 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79425dec-5681-42c2-ac1c-4f6d46bb0e2a")
+		(property "Reference" "J23"
+			(at 178.1174 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ReferentieProbe"
+			(at 178.1174 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32b18ed4-1c1d-4a29-a8d2-09a9f52fd8e5")
+		)
+		(pin "2"
+			(uuid "9fdd0e00-dfb0-4877-9cb3-210fcca7d1f9")
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "J23")
 					(unit 1)
 				)
 			)
@@ -12226,6 +12282,144 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 209.55 74.93 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8507041c-95ec-4eb1-9623-f49ebe3c7923")
+		(property "Reference" "J26"
+			(at 209.8674 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Voedingsstoffen 3"
+			(at 209.8674 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal"
+			(at 209.55 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 209.55 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c34eeeb-bd9f-480c-92db-1fd6e774254b")
+		)
+		(pin "2"
+			(uuid "93810b82-ec3b-4e9f-834e-cac61b072daf")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "J26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 209.55 52.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "857509d3-4dd4-4ca8-bcee-c9a2628508ac")
+		(property "Reference" "J25"
+			(at 209.8674 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Voedingsstoffen 2"
+			(at 209.8674 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal"
+			(at 209.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 209.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b93df9a-7f65-4c80-9448-2eaef5562dcb")
+		)
+		(pin "2"
+			(uuid "ad34fffe-76bb-4f60-be83-f9a48feb00f2")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "J25")
 					(unit 1)
 				)
 			)
@@ -13884,7 +14078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder"
 			(at 129.2352 185.42 0)
 			(effects
 				(font
@@ -14913,7 +15107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3.9"
 			(at 78.4352 185.42 0)
 			(effects
 				(font
@@ -15089,7 +15283,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 59.69 0)
+		(at 209.55 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15098,7 +15292,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4afa64f-7b5a-47a4-8191-6ca93aa265d9")
 		(property "Reference" "#PWR052"
-			(at 214.63 66.04 0)
+			(at 209.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15107,7 +15301,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 64.77 0)
+			(at 209.55 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15115,7 +15309,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 59.69 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15124,7 +15318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 59.69 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15133,7 +15327,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 59.69 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,7 +15444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3.9"
 			(at 45.4152 185.42 0)
 			(effects
 				(font
@@ -16630,7 +16824,7 @@
 		)
 	)
 	(sheet
-		(at 267.97 17.78)
+		(at 262.89 17.78)
 		(size 12.7 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16646,7 +16840,7 @@
 		)
 		(uuid "9d362e6d-9323-41d2-ab33-f0630b5b7c79")
 		(property "Sheetname" "Relays"
-			(at 267.97 17.0684 0)
+			(at 262.89 17.0684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16655,7 +16849,7 @@
 			)
 		)
 		(property "Sheetfile" "relays.kicad_sch"
-			(at 267.97 24.7146 0)
+			(at 262.89 24.7146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
