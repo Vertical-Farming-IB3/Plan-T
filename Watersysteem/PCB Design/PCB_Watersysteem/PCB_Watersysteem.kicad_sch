@@ -1546,6 +1546,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -2552,6 +2561,189 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_1_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3610,25 +3802,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 12.7 8.89 0)
+			(property "Reference" "D1"
+				(at 10.16 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "SK36A"
-				(at 12.7 6.35 0)
+				(at 10.16 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "DIOM5226X290N"
+			(property "Footprint" "SamacSys_Parts:DIOM5226X290N"
 				(at 12.7 -93.65 0)
 				(effects
 					(font
@@ -3824,7 +4014,7 @@
 						(type none)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at 2.54 0 0)
 					(length 2.54)
 					(name "K"
@@ -3842,7 +4032,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 17.78 0 180)
 					(length 2.54)
 					(name "A"
@@ -4018,7 +4208,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 8.128 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4026,14 +4216,14 @@
 				)
 			)
 			(property "Value" "MP1584_Module"
-				(at 0 6.35 0)
+				(at 0 5.842 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Watersysteem_Footprints_Library:MP1584_Module"
 				(at 0 9.398 0)
 				(effects
 					(font
@@ -4062,18 +4252,19 @@
 			)
 			(symbol "MP1584_Module_1_1"
 				(rectangle
-					(start -6.35 5.334)
-					(end 6.35 -6.604)
+					(start -6.35 3.81)
+					(end 6.35 -5.08)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type background)
+						(type color)
+						(color 255 255 194 1)
 					)
 				)
-				(pin input line
-					(at -8.89 3.81 0)
+				(pin power_in line
+					(at -8.89 2.54 0)
 					(length 2.54)
 					(name "IN+"
 						(effects
@@ -4082,7 +4273,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4090,26 +4281,8 @@
 						)
 					)
 				)
-				(pin input line
-					(at -8.89 1.27 0)
-					(length 2.54)
-					(name "IN+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -8.89 -2.54 0)
+				(pin power_in line
+					(at -8.89 -3.81 0)
 					(length 2.54)
 					(name "IN-"
 						(effects
@@ -4126,26 +4299,8 @@
 						)
 					)
 				)
-				(pin input line
-					(at -8.89 -5.08 0)
-					(length 2.54)
-					(name "IN-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 3.81 180)
+				(pin power_out line
+					(at 8.89 2.54 180)
 					(length 2.54)
 					(name "OUT+"
 						(effects
@@ -4154,7 +4309,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4162,26 +4317,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 8.89 1.27 180)
-					(length 2.54)
-					(name "OUT+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 -2.54 180)
+				(pin power_out line
+					(at 8.89 -3.81 180)
 					(length 2.54)
 					(name "OUT-"
 						(effects
@@ -4190,25 +4327,7 @@
 							)
 						)
 					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 -5.08 180)
-					(length 2.54)
-					(name "OUT-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4946,6 +5065,12 @@
 		(uuid "62fd96cf-26d5-4838-98ca-d45c208e1ccb")
 	)
 	(junction
+		(at 72.39 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00be5414-3b39-4f3a-982c-540e62b71594")
+	)
+	(junction
 		(at 128.27 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4994,12 +5119,6 @@
 		(uuid "5e3ef578-39c3-4459-bcd8-fd53079fbdad")
 	)
 	(junction
-		(at 53.34 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e4e3c1b-5684-454e-b8f7-b3863d0bd704")
-	)
-	(junction
 		(at 92.71 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5016,12 +5135,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "652a295c-4f7a-4ac0-9c47-ef85b1eb9490")
-	)
-	(junction
-		(at 71.12 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71cc63d3-a3f8-4860-a5da-df24ecc3885a")
 	)
 	(junction
 		(at 130.81 177.8)
@@ -5096,12 +5209,6 @@
 		(uuid "d0e856c4-f19d-483f-9e55-39263d0bb151")
 	)
 	(junction
-		(at 71.12 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d7e7cbfe-a1e6-4af4-a584-62b43114f7a3")
-	)
-	(junction
 		(at 187.96 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5126,12 +5233,6 @@
 		(uuid "e4a06472-673b-4480-b039-6636b7f8d787")
 	)
 	(junction
-		(at 53.34 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e8a97cd6-2844-4da8-b850-1c530a801917")
-	)
-	(junction
 		(at 113.03 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5154,12 +5255,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb5ada60-75a8-4922-a3be-6e4e360cbd05")
-	)
-	(junction
-		(at 73.66 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "feeff765-f5c8-4c5f-8eeb-a9290d1f7a56")
 	)
 	(no_connect
 		(at 63.5 60.96)
@@ -5367,16 +5462,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 177.8) (xy 74.93 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "223564ac-772b-4459-99cf-21421a08e9ad")
-	)
-	(wire
-		(pts
 			(xy 82.55 177.8) (xy 77.47 177.8)
 		)
 		(stroke
@@ -5454,16 +5539,6 @@
 			(type default)
 		)
 		(uuid "54179bf8-f97e-404a-9159-a0a76d096618")
-	)
-	(wire
-		(pts
-			(xy 71.12 177.8) (xy 71.12 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5832eee2-4798-4716-ac9f-7811d3ffc769")
 	)
 	(wire
 		(pts
@@ -5564,16 +5639,6 @@
 			(type default)
 		)
 		(uuid "72d9460f-76bc-4958-91bd-40417b5882dc")
-	)
-	(wire
-		(pts
-			(xy 71.12 184.15) (xy 71.12 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74653f39-bcdd-4748-8252-7672415404d9")
 	)
 	(wire
 		(pts
@@ -5744,16 +5809,6 @@
 			(type default)
 		)
 		(uuid "a7e7c2de-aa04-4a2c-96cc-4ba5cec9a284")
-	)
-	(wire
-		(pts
-			(xy 53.34 177.8) (xy 53.34 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f4fc68-5968-4704-8960-4cacbdb6b49b")
 	)
 	(wire
 		(pts
@@ -5987,6 +6042,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 184.15) (xy 71.12 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1b4d90b-ae78-4b52-a48e-5cfe1eca826d")
+	)
+	(wire
+		(pts
 			(xy 92.71 128.27) (xy 104.14 128.27)
 		)
 		(stroke
@@ -6077,13 +6142,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 177.8) (xy 73.66 177.8)
+			(xy 71.12 177.8) (xy 72.39 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe273918-092b-43ae-a207-aa0ffc012c3d")
+	)
+	(wire
+		(pts
+			(xy 72.39 177.8) (xy 74.93 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff2aa3e5-a140-4f21-b051-aa9e461de3e7")
 	)
 	(wire
 		(pts
@@ -7601,73 +7676,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 29.21 184.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0565ee13-0da8-483d-afc1-989a982338d9")
-		(property "Reference" "#FLG01"
-			(at 27.305 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 25.4 184.1499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 29.21 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7495a3a-f5f7-4460-90fd-b5a99eb6b750")
-		)
-		(instances
-			(project ""
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 19.05 35.56 0)
 		(unit 1)
@@ -8452,7 +8460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 276.86 144.78 0)
 			(effects
 				(font
@@ -8562,7 +8570,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 73.66 177.8 0)
+		(at 72.39 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8571,7 +8579,7 @@
 		(fields_autoplaced yes)
 		(uuid "25d2a68f-7fa6-458f-af49-24271253a194")
 		(property "Reference" "#PWR06"
-			(at 73.66 181.61 0)
+			(at 72.39 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8580,7 +8588,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 73.66 172.72 0)
+			(at 72.39 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8588,7 +8596,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 177.8 0)
+			(at 72.39 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8597,7 +8605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 177.8 0)
+			(at 72.39 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8606,7 +8614,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 73.66 177.8 0)
+			(at 72.39 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9008,6 +9016,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 148.59 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 148.59 177.8 0)
 			(effects
 				(font
@@ -9704,6 +9721,7 @@
 		)
 	)
 	(symbol
+		(lib_name "LED_1")
 		(lib_id "Device:LED")
 		(at 130.81 78.74 90)
 		(unit 1)
@@ -9750,6 +9768,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 130.81 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 130.81 78.74 0)
 			(effects
 				(font
@@ -13202,7 +13229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 276.86 158.75 0)
 			(effects
 				(font
@@ -14412,7 +14439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 276.86 132.08 0)
 			(effects
 				(font
@@ -14585,7 +14612,7 @@
 	)
 	(symbol
 		(lib_id "Watersysteem_Library:MP1584_Module")
-		(at 62.23 181.61 0)
+		(at 62.23 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14594,7 +14621,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1132f33-5521-4fe4-a19a-c43171ebeb1e")
 		(property "Reference" "U2"
-			(at 62.23 171.45 0)
+			(at 62.23 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14602,7 +14629,7 @@
 			)
 		)
 		(property "Value" "MP1584_Module"
-			(at 62.23 173.99 0)
+			(at 62.23 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14610,7 +14637,7 @@
 			)
 		)
 		(property "Footprint" "Watersysteem_Footprints_Library:MP1584_Module"
-			(at 62.23 172.212 0)
+			(at 62.23 170.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14619,7 +14646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 172.212 0)
+			(at 62.23 170.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14628,7 +14655,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 62.23 172.212 0)
+			(at 62.23 170.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14642,23 +14669,11 @@
 		(pin "2"
 			(uuid "684ace67-596e-4990-a605-ff0f386306b7")
 		)
-		(pin "3"
-			(uuid "967c6a9f-8087-4374-85d0-7090f8255733")
-		)
-		(pin "6"
-			(uuid "e9cd68c8-cf19-4f54-926e-8f6deaf6a72a")
-		)
-		(pin "5"
+		(pin "4"
 			(uuid "5b00754d-5825-4f6d-81c2-453af1e5899c")
 		)
-		(pin "4"
-			(uuid "c7ad953b-2915-4b35-b717-2d5e6d33546a")
-		)
-		(pin "8"
+		(pin "3"
 			(uuid "0fe3dc53-4cc4-4f28-8156-3570dc52f5e6")
-		)
-		(pin "7"
-			(uuid "9fd80267-f67c-4ce4-81e8-af869722c606")
 		)
 		(instances
 			(project ""
@@ -14765,7 +14780,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 276.86 119.38 0)
 			(effects
 				(font
@@ -16578,7 +16593,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
 			(at 24.13 177.8 0)
 			(effects
 				(font
