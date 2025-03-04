@@ -5167,6 +5167,12 @@
 		(uuid "847416e4-b6e0-4a43-a2d5-c986251e1185")
 	)
 	(junction
+		(at 261.62 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c496fc9-2c07-4c36-a084-e8fb382e5da5")
+	)
+	(junction
 		(at 92.71 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5183,12 +5189,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5cc08fb-3e92-48c3-8091-91ac68b71bda")
-	)
-	(junction
-		(at 261.62 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b684c7c1-e7d9-40ea-a175-fd95c681d133")
 	)
 	(junction
 		(at 92.71 128.27)
@@ -5442,16 +5442,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 62.23) (xy 269.24 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f8463b4-6914-47db-a648-d14243063db2")
-	)
-	(wire
-		(pts
 			(xy 74.93 177.8) (xy 77.47 177.8)
 		)
 		(stroke
@@ -5589,6 +5579,16 @@
 			(type default)
 		)
 		(uuid "67022e4f-d9da-4bb7-af92-5834430f9c8e")
+	)
+	(wire
+		(pts
+			(xy 261.62 62.23) (xy 271.78 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a4db924-7ea2-44d4-a34f-1b8deca3bd11")
 	)
 	(wire
 		(pts
@@ -15912,7 +15912,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 265.43 62.23 0)
+		(at 261.62 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15920,7 +15920,7 @@
 		(dnp no)
 		(uuid "f05d79f6-af8f-47f5-96d8-220d262983de")
 		(property "Reference" "JP1"
-			(at 267.462 64.516 0)
+			(at 263.906 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15928,7 +15928,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 265.43 58.42 0)
+			(at 257.81 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15937,7 +15937,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 265.43 62.23 0)
+			(at 261.62 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15946,7 +15946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 265.43 62.23 0)
+			(at 261.62 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15955,7 +15955,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 265.43 62.23 0)
+			(at 261.62 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16371,7 +16371,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 62.23 0)
+		(at 261.62 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16380,7 +16380,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6666a11-78ac-4045-bc6e-580c65f298c8")
 		(property "Reference" "#PWR049"
-			(at 261.62 68.58 0)
+			(at 261.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16389,7 +16389,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 261.62 67.31 0)
+			(at 261.62 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16397,7 +16397,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 62.23 0)
+			(at 261.62 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16406,7 +16406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 62.23 0)
+			(at 261.62 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16415,7 +16415,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 62.23 0)
+			(at 261.62 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
