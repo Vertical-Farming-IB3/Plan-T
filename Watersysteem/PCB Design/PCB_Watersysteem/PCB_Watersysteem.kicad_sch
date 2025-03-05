@@ -5196,12 +5196,6 @@
 		(uuid "58e0b83a-388f-46ef-92da-a3ba3873b831")
 	)
 	(junction
-		(at 74.93 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e3ef578-39c3-4459-bcd8-fd53079fbdad")
-	)
-	(junction
 		(at 92.71 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5296,12 +5290,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de4bea30-d5c1-4c04-81da-89f167384376")
-	)
-	(junction
-		(at 38.1 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e00f17dc-d7eb-466d-ae88-7b29f5576165")
 	)
 	(junction
 		(at 96.52 143.51)
@@ -5522,16 +5510,6 @@
 			(type default)
 		)
 		(uuid "1d8d342c-5075-4301-81fa-59a6d998ce9d")
-	)
-	(wire
-		(pts
-			(xy 74.93 177.8) (xy 77.47 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "204153a9-8b1e-43f7-ba96-e3bcce4b6d7e")
 	)
 	(wire
 		(pts
@@ -5905,16 +5883,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 177.8) (xy 38.1 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab8966dc-eace-41cc-8b4c-de885abf5044")
-	)
-	(wire
-		(pts
 			(xy 234.95 123.19) (xy 250.19 123.19)
 		)
 		(stroke
@@ -6095,7 +6063,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 177.8) (xy 44.45 177.8)
+			(xy 33.02 177.8) (xy 44.45 177.8)
 		)
 		(stroke
 			(width 0)
@@ -6235,7 +6203,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 177.8) (xy 74.93 177.8)
+			(xy 72.39 177.8) (xy 77.47 177.8)
 		)
 		(stroke
 			(width 0)
@@ -6255,7 +6223,7 @@
 	)
 	(global_label "Nutr2"
 		(shape input)
-		(at 241.3 59.69 180)
+		(at 241.3 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6265,7 +6233,7 @@
 		)
 		(uuid "0289b751-a679-4886-b288-e2731e98a80e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 59.69 0)
+			(at 233.1139 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6277,7 +6245,7 @@
 	)
 	(global_label "Nutr3"
 		(shape input)
-		(at 241.3 62.23 180)
+		(at 241.3 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6287,7 +6255,7 @@
 		)
 		(uuid "06fe28b2-ae14-4b3d-b59a-896bdca591fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 62.23 0)
+			(at 233.1139 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6319,9 +6287,9 @@
 			)
 		)
 	)
-	(global_label "Nutr0"
+	(global_label "RefProbe"
 		(shape input)
-		(at 241.3 54.61 180)
+		(at 241.3 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6331,7 +6299,7 @@
 		)
 		(uuid "0c22d4c7-e118-4c4d-aaae-659c30e75b73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 54.61 0)
+			(at 229.7877 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6915,7 +6883,7 @@
 	)
 	(global_label "RELAY_AIR"
 		(shape input)
-		(at 139.7 140.97 0)
+		(at 139.7 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6925,7 +6893,7 @@
 		)
 		(uuid "8adbd66f-a134-4af7-9896-00fdc1647e42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.2405 140.97 0)
+			(at 152.2405 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6957,7 +6925,7 @@
 			)
 		)
 	)
-	(global_label "Nutr0"
+	(global_label "RefProbe"
 		(shape input)
 		(at 190.5 50.8 0)
 		(fields_autoplaced yes)
@@ -6969,7 +6937,7 @@
 		)
 		(uuid "a94301d1-074a-4a82-9c81-01111e86c05e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.6861 50.8 0)
+			(at 202.0123 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7025,7 +6993,7 @@
 	)
 	(global_label "RELAY_UV"
 		(shape input)
-		(at 139.7 138.43 0)
+		(at 139.7 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7035,7 +7003,7 @@
 		)
 		(uuid "adbd601a-f235-4926-b99a-b26633b429ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.6962 138.43 0)
+			(at 151.6962 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7333,7 +7301,7 @@
 	)
 	(global_label "Nutr1"
 		(shape input)
-		(at 241.3 57.15 180)
+		(at 241.3 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7343,7 +7311,7 @@
 		)
 		(uuid "da3703b1-edd7-48f3-82cb-a312f761d867")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 57.15 0)
+			(at 233.1139 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9532,73 +9500,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 38.1 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3df52458-3353-49af-9aa4-ade6b1135a32")
-		(property "Reference" "TP5"
-			(at 40.64 173.2279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 40.64 175.7679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 43.18 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 38.1 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bfc0e7ff-bf9a-41e0-ba99-accaa02a20d3")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -14158,73 +14059,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 74.93 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf25c6df-b6da-4118-ac44-b40db6135183")
-		(property "Reference" "TP6"
-			(at 77.47 173.2279 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 77.47 175.7679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 80.01 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 74.93 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1509cac2-3c6d-4ee1-a16e-914576b65f4d")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
