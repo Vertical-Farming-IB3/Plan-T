@@ -2761,6 +2761,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -6436,7 +6519,7 @@
 	)
 	(global_label "TRIG_WATER"
 		(shape input)
-		(at 63.5 96.52 0)
+		(at 63.5 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6446,7 +6529,7 @@
 		)
 		(uuid "2f58b71e-72fa-4a7c-92d1-5514d85f23e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.4918 96.52 0)
+			(at 77.4918 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6590,7 +6673,7 @@
 	)
 	(global_label "ECHO_MIX"
 		(shape input)
-		(at 63.5 66.04 0)
+		(at 63.5 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6600,7 +6683,7 @@
 		)
 		(uuid "598fded4-7085-43d3-ab05-55b1e39a88a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.7985 66.04 0)
+			(at 75.7985 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +6827,7 @@
 	)
 	(global_label "TRIG_NUT"
 		(shape input)
-		(at 63.5 88.9 0)
+		(at 63.5 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6754,7 +6837,7 @@
 		)
 		(uuid "791b1994-d51a-4300-acbb-ad6eed01a3e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.1938 88.9 0)
+			(at 75.1938 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6964,7 +7047,7 @@
 	)
 	(global_label "ECHO_NUT"
 		(shape input)
-		(at 63.5 91.44 0)
+		(at 63.5 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6974,7 +7057,7 @@
 		)
 		(uuid "b50f5cdf-9c2a-4960-89e9-b5ffbfd79f47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.1614 91.44 0)
+			(at 76.1614 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,7 +7091,7 @@
 	)
 	(global_label "TRIG_MIX"
 		(shape input)
-		(at 63.5 93.98 0)
+		(at 63.5 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7018,7 +7101,7 @@
 		)
 		(uuid "baa17c29-92cd-48a5-b515-8df7eeeaa98c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.8309 93.98 0)
+			(at 74.8309 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7206,7 +7289,7 @@
 	)
 	(global_label "ECHO_WATER"
 		(shape input)
-		(at 63.5 99.06 0)
+		(at 63.5 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7216,7 +7299,7 @@
 		)
 		(uuid "ce42d95b-5fd9-4fe7-807d-beb25dc3cfb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.4594 99.06 0)
+			(at 78.4594 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8435,71 +8518,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 276.86 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f70647a-55dd-45ba-ba6a-4f1376ca03c5")
-		(property "Reference" "H3"
-			(at 275.59 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 275.59 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 276.86 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 276.86 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 276.86 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7286b4d7-61a9-45fa-876e-78832d73ea7f")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 92.71 137.16 0)
 		(unit 1)
@@ -8563,6 +8581,70 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 275.59 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2357ed37-a7c0-4243-b904-e36527235ab2")
+		(property "Reference" "H3"
+			(at 278.13 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 278.13 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 275.59 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 275.59 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 275.59 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -13539,72 +13621,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 279.4 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adf53d35-96b8-4da4-8bc5-2461d9cc7846")
-		(property "Reference" "#PWR032"
-			(at 279.4 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 279.4 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 279.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 279.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 279.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb7f7699-2b86-45b4-b25f-99de5414ded7")
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)
