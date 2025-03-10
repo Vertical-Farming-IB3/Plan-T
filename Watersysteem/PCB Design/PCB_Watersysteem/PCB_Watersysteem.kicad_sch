@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "PCB Watersysteem")
+		(date "2025-03-10")
 		(rev "1")
 		(company "KU Leuven")
 		(comment 1 "Kjell Naessens")
@@ -3088,89 +3089,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -5138,7 +5056,7 @@
 	)
 	(rectangle
 		(start 81.28 91.44)
-		(end 163.83 162.56)
+		(end 171.45 162.56)
 		(stroke
 			(width 0)
 			(type default)
@@ -5565,7 +5483,7 @@
 		(uuid "8c496fc9-2c07-4c36-a084-e8fb382e5da5")
 	)
 	(junction
-		(at 147.32 119.38)
+		(at 157.48 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99cd8360-de24-4b7f-a2ed-ef777407ad0f")
@@ -5665,19 +5583,19 @@
 		(uuid "0f036db0-41bb-4d1e-810b-ef6b26ffccb9")
 	)
 	(no_connect
-		(at 139.7 113.03)
+		(at 63.5 78.74)
 		(uuid "0fffb811-e188-48ff-bf93-2bb60c0f5c6d")
 	)
 	(no_connect
-		(at 139.7 107.95)
+		(at 63.5 81.28)
 		(uuid "11883c34-b39b-4a78-8fca-7af248caed1f")
 	)
 	(no_connect
-		(at 139.7 105.41)
+		(at 63.5 83.82)
 		(uuid "11ffe05b-2975-4009-bda0-e53119f67757")
 	)
 	(no_connect
-		(at 139.7 146.05)
+		(at 63.5 55.88)
 		(uuid "1eb02472-c1da-44c0-bd53-1ab7cd1b75be")
 	)
 	(no_connect
@@ -5685,7 +5603,7 @@
 		(uuid "41ad56e0-6fd1-499d-a462-45a7dd2ac325")
 	)
 	(no_connect
-		(at 139.7 110.49)
+		(at 63.5 71.12)
 		(uuid "4e90b104-b182-4bab-a8e2-372ed00826bb")
 	)
 	(no_connect
@@ -5748,16 +5666,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 106.68) (xy 140.97 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05c89c7e-c647-442f-b2a5-56b0dfcdd8d0")
-	)
-	(wire
-		(pts
 			(xy 219.71 73.66) (xy 219.71 74.93)
 		)
 		(stroke
@@ -5765,16 +5673,6 @@
 			(type default)
 		)
 		(uuid "0612d9ad-6328-4398-b78b-9a50ee57c1c4")
-	)
-	(wire
-		(pts
-			(xy 142.24 109.22) (xy 147.32 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08b53a6d-a27d-4513-bb75-1160e1aa4e53")
 	)
 	(wire
 		(pts
@@ -5798,16 +5696,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 106.68) (xy 147.32 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "118369af-c4c3-4e5c-89af-6d521a3c293e")
-	)
-	(wire
-		(pts
 			(xy 234.95 137.16) (xy 238.76 137.16)
 		)
 		(stroke
@@ -5818,7 +5706,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 119.38) (xy 147.32 120.65)
+			(xy 157.48 128.27) (xy 157.48 129.54)
 		)
 		(stroke
 			(width 0)
@@ -5878,16 +5766,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 144.78 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a74bf89-5f81-4c7b-b1c7-afe782650a3e")
-	)
-	(wire
-		(pts
 			(xy 209.55 80.01) (xy 209.55 82.55)
 		)
 		(stroke
@@ -5938,23 +5816,13 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 115.57) (xy 139.7 115.57)
+			(xy 139.7 115.57) (xy 157.48 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5593c401-61ba-419f-bcd8-c0ed46c6d7ce")
-	)
-	(wire
-		(pts
-			(xy 142.24 109.22) (xy 142.24 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cf0758a-1cac-41b4-a99d-bf0db161a3d6")
 	)
 	(wire
 		(pts
@@ -6078,7 +5946,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 123.19) (xy 139.7 123.19)
+			(xy 139.7 123.19) (xy 157.48 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6145,16 +6013,6 @@
 			(type default)
 		)
 		(uuid "7c2104cd-9372-48de-a021-0c8dcef518c3")
-	)
-	(wire
-		(pts
-			(xy 143.51 111.76) (xy 143.51 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f75ec27-a96a-46f3-ac42-43576b9b9037")
 	)
 	(wire
 		(pts
@@ -6258,7 +6116,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 118.11) (xy 139.7 118.11)
+			(xy 139.7 118.11) (xy 157.48 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6318,7 +6176,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 120.65) (xy 139.7 120.65)
+			(xy 139.7 120.65) (xy 157.48 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6448,7 +6306,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 116.84) (xy 147.32 119.38)
+			(xy 157.48 125.73) (xy 157.48 128.27)
 		)
 		(stroke
 			(width 0)
@@ -6538,16 +6396,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 147.32 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9873809-1263-4698-b8ba-51361204b7e6")
-	)
-	(wire
-		(pts
 			(xy 96.52 36.83) (xy 96.52 35.56)
 		)
 		(stroke
@@ -6565,16 +6413,6 @@
 			(type default)
 		)
 		(uuid "ec988a2a-7ee7-4a64-94b6-ea28345247f3")
-	)
-	(wire
-		(pts
-			(xy 143.51 111.76) (xy 147.32 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee9e078d-426b-44b3-95fe-d7216fca7e61")
 	)
 	(wire
 		(pts
@@ -6670,7 +6508,7 @@
 	)
 	(global_label "Nutr3"
 		(shape input)
-		(at 241.3 59.69 180)
+		(at 241.3 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6680,7 +6518,7 @@
 		)
 		(uuid "06fe28b2-ae14-4b3d-b59a-896bdca591fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 59.69 0)
+			(at 233.1139 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6758,7 +6596,7 @@
 	)
 	(global_label "RELAY_PUMP3"
 		(shape input)
-		(at 139.7 133.35 0)
+		(at 139.7 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6768,7 +6606,7 @@
 		)
 		(uuid "13438a68-b1bd-42fb-aa89-397e1c6acb99")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.8085 133.35 0)
+			(at 155.8085 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6934,7 +6772,7 @@
 	)
 	(global_label "ENDSTOP2"
 		(shape input)
-		(at 63.5 71.12 0)
+		(at 139.7 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6944,7 +6782,7 @@
 		)
 		(uuid "3c16f1f3-4e78-4e58-ae72-c5410c83e9d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2218 71.12 0)
+			(at 152.4218 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7000,7 +6838,7 @@
 	)
 	(global_label "RELAY_PUMP2"
 		(shape input)
-		(at 139.7 130.81 0)
+		(at 139.7 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7010,7 +6848,7 @@
 		)
 		(uuid "51f68323-1dc1-4533-8547-55b2d9627394")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.8085 130.81 0)
+			(at 155.8085 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7110,7 +6948,7 @@
 	)
 	(global_label "ENDSTOP1"
 		(shape input)
-		(at 63.5 73.66 0)
+		(at 139.7 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7120,7 +6958,7 @@
 		)
 		(uuid "5d9ea3db-4417-49b2-bd70-680db4512ee6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2218 73.66 0)
+			(at 152.4218 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7242,7 +7080,7 @@
 	)
 	(global_label "SCL0"
 		(shape input)
-		(at 63.5 83.82 0)
+		(at 63.5 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7252,7 +7090,7 @@
 		)
 		(uuid "7a71bac1-bd7b-4175-ae78-d7d636c29896")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.2023 83.82 0)
+			(at 71.2023 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7286,7 +7124,7 @@
 	)
 	(global_label "LED NUTR"
 		(shape input)
-		(at 63.5 78.74 0)
+		(at 139.7 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7296,7 +7134,7 @@
 		)
 		(uuid "83aa0615-c2f5-4380-ac0d-276998105ca4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.7985 78.74 0)
+			(at 151.9985 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7308,7 +7146,7 @@
 	)
 	(global_label "RELAY_AIR"
 		(shape input)
-		(at 139.7 138.43 0)
+		(at 139.7 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7318,7 +7156,7 @@
 		)
 		(uuid "8adbd66f-a134-4af7-9896-00fdc1647e42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.2405 138.43 0)
+			(at 152.2405 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7374,7 +7212,7 @@
 	)
 	(global_label "RX0"
 		(shape input)
-		(at 96.52 73.66 0)
+		(at 96.52 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7384,7 +7222,7 @@
 		)
 		(uuid "a96cf430-421d-4613-8cd3-d8d2e72f59a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.1942 73.66 0)
+			(at 103.1942 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7396,7 +7234,7 @@
 	)
 	(global_label "RELAY_PUMP1"
 		(shape input)
-		(at 139.7 128.27 0)
+		(at 139.7 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7406,7 +7244,7 @@
 		)
 		(uuid "ab4f5e82-3119-4583-b0a6-3fb8e0680be0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.8085 128.27 0)
+			(at 155.8085 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7418,7 +7256,7 @@
 	)
 	(global_label "RELAY_UV"
 		(shape input)
-		(at 139.7 140.97 0)
+		(at 139.7 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7428,7 +7266,7 @@
 		)
 		(uuid "adbd601a-f235-4926-b99a-b26633b429ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.6962 140.97 0)
+			(at 151.6962 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7462,7 +7300,7 @@
 	)
 	(global_label "RELAY_MIXER"
 		(shape input)
-		(at 139.7 143.51 0)
+		(at 139.7 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7472,7 +7310,7 @@
 		)
 		(uuid "b7a6cbae-3f80-41de-b868-c945c5b93be8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.9618 143.51 0)
+			(at 154.9618 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7528,7 +7366,7 @@
 	)
 	(global_label "ENDSTOP3"
 		(shape input)
-		(at 63.5 55.88 0)
+		(at 139.7 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7538,7 +7376,7 @@
 		)
 		(uuid "bdb0e04c-d663-435b-b487-99c33cfd48ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2218 55.88 0)
+			(at 152.4218 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7550,7 +7388,7 @@
 	)
 	(global_label "TX0"
 		(shape input)
-		(at 96.52 76.2 0)
+		(at 96.52 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7560,7 +7398,7 @@
 		)
 		(uuid "be261c05-40a5-46ab-8cf6-e7184faec484")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.8918 76.2 0)
+			(at 102.8918 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7660,7 +7498,7 @@
 	)
 	(global_label "SDA0"
 		(shape input)
-		(at 63.5 81.28 0)
+		(at 63.5 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7670,7 +7508,7 @@
 		)
 		(uuid "c7f0aff4-69ff-456b-a370-2965cd6c8570")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.2628 81.28 0)
+			(at 71.2628 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7726,7 +7564,7 @@
 	)
 	(global_label "Nutr1"
 		(shape input)
-		(at 241.3 54.61 180)
+		(at 241.3 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7736,7 +7574,7 @@
 		)
 		(uuid "da3703b1-edd7-48f3-82cb-a312f761d867")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.1139 54.61 0)
+			(at 233.1139 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7814,7 +7652,7 @@
 	)
 	(global_label "LED WATER"
 		(shape input)
-		(at 63.5 76.2 0)
+		(at 139.7 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7824,7 +7662,7 @@
 		)
 		(uuid "e6e1e1b3-c39a-48e7-8c31-79c8290f3f5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8265 76.2 0)
+			(at 153.0265 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7954,7 +7792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0033ccd5-8bb1-44c2-bc3e-85d35b5bfd17")
-		(property "Reference" "R5"
+		(property "Reference" "R3"
 			(at 133.35 69.8499 0)
 			(effects
 				(font
@@ -8008,7 +7846,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8227,7 +8065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a9dc868-9cce-4037-972e-9ee30259337b")
-		(property "Reference" "R3"
+		(property "Reference" "R13"
 			(at 115.57 27.9399 0)
 			(effects
 				(font
@@ -8281,7 +8119,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R3")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8296,7 +8134,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0aba9de5-0021-40f1-99ad-858eb4ea6231")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 253.6541 41.91 0)
 			(effects
 				(font
@@ -8374,7 +8212,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8852,7 +8690,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21ef3553-901c-4b93-a8ca-cd5e1798ad4f")
-		(property "Reference" "R11"
+		(property "Reference" "R7"
 			(at 93.218 129.54 0)
 			(effects
 				(font
@@ -8906,71 +8744,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 275.59 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2357ed37-a7c0-4243-b904-e36527235ab2")
-		(property "Reference" "H3"
-			(at 278.13 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 278.13 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 275.59 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 275.59 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 275.59 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "H3")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9117,7 +8891,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2cd0d2da-0e8a-48da-bcb2-2427e7506ce0")
-		(property "Reference" "C3"
+		(property "Reference" "C9"
 			(at 107.188 180.34 0)
 			(effects
 				(font
@@ -9171,7 +8945,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C3")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9319,7 +9093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33cf7649-3f26-41e1-bc05-3483211c00ef")
-		(property "Reference" "C13"
+		(property "Reference" "C11"
 			(at 190.5 76.1999 0)
 			(effects
 				(font
@@ -9373,7 +9147,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C13")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -9389,7 +9163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "345d0c36-b3eb-4b3e-abce-3af9beac46e4")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 150.1775 170.18 0)
 			(effects
 				(font
@@ -9450,7 +9224,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -9596,7 +9370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38274171-8fab-49c1-a399-0a2ed00bdac0")
-		(property "Reference" "R12"
+		(property "Reference" "R6"
 			(at 97.536 129.794 0)
 			(effects
 				(font
@@ -9650,7 +9424,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R12")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9666,7 +9440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a8a07eb-c372-4282-a070-f0a531979b68")
-		(property "Reference" "J9"
+		(property "Reference" "J8"
 			(at 230.505 148.59 0)
 			(effects
 				(font
@@ -9721,7 +9495,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -9737,7 +9511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c29b388-cfb8-42e1-88a8-319072dd994e")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 147.32 74.9299 0)
 			(effects
 				(font
@@ -9791,7 +9565,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -10072,7 +9846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d1bbca-3f02-4a73-a9cc-b78494332e3f")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 134.62 79.0574 90)
 			(effects
 				(font
@@ -10135,7 +9909,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10150,7 +9924,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "461dc27f-7190-49e6-a23b-7fff55f67fce")
-		(property "Reference" "J11"
+		(property "Reference" "J14"
 			(at 60.325 140.97 0)
 			(effects
 				(font
@@ -10202,7 +9976,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J11")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -10351,7 +10125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cee6350-1e08-463c-bb49-cf4352527cd8")
-		(property "Reference" "J24"
+		(property "Reference" "J15"
 			(at 176.8474 67.31 0)
 			(effects
 				(font
@@ -10403,7 +10177,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J24")
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -10551,7 +10325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "549b753f-8db6-4a99-b4d8-1dd74b34848e")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 115.57 69.8499 0)
 			(effects
 				(font
@@ -10605,7 +10379,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10687,7 +10461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5da06d68-5479-4c78-84c9-48bdf4372c3e")
-		(property "Reference" "D1"
+		(property "Reference" "D3"
 			(at 90.17 170.18 0)
 			(effects
 				(font
@@ -10811,7 +10585,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10944,70 +10718,6 @@
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 275.59 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e68d56f-7a95-414f-9aa9-1c42d081ae54")
-		(property "Reference" "H2"
-			(at 278.13 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 278.13 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 275.59 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 275.59 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 275.59 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "PCB_Watersysteem"
-				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -11155,7 +10865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "621861a5-98c5-480e-b6a8-edcdc732e584")
-		(property "Reference" "J8"
+		(property "Reference" "J9"
 			(at 230.505 132.08 0)
 			(effects
 				(font
@@ -11210,7 +10920,72 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J8")
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 276.86 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "628128ad-967c-448c-bd09-f36c7bde5002")
+		(property "Reference" "H2"
+			(at 275.59 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 275.59 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 276.86 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 276.86 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "081b1aab-5b96-4a22-ad60-1db936ab36b1")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -11226,7 +11001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "631c7449-8d12-4a4d-bb78-b78f0faee4cd")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 223.52 54.6099 0)
 			(effects
 				(font
@@ -11280,7 +11055,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11362,7 +11137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "651d943c-98ff-4944-bca1-c446b782c190")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 147.32 39.3699 0)
 			(effects
 				(font
@@ -11416,7 +11191,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -11698,7 +11473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70e8f918-1b7f-4d0e-9638-2086033b6ccd")
-		(property "Reference" "R15"
+		(property "Reference" "R14"
 			(at 67.31 140.9699 0)
 			(effects
 				(font
@@ -11752,7 +11527,72 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R15")
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 276.86 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7124d45e-f8e0-48a1-82b1-319d9e3c50c2")
+		(property "Reference" "H3"
+			(at 275.59 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 275.59 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 276.86 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 276.86 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0971651c-0480-4ca8-8787-db6a95dfa2a4")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -11834,7 +11674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "731b5d55-2dcf-4374-8273-eecdb790b5bb")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 36.83 140.9699 0)
 			(effects
 				(font
@@ -11888,7 +11728,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -11970,7 +11810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75ed421f-7ea8-406a-9319-395b0fa077f7")
-		(property "Reference" "J7"
+		(property "Reference" "J11"
 			(at 230.505 115.57 0)
 			(effects
 				(font
@@ -12025,7 +11865,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J7")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -12108,7 +11948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79425dec-5681-42c2-ac1c-4f6d46bb0e2a")
-		(property "Reference" "J23"
+		(property "Reference" "J10"
 			(at 178.1174 44.45 0)
 			(effects
 				(font
@@ -12160,7 +12000,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J23")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12576,7 +12416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "813ef031-12fd-49ec-8a98-10dac8bbb2c7")
-		(property "Reference" "R10"
+		(property "Reference" "R4"
 			(at 274.32 57.1499 0)
 			(effects
 				(font
@@ -12630,7 +12470,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R10")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -12795,7 +12635,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "846ba955-94cc-4e95-ac3e-005faa960896")
-		(property "Reference" "J10"
+		(property "Reference" "J13"
 			(at 29.845 140.97 0)
 			(effects
 				(font
@@ -12847,7 +12687,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J10")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -12864,7 +12704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8507041c-95ec-4eb1-9623-f49ebe3c7923")
-		(property "Reference" "J26"
+		(property "Reference" "J21"
 			(at 209.8674 68.58 0)
 			(effects
 				(font
@@ -12916,7 +12756,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J26")
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -12933,7 +12773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "857509d3-4dd4-4ca8-bcee-c9a2628508ac")
-		(property "Reference" "J25"
+		(property "Reference" "J19"
 			(at 209.8674 45.72 0)
 			(effects
 				(font
@@ -12985,7 +12825,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J25")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -13067,7 +12907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a0b721f-dc75-48c6-bf20-3f189c0661e1")
-		(property "Reference" "R9"
+		(property "Reference" "R12"
 			(at 156.21 74.9299 0)
 			(effects
 				(font
@@ -13121,7 +12961,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R9")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -13136,7 +12976,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a8d295c-a678-42a0-9dcc-ff220ef8b2c0")
-		(property "Reference" "J12"
+		(property "Reference" "J2"
 			(at 189.865 123.19 0)
 			(effects
 				(font
@@ -13194,7 +13034,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J12")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -13413,7 +13253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b2c4604-d10b-4969-be42-1840f0f3c90b")
-		(property "Reference" "C12"
+		(property "Reference" "C14"
 			(at 223.52 77.4699 0)
 			(effects
 				(font
@@ -13467,7 +13307,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C12")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -13483,7 +13323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b358a39-b96b-44fb-b785-756da2fbd790")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 191.77 53.3399 0)
 			(effects
 				(font
@@ -13537,7 +13377,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -13816,7 +13656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4c66f90-6d6e-429b-b2a2-1150475d8c75")
-		(property "Reference" "J13"
+		(property "Reference" "J3"
 			(at 189.865 144.78 0)
 			(effects
 				(font
@@ -13874,7 +13714,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J13")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -13890,7 +13730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4ed42bd-a81b-46ac-8867-f4f2a6cfd708")
-		(property "Reference" "C9"
+		(property "Reference" "C3"
 			(at 238.76 39.3699 0)
 			(effects
 				(font
@@ -13944,7 +13784,73 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C9")
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 279.4 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a56e9cb0-3039-44f9-a30e-ece14ed969a5")
+		(property "Reference" "#PWR092"
+			(at 279.4 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 279.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae952723-e75e-4b60-a542-a3a2c03a4840")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -14018,16 +13924,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 120.65 0)
+		(at 279.4 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9e6e0d3-0d6a-437e-aeae-e79f9d5c5a98")
-		(property "Reference" "#PWR090"
-			(at 147.32 127 0)
+		(uuid "a84b943e-f57c-4379-b661-9debaa3a59d4")
+		(property "Reference" "#PWR031"
+			(at 279.4 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14036,7 +13942,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 125.73 0)
+			(at 279.4 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14044,7 +13950,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 120.65 0)
+			(at 279.4 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14053,7 +13959,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 120.65 0)
+			(at 279.4 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14062,7 +13968,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 120.65 0)
+			(at 279.4 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6b12f3e-6ca2-4a25-a90d-c0a89fdf5f91")
+		)
+		(instances
+			(project "PCB_Watersysteem"
+				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9e6e0d3-0d6a-437e-aeae-e79f9d5c5a98")
+		(property "Reference" "#PWR090"
+			(at 157.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14290,7 +14262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b93572f9-b663-4a49-b038-90d9d762897b")
-		(property "Reference" "R2"
+		(property "Reference" "R9"
 			(at 90.17 27.9399 0)
 			(effects
 				(font
@@ -14344,7 +14316,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R2")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -14491,7 +14463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc6a3301-ea6b-43dd-a210-95973f30739a")
-		(property "Reference" "JP2"
+		(property "Reference" "JP1"
 			(at 102.616 149.098 0)
 			(effects
 				(font
@@ -14544,7 +14516,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "JP2")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -14559,7 +14531,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd4d964c-a41d-4236-8f2e-1a2c09a865b6")
-		(property "Reference" "C4"
+		(property "Reference" "C8"
 			(at 131.318 180.34 0)
 			(effects
 				(font
@@ -14613,7 +14585,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C4")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -14960,7 +14932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1132f33-5521-4fe4-a19a-c43171ebeb1e")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 62.23 170.18 0)
 			(effects
 				(font
@@ -15018,7 +14990,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -15034,7 +15006,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d117f8a3-162f-4e73-8434-d5f40f0349d8")
-		(property "Reference" "C14"
+		(property "Reference" "C4"
 			(at 88.9 109.2199 0)
 			(effects
 				(font
@@ -15088,7 +15060,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C14")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -15168,7 +15140,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6a9ec37-f81b-4532-973b-baa157332f20")
-		(property "Reference" "JP3"
+		(property "Reference" "JP2"
 			(at 98.806 149.098 0)
 			(effects
 				(font
@@ -15221,7 +15193,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "JP3")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -15229,15 +15201,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 152.4 114.3 180)
+		(at 162.56 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d6db71a0-6b51-47e1-83b2-7397ee6e0c90")
-		(property "Reference" "J3"
-			(at 148.082 101.6 0)
+		(property "Reference" "J18"
+			(at 158.242 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15246,7 +15218,7 @@
 			)
 		)
 		(property "Value" "Backup GPIO"
-			(at 147.828 103.632 0)
+			(at 157.988 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15255,7 +15227,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 152.4 114.3 0)
+			(at 162.56 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15264,7 +15236,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 114.3 0)
+			(at 162.56 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15273,7 +15245,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 152.4 114.3 0)
+			(at 162.56 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15302,7 +15274,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J3")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -15383,7 +15355,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d808a815-f951-4ecc-bedf-7df971cf0855")
-		(property "Reference" "R13"
+		(property "Reference" "R5"
 			(at 101.854 129.794 0)
 			(effects
 				(font
@@ -15437,7 +15409,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R13")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -15452,7 +15424,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9538c86-8c85-4cac-b43a-93a2b61cf8a8")
-		(property "Reference" "J6"
+		(property "Reference" "J1"
 			(at 189.865 101.6 0)
 			(effects
 				(font
@@ -15510,7 +15482,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J6")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -15793,7 +15765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e58a6f76-3517-4dfc-92b4-80de64587a36")
-		(property "Reference" "R7"
+		(property "Reference" "R11"
 			(at 147.32 27.9399 0)
 			(effects
 				(font
@@ -15847,7 +15819,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "R7")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -15999,7 +15971,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec7bcf1f-c5c8-4530-9dc5-c1ca33f759dc")
-		(property "Reference" "JP4"
+		(property "Reference" "JP3"
 			(at 94.996 149.098 0)
 			(effects
 				(font
@@ -16052,7 +16024,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "JP4")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -16204,7 +16176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eed230d5-5cc6-472e-b128-a943a5856444")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 125.73 39.3699 0)
 			(effects
 				(font
@@ -16258,7 +16230,7 @@
 		(instances
 			(project "PCB_Watersysteem"
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -16340,7 +16312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f05d79f6-af8f-47f5-96d8-220d262983de")
-		(property "Reference" "JP1"
+		(property "Reference" "JP4"
 			(at 263.906 64.008 0)
 			(effects
 				(font
@@ -16393,7 +16365,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "JP1")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -16409,7 +16381,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1ff1677-752e-4c17-8015-73e7b1107fac")
-		(property "Reference" "J2"
+		(property "Reference" "J7"
 			(at 92.075 66.04 0)
 			(effects
 				(font
@@ -16467,7 +16439,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J2")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -16619,7 +16591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f646fa50-a532-4a6c-b051-2c8c2379e9c5")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 50.4541 38.1 0)
 			(effects
 				(font
@@ -16784,7 +16756,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -16998,7 +16970,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc8ed207-ed5f-4abc-b62a-28a361db8a77")
-		(property "Reference" "J1"
+		(property "Reference" "J5"
 			(at 24.13 172.72 0)
 			(effects
 				(font
@@ -17050,7 +17022,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "J1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -17066,7 +17038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd2c3209-a55b-4583-b352-936246b9d919")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 116.84 171.45 0)
 			(effects
 				(font
@@ -17121,7 +17093,7 @@
 		(instances
 			(project ""
 				(path "/de0b8b90-8fde-4ab1-b1b1-e85d44454ecd"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
