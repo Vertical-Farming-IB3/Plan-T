@@ -5212,7 +5212,7 @@
 		)
 		(uuid "92d26e30-b6d4-4814-8f6b-e99781b9bf98")
 	)
-	(text "M4"
+	(text "M3"
 		(exclude_from_sim no)
 		(at 268.224 112.522 0)
 		(effects
