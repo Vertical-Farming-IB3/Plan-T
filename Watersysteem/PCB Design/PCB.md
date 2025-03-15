@@ -2,12 +2,12 @@
 
 In dit document sommen we de requirements op voor de PCB.
 
-## inputs
-- Analoog (x3) voedingstoffen => via 1 ADC (ADS1115)
-- Analoog (x3) Hoogtesensoren
+## Inputs
+- Analoog (x3) voedingstoffen => via 1 ADC (ADS1115) met BNC connectoren voor de probes
+- Analoog (x3) Ultrasone hoogtesensoren (HC-SR04)
 - Digitaal (x3) eindeloopschakelaars
 
-## outputs
+## Outputs
 - Digitaal LED indicator waterniveau
 - Digitaal LED indicator voedingsstofniveau
 - Relais UV lamp (230V/100mA)
@@ -23,6 +23,7 @@ In dit document sommen we de requirements op voor de PCB.
 
 230V AC / 100mA
 
+Dit wordt op de PCB door een buck converter (MP1584) van 12V naar 5V omgezet voor de relais. De 5V wordt verder omgevormd naar 3.3V door een LDO (AMS1117) voor de ESP32.
 ## Vermogen 12V
 - 4x pompje van 400mA
 - 1x luchtpomp 220mA
@@ -30,13 +31,14 @@ In dit document sommen we de requirements op voor de PCB.
 - relais (200mA bij 5V) => 100mA
 - Buck converter (1500mA bij 5V) => 800mA
 
-afgerond 3000mA bij 12V
+Afgerond maakt dit 3000mA bij 12V
 => P = 40W
 
 # Pinout
-nummers = ESP
+Nummers: ESP32
 
-A/B = expander
+A/B: IO expander
+IO expander is met I2C verbonden met de ESP32
 
 ### LEDs
 Pin| Description
@@ -92,11 +94,11 @@ B7 | B7
 I2C adres: 0X27
 
 herinstelbaar via JP1, JP2 en JP3 (verbind de jumpers voor een 0, ze zijn standaard 1):
-0b0100[JP1][JP2][JP3]
+0b0100\<JP1>\<JP2>\<JP3>
 
 
 ### ADC en probes
-I2C adres: 0x48 \
+I2C adres: 0x48
 Verbind JP4 voor adres 0x49
 
 Pin| Description
