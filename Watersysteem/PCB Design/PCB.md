@@ -93,7 +93,7 @@ B7 | B7
 ### IO expander
 I2C adres: 0X27
 
-herinstelbaar via JP1, JP2 en JP3 (verbind de jumpers voor een 0, ze zijn standaard 1):
+Het adres is herinstelbaar via JP1, JP2 en JP3 (verbind de jumpers voor een 0, ze zijn standaard 1): \
 0b0100\<JP1>\<JP2>\<JP3>
 
 
