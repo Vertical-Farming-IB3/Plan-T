@@ -31,13 +31,13 @@ Dit wordt op de PCB door een buck converter (MP1584) van 12V naar 5V omgezet voo
 - relais (200mA bij 5V) => 100mA
 - Buck converter (1500mA bij 5V) => 800mA
 
-Afgerond maakt dit 3000mA bij 12V
+Afgerond maakt dit 3000mA bij 12V \
 => P = 40W
 
 # Pinout
 Nummers: ESP32
 
-A/B: IO expander
+A/B: IO expander \
 IO expander is met I2C verbonden met de ESP32
 
 ### LEDs
