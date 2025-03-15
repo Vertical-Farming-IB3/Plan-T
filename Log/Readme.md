@@ -1,81 +1,126 @@
-# 18-03-2025 The real construction is getting closer now...
-Team plantcontainer is going to the Action to buy paint, brushes, ...
-Team water is looking into calibrating the ion sensors.
+# 🌱 Vertical Farm Project "Plan-T" Log
 
-# 15-03-2025 Waiting on orders and preparing/testing (open-door day)
-With most of our components on the way, and mr. Coppens working on the full closet, we are mostly testing sensors, ESP's and yaml code. We're also searching for other materials we'll need soon; white paint, paintbrushes, coconutfiber, ...
+## 📅 18-03-2025: The real construction is getting closer!
+- **Team Plantcontainer**: Going to Action to buy paint, brushes, and other supplies.
+- **Team Water**: Looking into calibrating the ion sensors.
 
-# 11-03-2025 PCB's ordered!
-The PCB's have been ordered from PCBWay. 
+---
 
-# 06-03-2025: We sowed our first seeds, to be used as a reference or maybe even to repot them in our working VF soon!
-We sowed:
-  - Basil
-  - Coriander
-  - Mint
-  - Oregano
-  - Leaf lettuce
-We also broke down the old construction.
+## 📅 15-03-2025: Waiting on Orders & Preparing (Open-Door Day)
+With most of our components on the way, and Mr. Coppens working on the full closet, we are:
+- Testing sensors, ESPs, and YAML code.
+- Searching for additional materials: white paint, paintbrushes, coconut fiber, etc.
 
-# 25-02-2025: Our first order!
-We ordered several components that we'll need for our construction. The sites used were Mouser, TinyTronics, AliExpress, PCBWay, Mouser, RS, ...
+---
 
-# First month of semester 2: Preparation for the real deal has begun
-Each group, team plantcontainer, team light and team water, have started researching and thinking about how to really implement their parts of the construction. We farmed as much components as possible from the old construction, that we're hoping to reuse.
+## 📅 11-03-2025: PCBs Ordered! 🎉
+The PCBs have been ordered from **PCBWay**.
 
-# 17-12-2024: Presentation and feedback
-We presented our progress and collected the feedback in the ClickUp notes.
+---
 
-# 19-11-2024: Planning 
-While waiting for our PCBs to arrive, we are creating a schedule to start working on our vertical farm. We aim to divide the assignment into smaller subtasks and assign them to all team members.
+## 📅 06-03-2025: First Seeds Sown! 🌱
+We sowed our first seeds to be used as a reference, or maybe even to repot them into our working vertical farm soon! 
+### 🌿 Planted:
+- Basil
+- Coriander
+- Mint
+- Oregano
+- Leaf Lettuce
 
-# 22-10-2024: Working on the old system
-We gathered to work on the previous system. The plan was to get it running again and examine the causes of failure a bit more.
+Additionally, we **broke down the old construction**.
 
-## What we did
-### Powering up the system
-Using the instructions on https://verticalfarmib3.github.io/inhoud/operation/ we turned on all of the systems (after trying some times).
-The esphome server runs on 192.168.0.40:8123 on the CM3 network. By setting up an automation we can automatically make the lights turn on and of at the correct time of day. We verified that the lights, pumps, fans and mixer work.
-The Grafana interface was accessible through port 3000.
+---
 
-### Moving the setup to a new place
-First we removed the wood enclosure and put it aside.
-Next we disassembled the top and front part that holds the glass. By doing this we could access the electronics and plants. The old plants were cleaned up and we cleaned the insides a bit.
-Then we moved the wooden frame to the new location. We put the aluminium frame around it.
+## 📅 25-02-2025: First Order Placed! 🛒
+We ordered several components necessary for our construction. 
+### 📦 Sites used:
+- Mouser
+- TinyTronics
+- AliExpress
+- PCBWay
+- RS
 
-### A new seed
-We carefully planted new seeds in the working planters.
-The timing of the lights was changed to be active from 8:00 to 20:00. We let the timing of the fans stay the same (active for 5 minutes, every 30 minutes).
-The plants are a mixture of basil, dill, chives, oregano, parsley and African marigolds.
+---
 
-## The problems we found
-- The mixer only works for a few seconds at a time. This isn't enough to mix all the nutrients in the big container.
-- The drainage tubes (that return excess water) get clogged by the rockwool.
-- Instead of using silicone to glue the tubes to the system, hot glue was used. This is not water proof.
-- Because of the high start up current of the most right lights, the relay gets melted closed sometimes. This is because the current exceeds the relay's specifications.
-- The pumps will pump new water to the plants whenever the soil moisture sensor drops below 50%. This means that when the sensors broke down, the system just kept on pumping water. This problem in combination with the clogged drainage tubes meant that there were water leaks.
+## 📅 First Month of Semester 2: Preparation Begins
+Each group (Team Plantcontainer, Team Light, Team Water) started researching and designing their part of the system. 
+- We **reused as many components as possible** from the old construction.
 
-# 16-10-2024: Brainstorming
+---
 
-## Starting up the old system
-- drainage tubes have to be fixed
-- relays have to be changed for better ones
-- the substrate (rock wool) should be changed for new substrate (we might have to try a different type of substrate)
-- fix the water replacement issue (easier access)
+## 📅 17-12-2024: Presentation & Feedback
+We presented our progress and collected feedback in our **ClickUp notes**.
 
-## Our ideas for the new system, modularity
-We will make something to put in your home (kitchen) instead of an Industrial scale farm. Not every home is the same, that's why our system should be modular.
-Our system is based on hydroponics.
-- a system with drawers inside drawers
-![image](./figure1.jpg)
-![image](./figure2.jpg)
-![image](./figure3.jpg)
-- connecting the sensors via I2C bus, having single common rail for all modules
-- Plug & Play system for every module
+---
 
-## Plans for our next session
-- getting the system running
+## 📅 19-11-2024: Planning Phase 📝
+While waiting for our **PCBs to arrive**, we:
+- Created a schedule.
+- Divided the assignment into smaller tasks.
+- Assigned tasks to team members.
 
+---
 
+## 📅 22-10-2024: Working on the Old System ⚙️
+We gathered to **restart and analyze** the previous system.
 
+### 🔌 Powering Up the System
+Using [this guide](https://verticalfarmib3.github.io/inhoud/operation/), we turned everything on:
+- **ESPHome server** runs on `192.168.0.40:8123` on the CM3 network.
+- **Grafana interface** is accessible via port `3000`.
+- **Lights, pumps, fans, and mixer** tested successfully.
+- **Automation setup** ensures lights turn on/off at the correct times.
 
+### 📦 Moving the Setup to a New Location
+1. Removed the **wood enclosure**.
+2. Disassembled the **top and front glass panel**.
+3. Cleaned the **old plants and interior**.
+4. Moved the **wooden frame**.
+5. Installed the **aluminum frame**.
+
+### 🌱 A New Seed
+We planted fresh seeds:
+- Basil
+- Dill
+- Chives
+- Oregano
+- Parsley
+- African Marigolds
+
+📌 **Updated light timing**: **08:00 - 20:00**
+📌 **Fan schedule**: **5 minutes every 30 minutes**
+
+### ❌ Issues Found
+- ⚠️ Mixer only works for **a few seconds** at a time.
+- ⚠️ **Drainage tubes clog** due to rockwool.
+- ⚠️ **Hot glue was used** instead of waterproof silicone.
+- ⚠️ **High startup current** causes relays to melt shut.
+- ⚠️ **Faulty moisture sensors** lead to overwatering and leaks.
+
+---
+
+## 📅 16-10-2024: Brainstorming 💡
+### 🔄 Fixing the Old System
+- **Replace drainage tubes**.
+- **Upgrade relays** to better ones.
+- **Test alternative substrates** instead of rockwool.
+- **Improve water replacement access**.
+
+### 🏡 New System: Modularity Focus
+We aim to **design a home-friendly vertical farm**, not an industrial one. Our system should be **modular**:
+- **Drawer-based system** inside another drawer.
+- **Sensors connected via I2C bus**.
+- **Common power rail** for all modules.
+- **Plug & Play system** for easy setup.
+
+### 📅 Next Session Goals
+- Get the old system running again.
+
+---
+
+## 📸 Concept Drawings
+<div style="display: flex; gap: 10px;">
+  <img src="./figure1.jpg" alt="Concept 1" width="200"/>
+  <img src="./figure2.jpg" alt="Concept 2" width="200"/>
+  <img src="./figure3.jpg" alt="Concept 3" width="200"/>
+</div>
