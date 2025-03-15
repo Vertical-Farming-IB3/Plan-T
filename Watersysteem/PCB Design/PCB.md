@@ -44,8 +44,8 @@ IO expander is met I2C verbonden met de ESP32
 Pin| Description
 ---|------------
 2  | Onboard LED (IO2)
-A7 | Nutriënten LED (IO2)
-B0 | Nutriënten LED (IO2)
+A7 | Water LED
+B0 | Nutriënten LED
 
 ### Hoogtesensoren (ultrasoon)
 Pin| Description
@@ -109,3 +109,10 @@ A2 | Nutriënten 1
 A3 | Referentie
 
 Testpunten zijn aangeduid op de PCB
+
+### I2C
+
+Pin| Description
+---|------------
+17 | SCL
+18 | SDA
