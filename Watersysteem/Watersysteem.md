@@ -5,30 +5,23 @@
 Het systeem bestaat uit onderstaande componenten, aan elkaar gekoppeld:
 
 - **Reservoirs**:
-1 waterreservoir & 1 voedingsstofreservoir. Uiteindelijk wordt het gerecycleerde water uit het systeem teruggebracht in dit waterreservoir.  
-Beide reservoirs worden aangevuld door een klep te openen aan de kast en hebben een sensor om de hoogte van de vloeistof op te meten.
-We zoeken ook voor een oplossing om het water en de voedingstoffen voldoende te circuleren zodat het niet blijft stilstaan en er geen geurtjes zullen ontwikkelen.
+1 waterreservoir, 1 voedingsstofreservoir en 1 mengreservoir. Uiteindelijk wordt het gerecycleerde water uit het systeem teruggebracht in dit waterreservoir.  
+De water- en voedingsstofreservoir worden aangevuld door een klep te openen aan de kast. We hebben voor elk reservoir een ultrasone sensor om de hoogte van de vloeistof op te meten.
+We hebben ook luchtpompen in de water- en voedingsstofreservoir om de vloeistoffen te circuleren om zo de groei van algen tegen te houden.
+Het mengreservoir bevat ook sensoren om de concentratie van voedingsstoffen op te meten en een mixer om zo het vloeistof te mengen.
 
 - **Pompen**:
-2 pompen om het water en de voedingstoffen naar het mengreservoir over te brengen.
-
-- **Mengreservoir**:
-Hierin worden de voedingsstoffen gemengd met het water.  
-Dit reservoir bevat dus een mixer, eventuele sensoren om de concentratie voedingsstoffen te meten en een sensor om de hoogte van de vloeistof op te meten.
+We gebruiken 2 pompen om het water en de voedingsstoffen naar het mengreservor over te brengen.
 
 - **Pompsysteem**
 Nadat het water gemixt is in het mengreservoir wordt het omhoog gepompt naar de gewenste plantenlade. We gebruiken per lade een pompje. Dit lijkt voordeliger dan een verdeelblok en ventielen op deze kleine schaal.
 
-- **Common connector**:
-Deze aansluitingen zijn de verbinding tussen het interne watersysteem en de plantenmodules. Hiermee wordt eveneens de stroom doorgegeven.  
-Er is een verbinding om het water naar de plantenmodule te brengen. Ook is er een retourverbinding om de wateroverschot te recycleren.
-
 - **UV-filter**:
-Het gerecycleerde water passeert door een UV-filter om algengroei te voorkomen. Hierna stroomt het verder naar het waterreservoir.
+In het mengreservoir zit ook een UVC-lamp, om zo micro-organismen te neutraliseren. 
 
 ## Reservoirs
 ![Reservoir](./assets/reservoir.JPEG)
-We hergebruiken enkele van de bloembakken als reservoir. Deze zijn ruim genoeg en kunnen makkelijk geïntegreerd worden in het ontwerp.
+We hergebruiken enkele van de bloembakken van vorig project als reservoir. Deze zijn ruim genoeg en kunnen makkelijk geïntegreerd worden in het ontwerp.
 
 ## Sensoren en Actuatoren
 
@@ -85,13 +78,15 @@ De [Ca2+ Sensor](http://www.measureteq.com/electrode-and-sensor/ion-selective-el
 
 De [K+ Sensor](http://www.measureteq.com/electrode-and-sensor/ion-selective-electrode/ise-2920-potassium-ion-selective-electrode.html) wordt aangesloten met een BNC-connector.
 
-### Uitlezen van de chemische sensoren
-Dit gebeurt met een ADC die vorig jaar reeds ontworpen is. We moeten nog op zoek naar het ontwerp van dit bordje.
+### ADC
+We gebruiken een ADC om de gegenereerde spanning van de sensoren op te meten. We hebben de ADS1115 genomen als ADC.
 
 ### UV licht
 
-Een gebruiksklare oplossing is zeer duur en niet direct beschikbaar. We zouden een eigen UV-filter kunnen maken door de tube langsheen een UV-ledstrip te laten gaan.  
-De effectiviteit van deze filter zou zelfs beter kunnen zijn als we de leds ook boven het waterreservoir hangen. Op deze manier komt het water gedurende een langere periode in contact met het UV-licht.   
+Een gebruiksklare oplossing is zeer duur en niet direct beschikbaar. We zouden een eigen UV-filter kunnen maken door de tube langsheen een UV-ledstrip te laten gaan. \
+De effectiviteit van deze filter zou zelfs beter kunnen zijn als we de leds ook boven het waterreservoir hangen. Op deze manier komt het water gedurende een langere periode in contact met het UV-licht.
+
+We kunnen ook een UV-lamp nemen die geschikt is voor gebruik in aquariums. Deze kunnen we dan in het reservoir zelf onderdompelen voor nog betere effectiviteit.
 
 Deze moet een golflengte hebben tussen de 254-265nm.
 
@@ -99,7 +94,7 @@ We vonden ook enkele interessante lampen met G23 connectors. Bijvoorbeeld een UV
 
 Er zijn ook oplossingen beschikbaar door zelf een zandfilter te maken. Deze moet wel regelmatig vervangen worden en kost mogelijks veel geld.
 
-Uiteindelijk vonden we enkele UV-lampen die in aquariums worden gebruikt. Deze kunnen we makkelijk toepassen in ons watersysteem.
+Na het bestellen van een UVC-lamp van Ali-express, is deze ongeveer 7 minuten na eerste gebruik ontploft.
 
 ### Waterniveau Sensor
 
@@ -124,12 +119,6 @@ Zie onderstaande links voor verschillende sensoren:
 
 We kozen voor de ultrasone sensor. De waterniveausensor was ook een goede keuze maar leek ons toch net niet helemaal geschikt. Beiden hebben nadelen en voordelen.
 
-## Common Connector
-
-![Common Connector](./assets/Common_connector.png)
-
-De common connector heeft 2 wateraansluitingen: WATER IN en WATER UIT. Deze worden elk voorzien met Quick-disconnects om makkelijk nieuwe plantenbakmodules aan te sluiten of te verwijderen.
-
 # Randmateriaal
 
 ## Tubes
@@ -146,4 +135,3 @@ Overal hebben we aansluitingen met een binnendiameter van 6mm. We maken een insc
 
 - UV-lamp verder onderzoeken
 - Implementatie kast onderzoeken
-- ADC onderzoeken
