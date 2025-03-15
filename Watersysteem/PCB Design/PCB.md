@@ -98,7 +98,7 @@ herinstelbaar via JP1, JP2 en JP3 (verbind de jumpers voor een 0, ze zijn standa
 
 
 ### ADC en probes
-I2C adres: 0x48
+I2C adres: 0x48 \
 Verbind JP4 voor adres 0x49
 
 Pin| Description
