@@ -1,11 +1,35 @@
-# 17-12-2024 Presentation and feedback
+# 18-03-2025 The real construction is getting closer now...
+Team plantcontainer is going to the Action to buy paint, brushes, ...
+Team water is looking into calibrating the ion sensors.
+
+# 15-03-2025 Waiting on orders and preparing/testing (open-door day)
+With most of our components on the way, and mr. Coppens working on the full closet, we are mostly testing sensors, ESP's and yaml code. We're also searching for other materials we'll need soon; white paint, paintbrushes, coconutfiber, ...
+
+# 11-03-2025 PCB's ordered!
+The PCB's have been ordered from PCBWay. 
+
+# 06-03-2025: We sowed our first seeds, to be used as a reference or maybe even to repot them in our working VF soon!
+We sowed:
+  - Basil
+  - Coriander
+  - Mint
+  - Oregano
+  - Leaf lettuce
+We also broke down the old construction.
+
+# 25-02-2025: Our first order!
+We ordered several components that we'll need for our construction. The sites used were Mouser, TinyTronics, AliExpress, PCBWay, Mouser, RS, ...
+
+# First month of semester 2: Preparation for the real deal has begun
+Each group, team plantcontainer, team light and team water, have started researching and thinking about how to really implement their parts of the construction. We farmed as much components as possible from the old construction, that we're hoping to reuse.
+
+# 17-12-2024: Presentation and feedback
 We presented our progress and collected the feedback in the ClickUp notes.
 
-
-# 19-11-2024 Planning 
+# 19-11-2024: Planning 
 While waiting for our PCBs to arrive, we are creating a schedule to start working on our vertical farm. We aim to divide the assignment into smaller subtasks and assign them to all team members.
 
-# 22-10-2024 Working on the old system
+# 22-10-2024: Working on the old system
 We gathered to work on the previous system. The plan was to get it running again and examine the causes of failure a bit more.
 
 ## What we did
@@ -31,7 +55,7 @@ The plants are a mixture of basil, dill, chives, oregano, parsley and African ma
 - Because of the high start up current of the most right lights, the relay gets melted closed sometimes. This is because the current exceeds the relay's specifications.
 - The pumps will pump new water to the plants whenever the soil moisture sensor drops below 50%. This means that when the sensors broke down, the system just kept on pumping water. This problem in combination with the clogged drainage tubes meant that there were water leaks.
 
-# 16-10-2024 Brainstorming
+# 16-10-2024: Brainstorming
 
 ## Starting up the old system
 - drainage tubes have to be fixed
