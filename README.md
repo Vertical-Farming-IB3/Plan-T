@@ -1,4 +1,5 @@
 # Plan-T 🌱  
+[Bezoek onze website](https://vertical-farming-ib3.github.io/)
 
 **Plan-T** is een vertical farming project met hydroponics, gericht op het duurzaam kweken van kruiden en groeten. De VF wordt automatisch bestuurd en gemonitord.
 
