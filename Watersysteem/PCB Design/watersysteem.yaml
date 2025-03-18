@@ -1,4 +1,5 @@
-### Het Ultieme Watersysteem
+### The Ultimate Water System
+# written by Kjell
 
 esphome:
   name: watersysteem
@@ -41,6 +42,7 @@ web_server:
 i2c:
   sda: GPIO18
   scl: GPIO17
+  scan: True
 
 ### IO EXPANDER ###
 mcp23017:
@@ -131,21 +133,24 @@ sensor:
   # HEIGHT SENSORS (ULTRASONIC)
   - platform: ultrasonic
     name: "Hoogte Nutriënten"
-    trigger_pin: 26
-    echo_pin: 25
+    trigger_pin: GPIO26
+    echo_pin: GPIO25
+    update_interval: 30s
   - platform: ultrasonic
     name: "Hoogte Water"
-    trigger_pin: 33
-    echo_pin: 32
+    trigger_pin: GPIO33
+    echo_pin: GPIO32
+    update_interval: 30s
   - platform: ultrasonic
     name: "Hoogte mixer"
-    trigger_pin: 14
-    echo_pin: 27
+    trigger_pin: GPIO14
+    echo_pin: GPIO27
+    update_interval: 5s
   # ANALOG PROBES
   - platform: ads1115
     name: "Nutriënten 1"
     multiplexer: A2_A3
-    gain: 0.512 # meausures up to 0.512V (see documentation)
+    gain: 0.512 # meausures up to 0.512V (see documentation), possibly change to 1.024 for double the range
   - platform: ads1115
     name: "Nutriënten 2"
     multiplexer: A1_A3
@@ -154,7 +159,18 @@ sensor:
     name: "Nutriënten 3"
     multiplexer: A0_A3
     gain: 0.512
-
+  # CURRENT SENSOR (FOR POWER CONSUMPTION)
+  - platform: adc
+    name: "Vermogenverbruik"
+    pin: GPIO34
+    update_interval: 10s
+    filters: # linear regression: I = (V - 2.28) / 0.1704
+      - offset: -2.2845
+      - multiply: 5.86854
+      # Multiply by voltage to get power consumption
+      - multiply: 12
+    unit_of_measurement: "W"
+          
 binary_sensor:
   # LIMIT SWITCHES
   - platform: gpio
@@ -177,7 +193,7 @@ binary_sensor:
     name: "Eindeloopschakelaar 3"
     pin:
       mcp23xxx: expander
-      number: 11 #B2
+      number: 11 #B3
       mode:
         input: True
         pullup: False
