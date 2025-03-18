@@ -3,8 +3,8 @@ Teamleden:
   - Beau Forrez
   - Elias Neels
   - Wout Batselé
-  - ...
-  - ...
+  - Wouter Fouquet
+  - Sander De Stercke
 
 ## To-do lijst
 - [ ] Componentenlijst opstellen
