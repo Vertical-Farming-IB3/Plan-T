@@ -1,48 +1,48 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"J11";"PinHeader_1x03_P2.54mm_Vertical";1;"Endstop Lade0";;;
-2;"J5";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"12V ingang";;;
-3;"JP4,JP2,JP1,JP3";"SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm";4;"SolderJumper_2_Open";;;
-4;"J9";"PinHeader_1x03_P2.54mm_Vertical";1;"Endstop Lade1";;;
-5;"SW2";"Wurth_Tactile_Switch_SPST-NO_434111043826";1;"BOOT";;;
-6;"R1,R3,R15,R14";"R_0805_2012Metric_Pad1.20x1.40mm_HandSolder";4;"470";;;
-7;"R4,R6,R5,R7,R2,R13,R11,R9,R8";"R_0805_2012Metric_Pad1.20x1.40mm_HandSolder";9;"10k";;;
-8;"J6";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Pomp1";;;
-9;"K1,K3,K7,K4,K6,K5,K2";"AHQSS105DM2FA0G";7;"AHQSS105DM2FA0G";;;
-10;"C4,C3,C14,C13,C12,C11,C10,C6,C7";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";9;"100n";;;
-11;"J22";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Mixer";;;
-12;"J18";"PinHeader_1x06_P2.54mm_Vertical";1;"Backup GPIO";;;
-13;"J24";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"UV";;;
-14;"D1";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"PWR";;;
-15;"D2";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"LED";;;
-16;"H2,H1,H4,H3";"MountingHole_3.2mm_M3_Pad_TopBottom";4;"MountingHole_Pad";;;
-17;"U3";"TSSOP-10_3x3mm_P0.5mm";1;"ADS1115IDGS";;;
-18;"J17";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Pomp4";;;
-19;"SW1";"Wurth_Tactile_Switch_SPST-NO_434111043826";1;"EN";;;
-20;"J14";"PinHeader_1x02_P2.54mm_Vertical";1;"LED Nutrient Level";;;
-21;"U1";"MP1584_Module";1;"MP1584_Module";;;
-22;"TP1,TP3,TP4,TP2";"TestPoint_Pad_D2.0mm";4;"TestPoint";;;
-23;"J21";"BNC_Amphenol_B6252HB-NPP3G-50_Horizontal";1;"Voedingsstoffen 3";;;
-24;"J1";"PinHeader_1x04_P2.54mm_Vertical";1;"Height Water";;;
-25;"J23";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"230V";;;
-26;"C2,C1";"CP_Elec_6.3x3.9";2;"100u";;;
-27;"U2";"ESP32-WROOM-32D";1;"ESP32-WROOM-32D";;;
-28;"J8";"PinHeader_1x03_P2.54mm_Vertical";1;"Endstop UV";;;
-29;"J4";"PinHeader_1x02_P2.54mm_Vertical";1;"TestPins";;;
-30;"J10";"BNC_Amphenol_B6252HB-NPP3G-50_Horizontal";1;"ReferentieProbe";;;
-31;"J7";"PinHeader_1x04_P2.54mm_Vertical";1;"TTL Connector";;;
-32;"J13";"PinHeader_1x02_P2.54mm_Vertical";1;"LED Water Level";;;
-33;"J16";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Pomp3";;;
-34;"J20";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Luchtpomp";;;
-35;"J15";"BNC_Amphenol_B6252HB-NPP3G-50_Horizontal";1;"Voedingsstoffen 1";;;
-36;"J3";"PinHeader_1x04_P2.54mm_Vertical";1;"Height Mixer";;;
-37;"J12";"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal";1;"Pomp2";;;
-38;"J2";"PinHeader_1x04_P2.54mm_Vertical";1;"Height Nutrients";;;
-39;"J19";"BNC_Amphenol_B6252HB-NPP3G-50_Horizontal";1;"Voedingsstoffen 2";;;
-40;"Q1,Q3,Q6,Q4,Q2,Q5,Q7";"SOT-23";7;"BSS138";;;
-41;"D8,D9,D10,D7,D5,D6,D4";"D_0805_2012Metric_Pad1.15x1.40mm_HandSolder";7;"1N4148";;;
-42;"U5";"SOIC-28W_7.5x17.9mm_P1.27mm";1;"MCP23017_SO";;;
-43;"C8";"CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder";1;"22u";;;
-44;"R10,R12";"R_0805_2012Metric_Pad1.20x1.40mm_HandSolder";2;"4.7k";;;
-45;"C9,C5";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";2;"10u";;;
-46;"U4";"SOT-223-3_TabPin2";1;"AMS1117-3.3";;;
-47;"D3";"DIOM5226X290N";1;"SK36A";;;
+Id;Designator;Footprint;Quantity;Designation
+1;J11;PinHeader_1x03_P2.54mm_Vertical;1;Endstop Lade0
+2;J5;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;12V ingang
+3;JP4,JP2,JP1,JP3;SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm;4;SolderJumper_2_Open
+4;J9;PinHeader_1x03_P2.54mm_Vertical;1;Endstop Lade1
+5;SW2;Wurth_Tactile_Switch_SPST-NO_434111043826;1;BOOT
+6;R1,R3,R15,R14;R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;4;470
+7;R4,R6,R5,R7,R2,R13,R11,R9,R8;R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;9;10k
+8;J6;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Pomp1
+9;K1,K3,K7,K4,K6,K5,K2;AHQSS105DM2FA0G;7;AHQSS105DM2FA0G
+10;C4,C3,C14,C13,C12,C11,C10,C6,C7;C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;9;100n
+11;J22;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Mixer
+12;J18;PinHeader_1x06_P2.54mm_Vertical;1;Backup GPIO
+13;J24;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;UV
+14;D1;LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder;1;PWR
+15;D2;LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder;1;LED
+16;H2,H1,H4,H3;MountingHole_3.2mm_M3_Pad_TopBottom;4;MountingHole_Pad
+17;U3;TSSOP-10_3x3mm_P0.5mm;1;ADS1115IDGS
+18;J17;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Pomp4
+19;SW1;Wurth_Tactile_Switch_SPST-NO_434111043826;1;EN
+20;J14;PinHeader_1x02_P2.54mm_Vertical;1;LED Nutrient Level
+21;U1;MP1584_Module;1;MP1584_Module
+22;TP1,TP3,TP4,TP2;TestPoint_Pad_D2.0mm;4;TestPoint
+23;J21;BNC_Amphenol_B6252HB-NPP3G-50_Horizontal;1;Voedingsstoffen 3
+24;J1;PinHeader_1x04_P2.54mm_Vertical;1;Height Water
+25;J23;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;230V
+26;C2,C1;CP_Elec_6.3x3.9;2;100u
+27;U2;ESP32-WROOM-32D;1;ESP32-WROOM-32D
+28;J8;PinHeader_1x03_P2.54mm_Vertical;1;Endstop UV
+29;J4;PinHeader_1x02_P2.54mm_Vertical;1;TestPins
+30;J10;BNC_Amphenol_B6252HB-NPP3G-50_Horizontal;1;ReferentieProbe
+31;J7;PinHeader_1x04_P2.54mm_Vertical;1;TTL Connector
+32;J13;PinHeader_1x02_P2.54mm_Vertical;1;LED Water Level
+33;J16;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Pomp3
+34;J20;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Luchtpomp
+35;J15;BNC_Amphenol_B6252HB-NPP3G-50_Horizontal;1;Voedingsstoffen 1
+36;J3;PinHeader_1x04_P2.54mm_Vertical;1;Height Mixer
+37;J12;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;1;Pomp2
+38;J2;PinHeader_1x04_P2.54mm_Vertical;1;Height Nutrients
+39;J19;BNC_Amphenol_B6252HB-NPP3G-50_Horizontal;1;Voedingsstoffen 2
+40;Q1,Q3,Q6,Q4,Q2,Q5,Q7;SOT-23;7;BSS138
+41;D8,D9,D10,D7,D5,D6,D4;D_0805_2012Metric_Pad1.15x1.40mm_HandSolder;7;1N4148
+42;U5;SOIC-28W_7.5x17.9mm_P1.27mm;1;MCP23017_SO
+43;C8;CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder;1;22u
+44;R10,R12;R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;2;4.7k
+45;C9,C5;C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;2;10u
+46;U4;SOT-223-3_TabPin2;1;AMS1117-3.3
+47;D3;DIOM5226X290N;1;SK36A
