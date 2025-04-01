@@ -51,7 +51,7 @@ mcp23017:
 
 ### ADC ###
 ads1115:
-  - address: 0x48
+  - address: 0x49
 
 
 # OUTPUTS
@@ -162,11 +162,15 @@ sensor:
   # CURRENT SENSOR (FOR POWER CONSUMPTION)
   - platform: adc
     name: "Vermogenverbruik"
-    pin: GPIO34
-    update_interval: 10s
-    filters: # linear regression: I = (V - 2.28) / 0.1704
-      - offset: -2.2845
-      - multiply: 5.86854
+    pin: GPIO35
+    update_interval: 1s
+    samples: 5
+    attenuation: 11db # change range to 0-3.9V
+    filters: # linear regression: I = (V - 2.3363) / 0.1608
+      - clamp:
+          min_value: 2.34
+      - offset: -2.3363
+      - multiply: 6.2189
       # Multiply by voltage to get power consumption
       - multiply: 12
     unit_of_measurement: "W"
