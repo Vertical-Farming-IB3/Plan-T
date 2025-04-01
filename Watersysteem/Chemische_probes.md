@@ -31,3 +31,49 @@ Dit komt overeen met de onderstaande concentraties. Hiermee kalibreren we onze s
 | NO₃⁻  | NaNO₃         | 799        | 959          | 1598        |
 | Ca²⁺  | Ca(NO₃)₂4H₂O | 100        | 200          | 400         |
 | K⁺    | KOH          | 102        | 203          | 406         |
+
+
+## Kalibratie per Sensor
+
+De sensoren werden uitgelezen na enige tijd ondergedompeld te zijn in de kalibratievloeistoffen. We maten pas deze uitgansspanning nadat de meetwaarde gestabiliseerd werd.
+
+### Kalibratie van de K⁺-sensor
+
+| K⁺ Concentratie (mg/l) | Gemeten Spanning (V) |
+|------------------------|----------------------|
+| 406                    | 0.102                |
+| 203                    | 0.093                |
+| 102                    | 0.083                |
+
+![Kalibratie K⁺-sensor](assets/Kalibratie_Kalium.png)
+
+Na zo'n tien tot twintig seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
+
+### Kalibratie van de Ca²⁺-sensor
+
+| Ca²⁺ Concentratie (mg/l) | Gemeten Spanning (V) |
+|--------------------------|----------------------|
+| 400                      | 0.044                |
+| 200                      | 0.038                |
+| 100                      | 0.032                |
+
+![Kalibratie Ca²⁺-sensor](assets/Kalibratie_Calcium.png)
+
+Na zo'n tien seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
+
+### Kalibratie van de NO₃⁻-sensor
+
+| NO₃⁻ Concentratie (mg/l) | Gemeten Spanning (V) |
+|--------------------------|----------------------|
+| 1598                     | 0.027                |
+| 959                      | 0.013                |
+| 799                      | 0.027                |
+
+![Kalibratie NO₃⁻-sensor](assets/Kalibratie_Nitraat.png)
+
+De kalibratie van nitraat werd tweemaal nagemeten, we verkregen echter geen interpreteerbare metingen. We vermoeden dat de probe kapot is, vorig jaar werd hier echter wel een logaritmisch verband gevonden.
+
+
+## Uitmeten van de voedingsstoffen
+
+Wanneer we het systeem volledig uittesten (vermoedelijk na de paasvakantie) zullen we de nutriëntverhouding kunnen uitmeten van de voedingsstoffen. Deze voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
