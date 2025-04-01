@@ -1,3 +1,5 @@
+![Repository Icon](assets/icon.jpg)
+
 # Plan-T 🌱  
 [Bezoek onze website](https://vertical-farming-ib3.github.io/)
 
