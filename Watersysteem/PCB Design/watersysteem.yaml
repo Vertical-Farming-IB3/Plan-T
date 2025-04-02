@@ -135,30 +135,41 @@ sensor:
     name: "Hoogte Nutriënten"
     trigger_pin: GPIO26
     echo_pin: GPIO25
-    update_interval: 30s
+    update_interval: 1s
   - platform: ultrasonic
     name: "Hoogte Water"
     trigger_pin: GPIO33
     echo_pin: GPIO32
-    update_interval: 30s
+    update_interval: 1s
   - platform: ultrasonic
     name: "Hoogte mixer"
     trigger_pin: GPIO14
     echo_pin: GPIO27
-    update_interval: 5s
+    update_interval: 1s
   # ANALOG PROBES
   - platform: ads1115
-    name: "Nutriënten 1"
+    name: "Kalium Nutriënten" # Nutriënten 1
     multiplexer: A2_A3
-    gain: 0.512 # meausures up to 0.512V (see documentation), possibly change to 1.024 for double the range
+    gain: 0.256 # meausures up to 0.256V (see documentation)
+    update_interval: 5s
+    filters: # y=0.0138ln(x)+0,0196
+      - lambda: |-
+          return exp((x - 0.0196) / 0.0138);
+    unit_of_measurement: "g/l"
   - platform: ads1115
-    name: "Nutriënten 2"
+    name: "Calcium Nutriënten" # Nutriënten 2
     multiplexer: A1_A3
-    gain: 0.512
-  - platform: ads1115
-    name: "Nutriënten 3"
-    multiplexer: A0_A3
-    gain: 0.512
+    gain: 0.256
+    update_interval: 5s
+    filters: # y=0.0087ln(x)-0.0079
+      - lambda: |-
+          return exp((x + 0.0079) / 0.0087);
+    unit_of_measurement: "g/l"
+  #- platform: ads1115
+  #  name: "Nutriënten 3" # Nutriënten 3
+  #  multiplexer: A0_A3
+  #  gain: 0.256
+  #  update_interval: 5s
   # CURRENT SENSOR (FOR POWER CONSUMPTION)
   - platform: adc
     name: "Vermogenverbruik"
