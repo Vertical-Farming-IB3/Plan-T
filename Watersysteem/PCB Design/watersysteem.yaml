@@ -62,7 +62,8 @@ switch:
     pin: GPIO2
   # WATER LED
   - platform: gpio
-    name: "Water LED"
+    name: "Status LED Rood"
+    inverted: True
     pin:
       mcp23xxx: expander
       number: 7 #A7
@@ -70,7 +71,8 @@ switch:
         output: True
   # NUTRIENTS LED
   - platform: gpio
-    name: "Nutriënten LED"
+    name: "Status LED Geel"
+    inverted: True
     pin:
       mcp23xxx: expander
       number: 8 #B0
@@ -92,35 +94,35 @@ switch:
       mode:
         output: True
   - platform: gpio
-    name: "Relais Luchtpomp"
+    name: "Luchtpomp"
     pin:
       mcp23xxx: expander
       number: 2 #A2
       mode:
         output: True
   - platform: gpio
-    name: "Relais pomp 1"
+    name: "Pomp bak links"
     pin:
       mcp23xxx: expander
       number: 6 #A6
       mode:
         output: True
   - platform: gpio
-    name: "Relais pomp 2"
+    name: "Pomp bak midden"
     pin:
       mcp23xxx: expander
       number: 5 #A5
       mode:
         output: True
   - platform: gpio
-    name: "Relais pomp 3"
+    name: "Pomp lade voorkant"
     pin:
       mcp23xxx: expander
       number: 4 #A4
       mode:
         output: True
   - platform: gpio
-    name: "Relais pomp 4"
+    name: "Pomp lade achterkant"
     pin:
       mcp23xxx: expander
       number: 3 #A3
