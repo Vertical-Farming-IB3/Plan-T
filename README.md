@@ -9,5 +9,6 @@
 - [Team licht](./Licht)
 - [Logboek](./Log)
 - [Power](./Power)  
-- [Licht](./Licht)  
+- [Licht](./Licht) 
 
+[Link](https://github.com/Vertical-Farming-IB3/vertical-farming-ib3.github.io/tree/main) naar repo voor website.
