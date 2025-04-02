@@ -5352,46 +5352,6 @@
 		)
 		(uuid "52fe7757-3db1-48a3-8774-bbf615760754")
 	)
-	(text_box "Plaats zo ver mogelijk van ESP op PCB"
-		(exclude_from_sim no)
-		(at 264.16 68.58 0)
-		(size 15.24 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5cfc2d41-d741-431e-b1af-68c1037a416f")
-	)
-	(text_box "Leds correct polariseren!\n(aanduiden op pcb)"
-		(exclude_from_sim no)
-		(at 38.1 152.4 0)
-		(size 21.59 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "62fd96cf-26d5-4838-98ca-d45c208e1ccb")
-	)
 	(junction
 		(at 72.39 177.8)
 		(diameter 0)
@@ -11482,7 +11442,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "100"
 			(at 67.31 143.5099 0)
 			(effects
 				(font
@@ -11683,7 +11643,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "100"
 			(at 36.83 143.5099 0)
 			(effects
 				(font
