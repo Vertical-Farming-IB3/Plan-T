@@ -71,7 +71,7 @@ switch:
         output: True
   # NUTRIENTS LED
   - platform: gpio
-    name: "Status LED Geel"
+    name: "Status LED Groen"
     inverted: True
     pin:
       mcp23xxx: expander
@@ -80,14 +80,14 @@ switch:
         output: True
   # RELAYS
   - platform: gpio
-    name: "Relais Mixer"
+    name: "Mixer"
     pin:
       mcp23xxx: expander
       number: 0 #A0
       mode:
         output: True
   - platform: gpio
-    name: "Relais UV lamp"
+    name: "UV lamp"
     pin:
       mcp23xxx: expander
       number: 1 #A1
@@ -101,14 +101,14 @@ switch:
       mode:
         output: True
   - platform: gpio
-    name: "Pomp bak links"
+    name: "Pomp water"
     pin:
       mcp23xxx: expander
       number: 6 #A6
       mode:
         output: True
   - platform: gpio
-    name: "Pomp bak midden"
+    name: "Pomp voedingsstoffen"
     pin:
       mcp23xxx: expander
       number: 5 #A5
@@ -138,35 +138,49 @@ sensor:
     trigger_pin: GPIO26
     echo_pin: GPIO25
     update_interval: 1s
+    #filters:
+    #- lambda: |- # 0.23 = 100%, 0.3 = 0%
+    #    return (x - 0.3) * (100.0 - 0.0) / (0.23 - 0.3) + 0.0;
+    #unit_of_measurement: "%"
+
   - platform: ultrasonic
     name: "Hoogte Water"
     trigger_pin: GPIO33
     echo_pin: GPIO32
     update_interval: 1s
+    filters:
+    - lambda: |- # 0.23 = 100%, 0.3 = 0%
+        return (x - 0.3) * (100.0 - 0.0) / (0.23 - 0.3) + 0.0;
+    unit_of_measurement: "%"
   - platform: ultrasonic
     name: "Hoogte mixer"
     trigger_pin: GPIO14
     echo_pin: GPIO27
     update_interval: 1s
+    filters:
+    - lambda: |- # 0.04 = 100%, 0.13 = 0%
+        return (x - 0.13) * 100.0 / (0.04 - 0.13);
+    unit_of_measurement: "%"
+
   # ANALOG PROBES
   - platform: ads1115
-    name: "Kalium Nutriënten" # Nutriënten 1
+    name: "Nutriënten Kalium" # Nutriënten 1
     multiplexer: A2_A3
     gain: 0.256 # meausures up to 0.256V (see documentation)
     update_interval: 5s
     filters: # y=0.0138ln(x)+0,0196
       - lambda: |-
           return exp((x - 0.0196) / 0.0138);
-    unit_of_measurement: "g/l"
+    unit_of_measurement: "mg/l"
   - platform: ads1115
-    name: "Calcium Nutriënten" # Nutriënten 2
+    name: "Nutriënten Calcium" # Nutriënten 2
     multiplexer: A1_A3
     gain: 0.256
     update_interval: 5s
     filters: # y=0.0087ln(x)-0.0079
       - lambda: |-
           return exp((x + 0.0079) / 0.0087);
-    unit_of_measurement: "g/l"
+    unit_of_measurement: "mg/l"
   #- platform: ads1115
   #  name: "Nutriënten 3" # Nutriënten 3
   #  multiplexer: A0_A3
