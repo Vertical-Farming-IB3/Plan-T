@@ -77,3 +77,11 @@ De kalibratie van nitraat werd tweemaal nagemeten, we verkregen echter geen inte
 ## Uitmeten van de voedingsstoffen
 
 Wanneer we het systeem volledig uittesten (vermoedelijk na de paasvakantie) zullen we de nutriëntverhouding kunnen uitmeten van de voedingsstoffen. Deze voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
+
+kraantjeswater
+200mg/l Calcium
+1300mg/l Kalium
+
+1/10 oplossing van voedingsstoffen
+3mg/l Calcium
+7000mg/l Kalium
