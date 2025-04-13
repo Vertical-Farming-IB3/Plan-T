@@ -43,7 +43,7 @@
 -	Nagemeten kapotte probe
 -	Test op lekkages + lekken opgelost
 -	Waterproofen
--	Hoogtesensoren verbonden en gekalibreerd
+-	Hoogtesensoren aangesloten en gekalibreerd
 -	Houder voor middelste hoogtesensor ontworpen
 -	Kabels in hulzen gestoken
 -	Kraantjeswater en voedingsstoffen uitgemeten
@@ -60,9 +60,9 @@
 ### 📅 01-04-2025:
 ##### Team Water: 
 -	Chemische probes gekalibreerd
--	Stroomsensor geherkalibreerd
+-	Stroomsensor gekalibreerd
 -	Documentatie kalibraties op Github aangevuld
--	Probes, pompjes, tubes gemonteerd en verbonden
+-	Probes, pompjes, tubes gemonteerd en aangesloten
 -	Hoogtesensoren gemonteerd
 -	Afvoeren in plantenlades bevestigd
 -	Kast verder bijgewerkt
@@ -105,7 +105,7 @@
 ##### Team Plantenbak: 
 Naar de Action om verf, borstels en andere benodigdheden. 
 ##### Team Water: 
-- Kallibratie van de ion-sensoren nagekeken.
+- Kalibratie van de ion-sensoren nagekeken.
 - YAML-code afgewerkt
 -	Afgewerkt kastframe met team plantenbak
 - Stroomsensoren
@@ -229,14 +229,14 @@ We stelden onze vooruitgang voor en vergaarden feedback in onze **ClickUp notiti
 Wachtende op onze **PCB's** hebben we:
 - Een planning gemaakt
 - Een taakverdeling gemaakt
-Er is beslist om, voor een efficiente realisatie van het project, een aantal gespecialiseerde teams op te delen.
-Nl. een team plantenbak (sensoren bij de planten), water (toe-en afvoer), licht (groeilampen) en power (centrale voeding).
+Er is beslist om, voor een efficiënte realisatie van het project, een aantal gespecialiseerde teams op te delen.
+Nl. een team plantenbak (sensoren bij de planten), water (toe- en afvoer), licht (groeilampen) en power (centrale voeding).
 Het integreren zal dan met alle groepen samen gebeuren.
 
 ---
 
 ### 📅 22-10-2024: Werken aan het oude systeem ⚙️
-We verzamelden om het vorige systeem te **analyzeren en herstarten**.
+We verzamelden om het vorige systeem te **analyseren en herstarten**.
 
 #### 🔌 Opstarten van het systeem
 Gebruik makende van [deze handleiding](https://verticalfarmib3.github.io/inhoud/operation/), hebben we alles ingeschakeld:
@@ -253,7 +253,7 @@ Gebruik makende van [deze handleiding](https://verticalfarmib3.github.io/inhoud/
 5. Installeren van het **aluminum frame**.
 
 #### 🌱 Nieuwe zaadjes
-We plantte verze zaadjes:
+We plantten verse zaadjes:
 - Basilicum
 - Dille
 - Bieslook
@@ -261,14 +261,14 @@ We plantte verze zaadjes:
 - Peterselie
 - Afrikaanse goudsbloemen
 
-📌 **Geupdated lichttiming**: **08:00 - 20:00**
-📌 **Geupdated ventilatortiming**: **5 minuten elke 30 minuten**
+📌 **Geüpdatet lichttiming**: **08:00 - 20:00**
+📌 **Geüpdatet ventilatortiming**: **5 minuten elke 30 minuten**
 
 #### ❌ Gevonden problemen
 - ⚠️ De mixer werkt slechts **enkele seconden** aan een stuk.
 - ⚠️ **De drainage verstopt** door de rotswol.
-- ⚠️ **Hetelijm was gebruikt** in de plaats van waterbestendige silicone.
-- ⚠️ **Hoge opstartstroom** zorgt voor het aan elkaar lassen van de relayscontacten.
+- ⚠️ **Hete lijm was gebruikt** in de plaats van waterbestendige silicone.
+- ⚠️ **Hoge opstartstroom** zorgt voor het aan elkaar lassen van de relaiscontacten.
 - ⚠️ **Kapotte vochtsensoren** leiden tot overbewatering en lekken.
 
 ---
@@ -285,7 +285,7 @@ We mikken op het **ontwerpen van een huisvriendelijke vertical farm**, geen indu
 - **Lade gebaseerd systeem** in een andere lade.
 - **Sensoren geconnecteerd via de I2C bus**. <!---->
 - **Gemeenschappelijke voedingsmodule** voor alle modules.
-- **Plug & Play systeem** voor een makkelijke setup.
+- **Plug-and-Play-systeem** voor een makkelijke setup.
 
 #### 📅 Doel van de volgende sessie
 - Het opstarten van het oude systeem.
