@@ -10,4 +10,4 @@ Plan-T is een vertical farming (VF) project met hydroponics, gericht op het duur
 - [Logboek](./Log)
 
 [Bezoek onze website,](https://vertical-farming-ib3.github.io/)
-[En zijn repository.](https://github.com/Vertical-Farming-IB3/vertical-farming-ib3.github.io/tree/main)
+[en zijn repository.](https://github.com/Vertical-Farming-IB3/vertical-farming-ib3.github.io/tree/main)
