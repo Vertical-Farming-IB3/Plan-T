@@ -88,7 +88,7 @@
 
 ---
 
-### 📅 21-03-2025: Een kast om in te werken
+### 📅 21-03-2025: Een kast om in te werken :fireworks:
 ##### Team Water: 
 -	Kast afgewerkt met team licht
 -	Kast verplaatst naar B225
@@ -101,7 +101,7 @@
 
 ---
 
-### 📅 18-03-2025: De echte constructie komt dichterbij!
+### 📅 18-03-2025: De echte constructie komt dichterbij! :hammer:
 ##### Team Plantenbak: 
 Naar de Action om verf, borstels en andere benodigdheden. 
 ##### Team Water: 
@@ -114,7 +114,7 @@ Naar de Action om verf, borstels en andere benodigdheden.
 
 ---
 
-### 📅 15-03-2025: Wachten op bestellingen & voorbereiden opendeurdag
+### 📅 15-03-2025: Wachten op bestellingen & voorbereiden opendeurdag :school:
 Met de meeste componenten besteld en Mr. Coppens die aan de kast werkt, werken wij aan:
 - Het testen van sensoren, ESP's en YAML-code.
 - Het zoeken naar bijkomende materialen: witte verf, verfborstels, kokosvezels, etc.
