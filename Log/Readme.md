@@ -1,14 +1,101 @@
 # 🌱 Vertical Farm Project "Plan-T" Logboek
 
+<!-- Beetje kijken met alle groepen hoe we de planning etc doen -->
+
+## 📅 12-05-2025:
+- **Team Water**: 
+
+---
+
+## 📅 06-05-2025: 
+- **Team Water**: 
+
+---
+
+## 📅 29-04-2025:
+- **Team Water**: 
+
+---
+
+## 📅 22-04-2025:
+- **Team Water**: 
+
+---
+
+## 📅 07-04-2025 tot 20-04-2025:
+- **Team Water**: 
+-	Verder gewerkt aan afvoer: montage + boren regenpijp
+-	Gekeken naar buitenkast
+-	Nagemeten kapotte probe
+-	Test op lekkages + lekken opgelost
+-	Waterproofen
+-	Hoogtesensoren verbonden en gekalibreerd
+-	Houder voor middelste hoogtesensor ontworpen
+-	Kabels in hulzen gestoken
+-	Kraantjeswater en voedingsstoffen uitgemeten
+-	Reservoirs gevuld, pompjes getest, mixer getest, circulatie getest
+
+---
+
+## 📅 04-04-2025:
+- **Team Water**: 
+-	Nagekeken realisatie buitenkast
+
+---
+
+## 📅 01-04-2025:
+- **Team Water**: 
+-	Chemische probes gekalibreerd
+-	Stroomsensor geherkalibreerd
+-	Documentatie kalibraties op Github aangevuld
+-	Probes, pompjes, tubes gemonteerd en verbonden
+-	Hoogtesensoren gemonteerd
+-	Afvoeren in plantenlades bevestigd
+-	Kast verder bijgewerkt
+
+---
+
+## 📅 26-03-2025: 
+- **Team Water**: 
+-	Ultrasone sensor houders
+-	PCB programmeren en verbinden met HomeAssistant
+
+---
+
+## 📅 25-03-2025:
+- **Team Water**: 
+-	Verder gewerkt aan kast (indeling uitgewerkt, laden gerepareerd, …)
+-	Materiaal gekocht in de Gamma
+-	Oude profielen uit elkaar gehaald en nieuwe profielen in elkaar gezet
+-	Plantenbakken hellend gemaakt
+-	Uitgedacht la layout …
+-	PCB gesoldeerd
+-	Probehouder ontworpen en geprint
+
+---
+
+## 📅 21-03-2025:
+- **Team Water**: 
+-	Kast afgewerkt met team licht
+-	Kast verplaatst naar B225
+
+---
+
+## 📅 20-03-2025:
+- **Team Water**: 
+-	Chemie: kalibratievloeistoffen gemaakt
+
+---
+
 ## 📅 18-03-2025: De echte constructie komt dichterbij!
 - **Team Plantenbak**: 
 Naar de Action om verf, borstels en andere benodigdheden. 
 - **Team Water**: 
-Kallibratie van de ion-sensoren nagekeken.
-YAML-code afgewerkt
+- Kallibratie van de ion-sensoren nagekeken.
+- YAML-code afgewerkt
+-	Afgewerkt kastframe met team plantenbak
+- Stroomsensoren
 - **Team Licht**: 
-
-<!-- Eerst vertalen, dan aanvullen, bewerken-->
 
 ---
 
@@ -17,14 +104,33 @@ Met de meeste componenten besteld en Mr. Coppens die aan de kast werkt, werken w
 - Het testen van sensoren, ESP's en YAML-code.
 - Het zoeken naar bijkomende materialen: witte verf, verfborstels, kokosvezels, etc.
 
+- **Team Water**: 
+-	Lamp testen 
+-	Bekijken wat nodig voor chemie
+-	Verder werken aan YAML-code voor elektronica
+
+---
+
+## 📅 13-03-2025:
+- **Team Water**: 
+-	Overleg met chemie (meneer De Vreese)
+
 ---
 
 ## 📅 11-03-2025: PCB's besteld! 🎉
 De PCB's zijn besteld bij **PCBWay**.
 
+- **Team Water**: 
+-	UV-lamp testen, elektronische componenten testen
+-	Elektronische componenten testen
+-	PCB-componenten gecontroleerd en PCB besteld
+-	Pinout voor PCB beschreven
+-	YAML voor watersysteem gestart
+-	Gewerkt aan opbouw kast met team plantenbak
+
 ---
 
-## 📅 06-03-2025: Eerste zaaisel! 🌱
+## 📅 06-03-2025: Eerste zaaisel! 🌱  <!-- 06/03 of 04/03? -->
 We zaaiden onze eerste zaadjes als een referentie, of misschien wel om ze binnenkort in onze werkende vertical farm te verpotten! 
 ### 🌿 Geplant:
 - Basilicum
@@ -37,6 +143,15 @@ Bijkomend hebben we, **de oude constructie afgebroken**.
 
 ---
 
+## 📅 04-03-2025:
+- **Team Water**: 
+-	Elektrisch schema afgemaakt
+-	PCB maken gestart
+-	Afbreken en recycleren oud systeem met team plantenbak
+-	Bedrijfsbezoek Citymesh
+
+---
+
 ## 📅 25-02-2025: Eerste bestelling geplaatst! 🛒
 We bestelden meerdere benodigde componenenten voor onze constructie.
 ### 📦 Gebruikte websites:
@@ -46,7 +161,35 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 - PCBWay
 - AliExpress
 
+- **Team Water**: 
+-	Elektrisch schema verder afwerken
+-	Componenten besteld
+-	Bedrijfsbezoek Colruyt
+
 ---
+
+## 📅 18-02-2025:
+- **Team Water**: 
+-	Afronden bestellijst en opsturen 
+-	Voeding voor elektronica bepaald
+-	Onderzoek naar ADC voor de chemische probes
+-	Start elektrisch schema PCB
+-	Volgens mij was hier afwerken planning...
+-	Uitwerken toevoer/afvoer
+
+---
+
+## 📅 11-02-2025:
+- **Team Water**: 
+-	Teamverdeling schakels (+ herverdeling) + inlichten
+-	Opstellen taakverdeling
+-	Afwerken planning 
+-	Besluiten welk systeem te gebruiken 
+-	Bestellijst aanvullen
+
+---
+
+<!-- Dit lijkt een deel appart -->
 
 ## 📅 Eerste maand van de tweede semester: De voorbereiding begint
 Iedere groep (Team Plantenbak, Team Licht, Team Water) zijn begonnen met onderzoek en het ontwerpen van hun systemen. 
@@ -68,8 +211,6 @@ Wachtende op onze **PCB's** hebben we:
 
 ## 📅 22-10-2024: Werken aan het oude systeem ⚙️
 We verzamelden om het vorige systeem te **analyzeren en herstarten**.
-
-<!-- Dit lijkt een deel appart -->
 
 ### 🔌 Opstarten van het systeem
 Gebruik makende van [deze handleiding](https://verticalfarmib3.github.io/inhoud/operation/), hebben we alles ingeschakeld:
