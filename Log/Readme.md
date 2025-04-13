@@ -98,15 +98,15 @@
 ---
 
 ### 📅 18-03-2025: De echte constructie komt dichterbij!
-- **Team Plantenbak**: 
+##### Team Plantenbak: 
 Naar de Action om verf, borstels en andere benodigdheden. 
 ##### Team Water: 
 - Kallibratie van de ion-sensoren nagekeken.
 - YAML-code afgewerkt
 -	Afgewerkt kastframe met team plantenbak
 - Stroomsensoren
-- **Team Licht**: 
-- **Team Power**: 
+##### Team Licht: 
+##### Team Power: 
 
 ---
 
