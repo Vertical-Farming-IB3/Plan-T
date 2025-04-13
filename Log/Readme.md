@@ -2,6 +2,14 @@
 
 <!-- Beetje kijken met alle groepen hoe we de planning etc doen -->
 
+<!-- Ik zou toch ook de datums omdraaien, maakt het iets makkelijker om secties te implementeren zoals sem 1 en sem 2 -->
+
+---
+
+# Sem 2: Praktische fase
+
+---
+
 ## 📅 12-05-2025:
 - **Team Water**: 
 
@@ -22,7 +30,7 @@
 
 ---
 
-## 📅 07-04-2025 tot 20-04-2025:
+## 📅 07-04-2025 tot 20-04-2025: Paasvakantie :egg::rabbit2:
 - **Team Water**: 
 -	Verder gewerkt aan afvoer: montage + boren regenpijp
 -	Gekeken naar buitenkast
@@ -74,7 +82,7 @@
 
 ---
 
-## 📅 21-03-2025:
+## 📅 21-03-2025: Een kast om in te werken
 - **Team Water**: 
 -	Kast afgewerkt met team licht
 -	Kast verplaatst naar B225
@@ -189,11 +197,13 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 
 ---
 
-<!-- Dit lijkt een deel appart -->
-
-## 📅 Eerste maand van de tweede semester: De voorbereiding begint
+## 📅 Eerste maand van de tweede semester: De voorbereiding begint  <!-- Komt overeen met de 11/02 - 04/03 zou het wel opsplitsen onder meer door de bedrijfsbezoeken -->
 Iedere groep (Team Plantenbak, Team Licht, Team Water) zijn begonnen met onderzoek en het ontwerpen van hun systemen. 
 - We **hergebruikten zoveel mogelijk componenten** van de oude constructie.
+
+---
+
+# Sem 1: Voorbereidende fase
 
 ---
 
@@ -206,6 +216,9 @@ We stelden onze vooruitgang voor en vergaarden feedback in onze **ClickUp notiti
 Wachtende op onze **PCB's** hebben we:
 - Een planning gemaakt
 - Een taakverdeling gemaakt
+Er is beslist om, voor een efficiente realisatie van het project, een aantal gespecialiseerde teams op te delen.
+Nl. een team plantenbak (sensoren bij de planten), water (toe-en afvoer), licht (groeilampen) en power (centrale voeding).
+Het integreren zal dan met alle groepen samen gebeuren.
 
 ---
 
