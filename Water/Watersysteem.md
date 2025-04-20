@@ -4,9 +4,10 @@
 
 Het systeem bestaat uit onderstaande componenten, aan elkaar gekoppeld:
 
+## Componenten 
 - **Reservoirs**:
 1 waterreservoir, 1 voedingsstofreservoir en 1 mengreservoir. Uiteindelijk wordt het gerecycleerde water uit het systeem teruggebracht in dit waterreservoir.  
-Het water- en voedingsstofreservoir worden aangevuld door een klep te openen aan de kast. We hebben voor elk reservoir een ultrasone sensor om de hoogte van de vloeistof op te meten.
+Het water- en voedingsstofreservoir kunnen uitgehaald worden en zo eenvoudig aangevuld worden. We hebben voor elk reservoir een [ultrasone sensor](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf) om de hoogte van de vloeistof op te meten.
 We hebben ook luchtpompen in de water- en voedingsstofreservoir om de vloeistoffen te circuleren om zo de groei van algen tegen te houden.
 Het mengreservoir bevat ook sensoren om de concentratie van voedingsstoffen op te meten en een mixer om zo het vloeistof te mengen.
 

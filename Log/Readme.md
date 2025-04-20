@@ -65,7 +65,8 @@
 -	Probes, pompjes, tubes gemonteerd en aangesloten
 -	Hoogtesensoren gemonteerd
 -	Afvoeren in plantenlades bevestigd
--	Kast verder bijgewerkt
+-	Pompen aangesloten 
+- Buizen leggen voor de toevoer
 
 ---
 
@@ -162,6 +163,7 @@ Bijkomend hebben we, **de oude constructie afgebroken**.
 ##### Team Water: 
 -	Elektrisch schema afgemaakt
 -	PCB maken gestart
+- Binnenkast opouwen  
 -	Afbreken en recycleren oud systeem met team plantenbak
 -	Bedrijfsbezoek Citymesh
 
@@ -178,6 +180,8 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 
 ##### Team Water: 
 -	Elektrisch schema verder afwerken
+- Water schema afwerken
+- Start binenkast
 -	Componenten besteld
 -	Bedrijfsbezoek Colruyt
 
@@ -189,7 +193,7 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 -	Voeding voor elektronica bepaald
 -	Onderzoek naar ADC voor de chemische probes
 -	Start elektrisch schema PCB
--	Volgens mij was hier afwerken planning...
+-	Afwerken planning + indienen
 -	Uitwerken toevoer/afvoer
 
 ---
@@ -204,7 +208,7 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 
 ---
 
-### 📅 Eerste maand van de tweede semester: De voorbereiding begint  <!-- Komt overeen met de 11/02 - 04/03 zou het wel opsplitsen onder meer door de bedrijfsbezoeken -->
+### 📅 Eerste maand van het tweede semester: De voorbereiding begint  <!-- Komt overeen met de 11/02 - 04/03 zou het wel opsplitsen onder meer door de bedrijfsbezoeken -->
 Iedere groep (Team Plantenbak, Team Licht, Team Water) zijn begonnen met onderzoek en het ontwerpen van hun systemen. 
 - We **hergebruikten zoveel mogelijk componenten** van de oude constructie.
 
