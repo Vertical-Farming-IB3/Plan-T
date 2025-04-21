@@ -38,14 +38,14 @@
 
 ### 📅 07-04-2025 tot 20-04-2025: Paasvakantie :egg::rabbit2:
 ##### Team Water: 
--	Verder gewerkt aan afvoer: montage + boren regenpijp
+- Verder gewerkt aan afvoer: montage + boren regenpijp
 -	Gekeken naar buitenkast
 -	Nagemeten kapotte probe
 -	Test op lekkages + lekken opgelost
 -	Waterproofen
 -	Hoogtesensoren aangesloten en gekalibreerd
 -	Houder voor middelste hoogtesensor ontworpen
--	Kabels in hulzen gestoken
+-	Kabels in hulzen gestoken <!-- Hulzen? -->
 -	Kraantjeswater en voedingsstoffen uitgemeten
 -	Reservoirs gevuld, pompjes getest, mixer getest, circulatie getest
 
@@ -72,7 +72,7 @@
 
 ### 📅 26-03-2025: 
 ##### Team Water: 
--	Ultrasone sensor houders
+-	Ultrasone sensorhouders ontworpen en geprint
 -	PCB programmeren en verbinden met HomeAssistant
 
 ---
@@ -83,8 +83,8 @@
 -	Materiaal gekocht in de Gamma
 -	Oude profielen uit elkaar gehaald en nieuwe profielen in elkaar gezet
 -	Plantenbakken hellend gemaakt
--	Uitgedacht la layout …
--	PCB gesoldeerd
+-	Indeling uitgedacht van de la 
+-	PCB's gesoldeerd
 -	Probehouder ontworpen en geprint
 
 ---
@@ -121,9 +121,9 @@ Met de meeste componenten besteld en Mr. Coppens die aan de kast werkt, werken w
 - Het zoeken naar bijkomende materialen: witte verf, verfborstels, kokosvezels, etc.
 
 ##### Team Water: 
--	Lamp testen 
+-	UV-C Lamp testen 
 -	Bekijken wat nodig voor chemie
--	Verder werken aan YAML-code voor elektronica
+-	Verder werken aan YAML-code
 
 ---
 
@@ -137,7 +137,6 @@ Met de meeste componenten besteld en Mr. Coppens die aan de kast werkt, werken w
 De PCB's zijn besteld bij **PCBWay**.
 
 ##### Team Water: 
--	UV-lamp testen, elektronische componenten testen
 -	Elektronische componenten testen
 -	PCB-componenten gecontroleerd en PCB besteld
 -	Pinout voor PCB beschreven
@@ -170,7 +169,7 @@ Bijkomend hebben we, **de oude constructie afgebroken**.
 ---
 
 ### 📅 25-02-2025: Eerste bestelling geplaatst! 🛒
-We bestelden meerdere benodigde componenenten voor onze constructie.
+We bestelden meerdere benodigde componenten voor onze constructie.
 #### 📦 Gebruikte websites:
 - Mouser
 - RS Components
@@ -181,7 +180,7 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 ##### Team Water: 
 -	Elektrisch schema verder afwerken
 - Water schema afwerken
-- Start binenkast
+- Start binnenkast
 -	Componenten besteld
 -	Bedrijfsbezoek Colruyt
 
@@ -190,7 +189,7 @@ We bestelden meerdere benodigde componenenten voor onze constructie.
 ### 📅 18-02-2025:
 ##### Team Water: 
 -	Afronden bestellijst en opsturen 
--	Voeding voor elektronica bepaald
+-	Voeding bepaald
 -	Onderzoek naar ADC voor de chemische probes
 -	Start elektrisch schema PCB
 -	Afwerken planning + indienen
