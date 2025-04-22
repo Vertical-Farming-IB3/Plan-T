@@ -38,6 +38,10 @@ web_server:
   port: 80
   version: 3
 
+# status LED
+status_led:
+  pin: GPIO2
+
 # Setup I2C for communication
 i2c:
   sda: GPIO18
@@ -57,9 +61,9 @@ ads1115:
 # OUTPUTS
 switch:
   # ONBOARD LED
-  - platform: gpio
-    name: "Onboard LED"
-    pin: GPIO2
+  #- platform: gpio
+  #  name: "Onboard LED"
+  #  pin: GPIO2
   # WATER LED
   - platform: gpio
     name: "Status LED Rood"
@@ -138,10 +142,10 @@ sensor:
     trigger_pin: GPIO26
     echo_pin: GPIO25
     update_interval: 1s
-    #filters:
-    #- lambda: |- # 0.23 = 100%, 0.3 = 0%
-    #    return (x - 0.3) * (100.0 - 0.0) / (0.23 - 0.3) + 0.0;
-    #unit_of_measurement: "%"
+    filters:
+    - lambda: |- # 0.04 = 100%, 0.145 = 0%
+        return (x - 0.145) * (100.0 - 0.0) / (0.04 - 0.145) + 0.0;
+    unit_of_measurement: "%"
 
   - platform: ultrasonic
     name: "Hoogte Water"
@@ -149,8 +153,8 @@ sensor:
     echo_pin: GPIO32
     update_interval: 1s
     filters:
-    - lambda: |- # 0.23 = 100%, 0.3 = 0%
-        return (x - 0.3) * (100.0 - 0.0) / (0.23 - 0.3) + 0.0;
+    - lambda: |- # 0.04 = 100%, 0.14 = 0%
+        return (x - 0.145) * (100.0 - 0.0) / (0.04 - 0.145) + 0.0;
     unit_of_measurement: "%"
   - platform: ultrasonic
     name: "Hoogte mixer"
@@ -168,19 +172,19 @@ sensor:
     multiplexer: A2_A3
     gain: 0.256 # meausures up to 0.256V (see documentation)
     update_interval: 5s
-    filters: # y=0.0138ln(x)+0,0196
-      - lambda: |-
-          return exp((x - 0.0196) / 0.0138);
-    unit_of_measurement: "mg/l"
+#    filters: # y=0.0138ln(x)+0,0196
+#      - lambda: |-
+#          return exp((x - 0.0196) / 0.0138);
+#    unit_of_measurement: "mg/l"
   - platform: ads1115
     name: "Nutriënten Calcium" # Nutriënten 2
     multiplexer: A1_A3
     gain: 0.256
     update_interval: 5s
-    filters: # y=0.0087ln(x)-0.0079
-      - lambda: |-
-          return exp((x + 0.0079) / 0.0087);
-    unit_of_measurement: "mg/l"
+#    filters: # y=0.0087ln(x)-0.0079
+#      - lambda: |-
+#          return exp((x + 0.0079) / 0.0087);
+#    unit_of_measurement: "mg/l"
   #- platform: ads1115
   #  name: "Nutriënten 3" # Nutriënten 3
   #  multiplexer: A0_A3
