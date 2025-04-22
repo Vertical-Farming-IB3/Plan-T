@@ -33,7 +33,11 @@
 
 ### 📅 22-04-2025:
 ##### Team Water: 
-
+- Site verder afwerken
+- Power aansluiten pcb water
+- Buitenkast
+- Automatisatie schrijven
+- Bakken uitkuisen 
 ---
 
 ### 📅 07-04-2025 tot 20-04-2025: Paasvakantie :egg::rabbit2:
