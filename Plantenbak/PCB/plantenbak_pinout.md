@@ -32,8 +32,13 @@
 - GPIO35
 - VCC (3.3V)
 - GND
-  
 
+## BH1750 lichtmeter
+- I²C: GPIO21 en 22
+- VCC (3.3V)
+- GND
+- PULL DOWN
+  
 # Bak 2: drip hydroponics
 
 ## Onboard led:
@@ -64,4 +69,10 @@
 - GPIO35
 - VCC (3.3V)
 - GND
+
+## BH1750 lichtmeter
+- I²C: GPIO21 en 22
+- VCC (3.3V)
+- GND
+- PULL DOWN
 
