@@ -16,7 +16,7 @@ Om de kalibratieoplossingen te maken, voegen we gedestilleerd water toe aan de s
 | Ca²⁺  | 1 part               | 4 parts H₂O      | 9 parts H₂O         | 19 parts H₂O   |
 | K⁺    | 1 part               | 4 parts H₂O      | 9 parts H₂O         | 19 parts H₂O   |
 
-### Absolute Hoeveelheden voor 200 ml Kalibratievloeistof
+### Absolute Hoeveelheden voor Kalibratievloeistof
 
 | Ion   | High (ml stock + ml H₂O) | Medium (ml stock + ml H₂O) | Low (ml stock + ml H₂O) |
 |-------|-------------------------|---------------------------|-------------------------|
@@ -31,6 +31,14 @@ Dit komt overeen met de onderstaande concentraties. Hiermee kalibreren we onze s
 | NO₃⁻  | NaNO₃         | 799        | 959          | 1598        |
 | Ca²⁺  | Ca(NO₃)₂4H₂O | 100        | 200          | 400         |
 | K⁺    | KOH          | 102        | 203          | 406         |
+
+### pH-waarden per kalibratievloeistof
+
+| Ion   | High  | Medium | Low  |
+|-------|-------|--------|------|
+| NO₃⁻  | 7     | 7      | 7    |
+| Ca²⁺  | 6-7   | 6-7    | 6-7  |
+| K⁺    | 12.0  | 11.7   | 11.4 |
 
 
 ## Kalibratie per Sensor
