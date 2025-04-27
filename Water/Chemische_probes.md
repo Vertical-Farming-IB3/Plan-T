@@ -34,11 +34,11 @@ Dit komt overeen met de onderstaande concentraties. Hiermee kalibreren we onze s
 
 ### pH-waarden per kalibratievloeistof
 
-| Ion   | High  | Medium | Low  |
-|-------|-------|--------|------|
-| NO₃⁻  | 7     | 7      | 7    |
-| Ca²⁺  | 6-7   | 6-7    | 6-7  |
-| K⁺    | 12.0  | 11.7   | 11.4 |
+| Ion   | Stock | High  | Medium | Low  |
+|-------|-------|-------|--------|------|
+| NO₃⁻  | 7     | 7     | 7      | 7    |
+| Ca²⁺  | 6-7   | 6-7   | 6-7    | 6-7  |
+| K⁺    | 12.7  | 12.0  | 11.7   | 11.4 |
 
 
 ## Kalibratie per Sensor
