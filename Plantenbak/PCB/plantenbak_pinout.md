@@ -2,7 +2,7 @@
 - GPIO2
 
 ## Fans:
-- GPIO19 ( relais )
+- GPIO32 ( relais )
 - 12V power
 
 ## NFC:
