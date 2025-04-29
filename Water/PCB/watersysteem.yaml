@@ -172,24 +172,41 @@ sensor:
     multiplexer: A2_A3
     gain: 0.256 # meausures up to 0.256V (see documentation)
     update_interval: 5s
-#    filters: # y=0.0138ln(x)+0,0196
-#      - lambda: |-
-#          return exp((x - 0.0196) / 0.0138);
-#    unit_of_measurement: "mg/l"
+    filters: # y=0.0195ln(x)+0,0011
+      - lambda: |-
+          return exp((x - 0.011) / 0.0195);
+    unit_of_measurement: "mg/l"
   - platform: ads1115
     name: "Nutriënten Calcium" # Nutriënten 2
     multiplexer: A1_A3
     gain: 0.256
     update_interval: 5s
-#    filters: # y=0.0087ln(x)-0.0079
-#      - lambda: |-
-#          return exp((x + 0.0079) / 0.0087);
-#    unit_of_measurement: "mg/l"
-  #- platform: ads1115
-  #  name: "Nutriënten 3" # Nutriënten 3
-  #  multiplexer: A0_A3
-  #  gain: 0.256
-  #  update_interval: 5s
+    filters: # y=0.0072ln(x)-0.0102
+      - lambda: |-
+          return exp((x + 0.0102) / 0.0072);
+    unit_of_measurement: "mg/l"
+  - platform: ads1115
+    name: "Nutriënten Nitraat" # Nutriënten 3
+    multiplexer: A0_A3
+    gain: 0.256
+    update_interval: 5s
+    filters: # y=0.0382ln(x)-0.2338
+      - lambda: |-
+          return exp((x + 0.2338) / 0.0382);
+    unit_of_measurement: "mg/l"
+    
+  # pH probe
+  - platform: adc
+    name: "pH waarde"
+    pin: GPIO34
+    update_interval: 1s
+    samples: 5
+    attenuation: 11db # 0-3.9V
+    filters: # y=-0.774ln(x) + 3,7518
+      - lambda: |-
+          return exp((x-3.7518) / -0.774);
+    unit_of_measurement: " "
+  
   # CURRENT SENSOR (FOR POWER CONSUMPTION)
   - platform: adc
     name: "Vermogenverbruik"
@@ -205,7 +222,7 @@ sensor:
       # Multiply by voltage to get power consumption
       - multiply: 12
     unit_of_measurement: "W"
-          
+            
 binary_sensor:
   # LIMIT SWITCHES
   - platform: gpio
