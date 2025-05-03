@@ -54,8 +54,12 @@ De sensoren werden uitgelezen na enige tijd ondergedompeld te zijn in de kalibra
 | 102                    | 0.083                |0.091
 
 <p float="left">
-  <img src="assets/Kalibratie1_Kalium.png" width="45%" />
-  <img src="assets/Kalibratie2_Kalium.png" width="45%" />
+  <p align="center">
+    <img src="assets/Kalibratie1_Kalium.png" width="45%" /><br><sub>Kalibratie 1</sub>
+  </p>
+  <p align="center">
+    <img src="assets/Kalibratie2_Kalium.png" width="45%" /><br><sub>Kalibratie 2</sub>
+  </p>
 </p>
 
 Na zo'n tien tot twintig seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
@@ -69,8 +73,12 @@ Na zo'n tien tot twintig seconden waren de metingen stabiel. We verkrijgen een n
 | 100                      | 0.032                | 0.023
 
 <p float="left">
-  <img src="assets/Kalibratie1_Calcium.png" width="45%" />
-  <img src="assets/Kalibratie2_Calcium.png" width="45%" />
+  <p align="center">
+    <img src="assets/Kalibratie1_Calcium.png" width="45%" /><br><sub>Kalibratie 1</sub>
+  </p>
+  <p align="center">
+    <img src="assets/Kalibratie2_Calcium.png" width="45%" /><br><sub>Kalibratie 2</sub>
+  </p>
 </p>
 
 Na zo'n tien seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
@@ -84,8 +92,12 @@ Na zo'n tien seconden waren de metingen stabiel. We verkrijgen een nagenoeg perf
 | 799                      | 0.027                | 0.018
 
 <p float="left">
-  <img src="assets/Kalibratie1_Nitraat.png" width="45%" />
-  <img src="assets/Kalibratie2_Nitraat.png" width="45%" />
+  <p align="center">
+    <img src="assets/Kalibratie1_Nitraat.png" width="45%" /><br><sub>Kalibratie 1</sub>
+  </p>
+  <p align="center">
+    <img src="assets/Kalibratie2_Nitraat.png" width="45%" /><br><sub>Kalibratie 2</sub>
+  </p>
 </p>
 
 Bij de eerste meting verkregen we geen verband tussen de meetwaarden. Bij de tweede meting was er wel een verband te vinden, maar de meetwaarden waren opmerkelijk laag vergeleken met de kalibraties die men vorig jaar uitvoerde.
@@ -98,7 +110,9 @@ Bij de eerste meting verkregen we geen verband tussen de meetwaarden. Bij de twe
 | 11.4      | 1.92
 | 12        | 1.78
 
-[pH-meting](./assets/Kalibratie_pH.png)
+<p float="left">
+  <img src="./assets/Kalibratie_pH.png" width="45%" />
+</p>
 
 De pH-probe werd gekalibreerd met behulp van de eerder gemaakte kalibratievloeistoffen.
 
