@@ -43,48 +43,68 @@ Dit komt overeen met de onderstaande concentraties. Hiermee kalibreren we onze s
 
 ## Kalibratie per Sensor
 
-De sensoren werden uitgelezen na enige tijd ondergedompeld te zijn in de kalibratievloeistoffen. We maten pas deze uitgansspanning nadat de meetwaarde gestabiliseerd werd.
+De sensoren werden uitgelezen na enige tijd ondergedompeld te zijn in de kalibratievloeistoffen. We maten pas deze uitgansspanning nadat de meetwaarde gestabiliseerd werd. Deze kalibraties werden twee keer uitgevoerd (met een week tussen beide kalibraties).
 
 ### Kalibratie van de K⁺-sensor
 
-| K⁺ Concentratie (mg/l) | Gemeten Spanning (V) |
-|------------------------|----------------------|
-| 406                    | 0.102                |
-| 203                    | 0.093                |
-| 102                    | 0.083                |
+| K⁺ Concentratie (mg/l) | Gemeten Spanning kalibratie 1 (V) | Gemeten Spanning kalibratie 2 (V) |
+|------------------------|----------------------|----------------------|
+| 406                    | 0.102                | 0.118
+| 203                    | 0.093                |0.106
+| 102                    | 0.083                |0.091
 
-![Kalibratie K⁺-sensor](assets/Kalibratie_Kalium.png)
+<p float="left">
+  <img src="assets/Kalibratie1_Kalium.png" width="45%" />
+  <img src="assets/Kalibratie2_Kalium.png" width="45%" />
+</p>
 
 Na zo'n tien tot twintig seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
 
 ### Kalibratie van de Ca²⁺-sensor
 
-| Ca²⁺ Concentratie (mg/l) | Gemeten Spanning (V) |
-|--------------------------|----------------------|
-| 400                      | 0.044                |
-| 200                      | 0.038                |
-| 100                      | 0.032                |
+| Ca²⁺ Concentratie (mg/l) | Gemeten Spanning kalibratie 1 (V) | Gemeten Spanning kalibratie 2 (V) |
+|--------------------------|----------------------|----------------------|
+| 400                      | 0.044                | 0.033
+| 200                      | 0.038                | 0.028
+| 100                      | 0.032                | 0.023
 
-![Kalibratie Ca²⁺-sensor](assets/Kalibratie_Calcium.png)
+<p float="left">
+  <img src="assets/Kalibratie1_Calcium.png" width="45%" />
+  <img src="assets/Kalibratie2_Calcium.png" width="45%" />
+</p>
 
 Na zo'n tien seconden waren de metingen stabiel. We verkrijgen een nagenoeg perfect logaritmisch verband na het uitvoeren van regressie op deze meetwaarden.
 
 ### Kalibratie van de NO₃⁻-sensor
 
-| NO₃⁻ Concentratie (mg/l) | Gemeten Spanning (V) |
-|--------------------------|----------------------|
-| 1598                     | 0.027                |
-| 959                      | 0.013                |
-| 799                      | 0.027                |
+| NO₃⁻ Concentratie (mg/l) | Gemeten Spanning kalibratie 1 (V) | Gemeten Spanning kalibratie 2 (V) |
+|--------------------------|----------------------|----------------------|
+| 1598                     | 0.027                | 0.0465
+| 959                      | 0.013                | 0.0325
+| 799                      | 0.027                | 0.018
 
-![Kalibratie NO₃⁻-sensor](assets/Kalibratie_Nitraat.png)
+<p float="left">
+  <img src="assets/Kalibratie1_Nitraat.png" width="45%" />
+  <img src="assets/Kalibratie2_Nitraat.png" width="45%" />
+</p>
 
-De kalibratie van nitraat werd tweemaal nagemeten, we verkregen echter geen interpreteerbare metingen. We vermoeden dat de probe kapot is, vorig jaar werd hier echter wel een logaritmisch verband gevonden.
+Bij de eerste meting verkregen we geen verband tussen de meetwaarden. Bij de tweede meting was er wel een verband te vinden, maar de meetwaarden waren opmerkelijk laag vergeleken met de kalibraties die men vorig jaar uitvoerde.
 
+### Kalibratie van de pH-sensor
+
+| pH-waarde | Gemeten Spanning (V) |
+|-----------|----------------------|
+| 7         | 2.24
+| 11.4      | 1.92
+| 12        | 1.78
+
+[pH-meting](./assets/Kalibratie_pH.png)
+
+De pH-probe werd gekalibreerd met behulp van de eerder gemaakte kalibratievloeistoffen.
 
 ## Uitmeten van de voedingsstoffen
 
-Wanneer we het systeem volledig uittesten (vermoedelijk na de paasvakantie) zullen we de nutriëntverhouding kunnen uitmeten van de voedingsstoffen. Deze voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
+De voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
 
 kraantjeswater:  
 200mg/l Calcium  
