@@ -28,11 +28,16 @@ wifi:
     ssid: "Plantenbak Fallback Hotspot"
     password: "na05gv8dfHVP"
 
+captive_portal:
+
 # I2C Configuratie (wordt gedeeld door zowel PN532 als SCD4x)
 i2c:
   sda: GPIO21
   scl: GPIO22
   scan: true  # Automatische detectie van I2C-apparaten
+
+web_server:
+  version: 3
 
 output:
   - platform: gpio
@@ -173,3 +178,18 @@ sensor:
     lambda: return 12.0 * id(adcCurrent).state;
     name: "Vermogen"
     update_interval: 0.5s
+
+  # BH1750 Light Sensor
+  - platform: bh1750
+    name: "Light Level"
+    update_interval: 1s
+    address: 0x23
+    unit_of_measurement: "lx"
+    accuracy_decimals: 1
+
+binary_sensor:
+  - platform: status
+    name: "Plantenbak Lade 1 Status"
+    id: system_status
+    entity_category: "diagnostic"
+
