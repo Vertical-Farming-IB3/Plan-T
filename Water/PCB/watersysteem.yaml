@@ -38,6 +38,11 @@ captive_portal:
 #  port: 80
 #  version: 3
 
+# haal tijd op van de server
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
 # status LED
 status_led:
   pin: GPIO2
@@ -224,11 +229,13 @@ sensor:
       # Multiply by voltage to get power consumption
       - multiply: 12
     unit_of_measurement: "W"
+    internal: True
   
   # TOTAAL VERMOGEN:
   # voeg 14W toe als de UV-lamp aanligt
   - platform: template
     name: "Totaal vermogen"
+    id: vermogen
     unit_of_measurement: "W"
     update_interval: 1s
     lambda: |-
@@ -237,6 +244,16 @@ sensor:
         vermogen += 14.0;
       }
       return vermogen;
+
+  # DAGELIJKS ENERGIEVERBRUIK
+  - platform: total_daily_energy
+    name: "Dagelijks Energieverbruik"
+    power_id: vermogen
+    unit_of_measurement: "kWh"
+    accuracy_decimals: 3
+    filters:
+      - multiply: 0.001
+    icon: mdi:counter
             
 binary_sensor:
   # LIMIT SWITCHES
