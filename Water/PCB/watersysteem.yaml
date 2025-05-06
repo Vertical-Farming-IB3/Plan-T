@@ -219,7 +219,7 @@ sensor:
     id: pcb_power_sensor
     pin: GPIO35
     update_interval: 1s
-    samples: 5
+    samples: 10
     attenuation: 11db # change range to 0-3.9V
     filters: # linear regression: I = (V - 2.3363) / 0.1608
       - clamp:
