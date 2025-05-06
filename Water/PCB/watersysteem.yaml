@@ -34,9 +34,9 @@ wifi:
 captive_portal:
     
 # Enable basic web server for easy debugging
-web_server:
-  port: 80
-  version: 3
+#web_server:
+#  port: 80
+#  version: 3
 
 # status LED
 status_led:
@@ -92,6 +92,7 @@ switch:
         output: True
   - platform: gpio
     name: "UV lamp"
+    id: uv_lamp
     pin:
       mcp23xxx: expander
       number: 1 #A1
@@ -209,7 +210,8 @@ sensor:
   
   # CURRENT SENSOR (FOR POWER CONSUMPTION)
   - platform: adc
-    name: "Vermogenverbruik"
+    name: "Vermogen PCB"
+    id: pcb_power_sensor
     pin: GPIO35
     update_interval: 1s
     samples: 5
@@ -222,6 +224,19 @@ sensor:
       # Multiply by voltage to get power consumption
       - multiply: 12
     unit_of_measurement: "W"
+  
+  # TOTAAL VERMOGEN:
+  # voeg 14W toe als de UV-lamp aanligt
+  - platform: template
+    name: "Totaal vermogen"
+    unit_of_measurement: "W"
+    update_interval: 1s
+    lambda: |-
+      float vermogen = id(pcb_power_sensor).state;
+      if (id(uv_lamp).state) {
+        vermogen += 14.0;
+      }
+      return vermogen;
             
 binary_sensor:
   # LIMIT SWITCHES
@@ -249,3 +264,9 @@ binary_sensor:
       mode:
         input: True
         pullup: False
+
+  # STATUS FOR HOME ASSISTANT DASHBOARD
+  - platform: status
+    name: "Watersysteem Status"
+    id: system_status
+    entity_category: "diagnostic"
