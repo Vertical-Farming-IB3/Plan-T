@@ -16,6 +16,11 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 | MH-Z19B        | CO₂                          | 5V      | UART      | Matig          | Gemiddeld      | Alleen CO₂, trager, minder stabiel |
 | CCS811         | eCO₂, TVOC                   | 3.3V    | I²C       | Laag tot gemiddeld | Laag        | Indirecte CO₂, inferieur aan GY-SCD40 |
 
+Zie onderstaande links voor verschillende sensoren:
+- [GY-SCD40](https://www.tinytronics.nl/nl/sensoren/lucht/vochtigheid/gy-scd40-module-co2-luchtvochtigheid-en-temperatuursensor-i2c)
+- [MH-Z19B](https://www.tinytronics.nl/nl/winsen-mh-z19b-co2-sensor-met-kabel)
+- [CCS811](https://www.adafruit.com/product/3566)
+
 #### Voordelen:
 - Hoge nauwkeurigheid  
 - Meet drie parameters tegelijk  
@@ -39,6 +44,11 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 | RC522          | SPI           | ~2 cm  | ISO/IEC 14443 A        | Laag            | Korter bereik, minder robuust |
 | MFRC630        | SPI/I²C       | ~5 cm  | 14443 A/B + NFC Forum  | Hoog            | Sneller en flexibeler, maar duurder en minder ingeburgerd |
 
+Zie onderstaande links voor verschillende sensoren:
+- [PN532](https://www.tinytronics.nl/en/communication-and-signals/wireless/rfid/rfid-nfc-kit-pn532-with-s50-card-and-s50-key-tag)
+- [RC522](https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/rfid/rfid-kit-mfrc522-s50-mifare-met-kaart-en-key-tag)
+- [MFRC630](https://gr.mouser.com/c/semiconductors/wireless-rf-integrated-circuits/nfc-rfid-tags-transponders/?m=NXP&series=MFRC630)
+  
 #### Voordelen:
 - Brede ondersteuning, meerdere protocollen  
 - Betrouwbaar en compatibel met ESP  
@@ -48,7 +58,7 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 - Duurder dan RC522  
 - Groter formaat  
 
-**Keuze-motivatie:** De PN532 was beschikbaar op de campus en heeft een goede compatibiliteit met ESP32 en bibliotheken zoals Adafruit’s NFC-lib. Daardoor was het de beste keuze voor snelle implementatie.
+**Keuze-motivatie:** De PN532 was beschikbaar op de campus en heeft een goede compatibiliteit met ESP32 en ESPHome. Daardoor was het de beste keuze voor snelle implementatie.
 
 ---
 
@@ -62,6 +72,11 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 | INA219         | Shunt + ADC       | Tot 3.2A   | I²C       | Hoog            | Gemiddeld      | Beter voor lage stromen, nauwkeuriger |
 | SCT-013        | Transformatorspoel| 100A       | Analoog   | Laag tot gemiddeld | Laag        | Alleen AC, extra burden resistor nodig |
 
+Zie onderstaande links voor verschillende sensoren:
+- [ACS712](https://www.tinytronics.nl/nl/sensoren/stroom-spanning/acs712-stroomsensor-module-20a)
+- [INA219](https://www.tinytronics.nl/en/sensors/current-voltage/ina219-i2c-dc-current-and-voltage-meter-3.2a-module)
+- [SCT-013](https://www.tinytronics.nl/nl/sensoren/stroom-spanning/ac-stroom-sensor-sct013-030-30a)
+
 #### Voordelen:
 - Simpel aan te sluiten (analoog)  
 - Meet zowel AC als DC  
@@ -71,7 +86,7 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 - Gevoelig voor ruis  
 - Lage resolutie, niet geschikt voor hele kleine stromen  
 
-**Keuze-motivatie:** Omdat het systeem op lage stroom werkt, was de ACS712 accuraat genoeg voor onze noden. Bovendien was deze sensor nog beschikbaar in de IB3-voorraad.
+**Keuze-motivatie:** Omdat het systeem op lage stroom werkt, was de ACS712 accuraat genoeg voor onze noden. Bovendien had een teamlid deze sensor al thuis liggen, waardoor we dus budget konden sparen.
 
 ---
 
@@ -84,6 +99,12 @@ In deze sectie vergelijken we enkele van onze gekozen sensoren met alternatieve 
 | Capacitive Soil Sensor v2 | Capacitatief         | Analoog   | Spatwaterdicht | Gemiddeld  | Laag            | Goede optie voor hydroponics |
 | Resistive sensor (YL-69)  | Weerstandsmeting     | Analoog   | Nee            | Laag       | Zeer laag       | Roest snel, onnauwkeurig |
 | SHT10 Soil Sensor         | Digitale sensor (I²C)| I²C       | Ja             | Hoog       | Hoog            | Professionele kwaliteit, duur |
+
+Zie onderstaande links voor verschillende sensoren:
+- [v2](https://www.tinytronics.nl/en/sensors/liquid/capacitive-soil-moisture-sensor-module-with-cable)
+- [YL-69](https://nl.aliexpress.com/item/1005004305871722.html)
+- [SHT10](https://www.gotron.be/soil-temperature-moisture-sensor.html)
+
 
 #### Voordelen:
 - Capacitatieve meting is nauwkeuriger dan resistieve  
