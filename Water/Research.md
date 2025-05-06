@@ -53,13 +53,13 @@ We kozen voor de ultrasone sensor. De waterniveausensor was ook een goede keuze 
 ## Mixer
 Er zijn verschillende opties voor watercirculatie:
 
-- *Dompelpomp*  
+- *Aquariumpomp*  
   - Voordelen: Sterke circulatie  
-  - Nadelen: Kan schuim of turbulentie veroorzaken  
+  - Nadelen: turbulentie veroorzaken en kan verstopt geraken  
 
 - *Luchtpomp + luchtsteen*  
   - Voordelen: Zachte menging, weinig energieverbruik  
-  - Nadelen: Lichte menging  
+  - Nadelen: Trage menging en schuimvorming  
 
 - *Mechanische mixer*  
   - Voordelen: Efficiënt mengen zonder veel turbulentie  
