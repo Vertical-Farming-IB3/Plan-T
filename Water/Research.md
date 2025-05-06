@@ -27,7 +27,7 @@ Ten slotte wensen we de lamp aan te sturen via een PCB met ESPHome, gekoppeld aa
 
 De eerst bestelde UVC-lamp via AliExpress gaf problemen: deze ontplofte al na zeven minuten gebruik. Dit onderstreept het belang van kwaliteitsvolle componenten en betrouwbare leveranciers.
 
-### Waterniveau Sensor
+## Waterniveau Sensor
 
 Er zijn verschillende opties voor waterniveau meting:
 
