@@ -120,10 +120,23 @@ De pH-probe werd gekalibreerd met behulp van de eerder gemaakte kalibratievloeis
 
 De voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
 
-kraantjeswater:  
-200mg/l Calcium  
-1300mg/l Kalium
+In kraantjeswater meten we volgende hoeveelheden:
 
-1/20 verdunde oplossing van voedingsstoffen:  
-3mg/l Calcium  
-7000mg/l Kalium
+| Voedingsstof | Concentratie |
+|--------------|--------------|
+| Nitraat      | 2100 mg/l    |
+| Kalium       | 260 mg/l     |
+| Calcium      | 120 mg/l     |
+| pH           | 6.1          |
+
+Op basis van de aanbevolen hoeveelheden voedingsstoffen (1 dop per 8l) en de grootte van de reservoirs (8l) kozen we ervoor om volgende aanbeveling te maken voor de gebruiker: "Wanneer u het voedingsstoffenreservoir bijvult dient u 1 dopje voedingsstoffen per vol reservoir toe te voegen".
+De voedingsstoffen worden succesvol gemixt met het water door het luchtpompje.
+
+Na het toevoegen van deze concentratie meten we volgende concentraties op:
+
+| Voedingsstof | Concentratie |
+|--------------|--------------|
+| Nitraat      | 2600 mg/l    |
+| Kalium       | 410 mg/l     |
+| Calcium      | 26 mg/l      |
+| pH           | 4.7          |
