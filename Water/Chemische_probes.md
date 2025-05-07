@@ -116,18 +116,26 @@ Bij de eerste meting verkregen we geen verband tussen de meetwaarden. Bij de twe
 
 De pH-probe werd gekalibreerd met behulp van de eerder gemaakte kalibratievloeistoffen.
 
-## Uitmeten van de voedingsstoffen
+## Uitmeten van kraantjeswater
 
-De voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
+In onze verticale farm zullen we gebruik maken van kraantjewater (verdund met de voedingsstoffen). We maten dit water uit en vergeleken de waarden met een rapport van Farys [1].
 
 In kraantjeswater meten we volgende hoeveelheden:
 
-| Voedingsstof | Concentratie | Verwachtewaarde |
-|--------------|--------------|-----------------|
-| Nitraat      | 2100 mg/l    | 10.7 mg/l       |
-| Kalium       | 260 mg/l     | 4.5 mg/l        |
-| Calcium      | 120 mg/l     | 86mg/l          |
-| pH           | 6.1          | 7.8
+| Voedingsstof | Concentratie | Verwachte waarde [1] |
+|--------------|--------------|----------------------|
+| Nitraat      | 2100 mg/l    | 10.7 mg/l            |
+| Kalium       | 260 mg/l     | 4.5 mg/l             |
+| Calcium      | 120 mg/l     | 86mg/l               |
+| pH           | 6.1          | 7.8                  |
+
+Voor beide kalibraties kwamen we onrealistische waarden uit bij de nitraat- en kaliummetingen. De verhoogde waarde van calcium is realistisch, dit kan te wijten zijn aan verkalkte leidingen. De pH is ook redelijk neutraal en beschouwen we als aanvaardbaar.
+
+[1] Farys, “Watersamenstelling en hardheid in jouw gemeente,” Farys.be. [Online]. Beschikbaar: https://www.farys.be/nl/watersamenstelling-en-hardheid-in-jouw-gemeente. [Geraadpleegd: 7-mei-2025]
+
+## Uitmeten van de voedingsstoffen
+
+De voedingsstoffen worden kant-en-klaar aangekocht in een tuincentrum. Dit ligt in lijn met het doel om de verticale farm commercieel op de markt te brengen, de voedingsstoffen zijn voor iedereen verkrijgbaar en kosten niet veel.
 
 Op basis van de aanbevolen hoeveelheden voedingsstoffen (1 dop per 8l) en de grootte van de reservoirs (8l) kozen we ervoor om volgende aanbeveling te maken voor de gebruiker: "Wanneer u het voedingsstoffenreservoir bijvult dient u 1 dopje voedingsstoffen per vol reservoir toe te voegen".
 De voedingsstoffen worden succesvol gemixt met het water door het luchtpompje.
