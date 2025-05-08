@@ -6,3 +6,5 @@ Onze groep bestaat uit:
 - Wout Batsele
 - Sander De Stercke
 - Wouter Fouquet
+
+Meer info vindt u [hier](https://vertical-farming-ib3.github.io/Plantenbak/).
