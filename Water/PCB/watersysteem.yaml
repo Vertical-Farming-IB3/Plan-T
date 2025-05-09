@@ -90,6 +90,7 @@ switch:
   # RELAYS
   - platform: gpio
     name: "Mixer"
+    id: mixer
     pin:
       mcp23xxx: expander
       number: 0 #A0
@@ -210,7 +211,10 @@ sensor:
     attenuation: 11db # 0-3.9V
     filters: # y=-0.774ln(x) + 3,7518
       - lambda: |-
-          return exp((x-3.7518) / -0.774);
+          if (id(mixer).state) {
+            return std::numeric_limits<float>::quiet_NaN(); // Return NaN when mixer is on
+          }
+          return exp((x - 3.7518) / -0.774); // Normal pH calculation when mixer is off
     unit_of_measurement: " "
   
   # CURRENT SENSOR (FOR POWER CONSUMPTION)
