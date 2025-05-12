@@ -150,6 +150,11 @@ sensor:
     echo_pin: GPIO25
     update_interval: 1s
     filters:
+    - filter_out: nan  # Filter out any invalid readings
+    - median:
+        window_size: 5
+        send_every: 1
+        send_first_at: 1
     - lambda: |- # 0.04 = 100%, 0.145 = 0%
         return (x - 0.145) * (100.0 - 0.0) / (0.04 - 0.145) + 0.0;
     unit_of_measurement: "%"
@@ -160,6 +165,11 @@ sensor:
     echo_pin: GPIO32
     update_interval: 1s
     filters:
+    - filter_out: nan  # Filter out any invalid readings
+    - median:
+        window_size: 5
+        send_every: 1
+        send_first_at: 1
     - lambda: |- # 0.04 = 100%, 0.14 = 0%
         return (x - 0.145) * (100.0 - 0.0) / (0.04 - 0.145) + 0.0;
     unit_of_measurement: "%"
@@ -169,6 +179,11 @@ sensor:
     echo_pin: GPIO27
     update_interval: 1s
     filters:
+    - filter_out: nan  # Filter out any invalid readings
+    - median:
+        window_size: 5
+        send_every: 1
+        send_first_at: 1
     - lambda: |- # 0.04 = 100%, 0.13 = 0%
         return (x - 0.13) * 100.0 / (0.04 - 0.13);
     unit_of_measurement: "%"
@@ -210,6 +225,10 @@ sensor:
     samples: 5
     attenuation: 11db # 0-3.9V
     filters: # y=-0.774ln(x) + 3,7518
+      - median:
+          window_size: 10
+          send_every: 1
+          send_first_at: 1
       - lambda: |-
           if (id(mixer).state) {
             return std::numeric_limits<float>::quiet_NaN(); // Return NaN when mixer is on
