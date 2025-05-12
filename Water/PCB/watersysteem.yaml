@@ -222,13 +222,9 @@ sensor:
     name: "pH waarde"
     pin: GPIO34
     update_interval: 1s
-    samples: 5
+    samples: 10
     attenuation: 11db # 0-3.9V
     filters: # y=-0.774ln(x) + 3,7518
-      - median:
-          window_size: 10
-          send_every: 1
-          send_first_at: 1
       - lambda: |-
           if (id(mixer).state) {
             return std::numeric_limits<float>::quiet_NaN(); // Return NaN when mixer is on
