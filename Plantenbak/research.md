@@ -98,7 +98,7 @@ Zie onderstaande links voor verschillende sensoren:
 |---------------------------|----------------------|-----------|----------------|------------|----------------|-------------|
 | Capacitive Soil Sensor v2 | Capacitatief         | Analoog   | Spatwaterdicht | Gemiddeld  | Laag            | Goede optie voor hydroponics |
 | Resistive sensor (YL-69)  | Weerstandsmeting     | Analoog   | Nee            | Laag       | Zeer laag       | Roest snel, onnauwkeurig |
-| DFRobot SEN0193           | Capacitief digitaal  | 3.3V–5V   | UART/I2C/analog| Zeer goed  | Hoog (± €25–€35)| Professionele sensor, waterdicht, nauwkeurig |
+| DFRobot SEN0193           | Capacitief digitaal  | UART/I2C/analog  | Waterdicht | Zeer goed  | Hoog (± €25–€35)| Professionele sensor, waterdicht, nauwkeurig |
 
 Zie onderstaande links voor verschillende sensoren:
 - [v2](https://www.tinytronics.nl/en/sensors/liquid/capacitive-soil-moisture-sensor-module-with-cable)
