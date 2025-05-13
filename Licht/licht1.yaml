@@ -1,0 +1,1231 @@
+esphome:
+  name: licht-lade-1
+  friendly_name: licht lade 1
+  on_boot:
+    priority: 600  # Runs after hardware initialization
+    then:
+      #show the states of the ledpg and fault pins
+      - text_sensor.template.publish:
+          id: ledpg_1_state
+          state: !lambda 'return id(ledpg_1).state ? "HIGH" : "LOW";'
+      - text_sensor.template.publish:
+          id: fault_1_state
+          state: !lambda 'return id(fault_1).state ? "HIGH" : "LOW";'
+      - text_sensor.template.publish:
+          id: ledpg_2_state
+          state: !lambda 'return id(ledpg_2).state ? "HIGH" : "LOW";'
+      - text_sensor.template.publish:
+          id: fault_2_state
+          state: !lambda 'return id(fault_2).state ? "HIGH" : "LOW";'
+      - script.execute: start_routine
+      - delay: 2s
+      - script.execute: eco
+
+#       when using driver 3 => uncomment this, enable and the individual pwm controlls (in script)
+#      - text_sensor.template.publish:
+#          id: ledpg_3_state
+#          state: !lambda 'return id(ledpg_3).state ? "HIGH" : "LOW";'
+#      - text_sensor.template.publish:
+#          id: fault_3_state
+#          state: !lambda 'return id(fault_3).state ? "HIGH" : "LOW";'
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: 
+  reboot_timeout: 0s
+  on_client_disconnected:
+    then: 
+      script.execute: handle_fault_or_ledpg_low
+
+ota:
+  - platform: esphome
+    password: 
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Licht1 Fallback Hotspot"
+    password: "Lumos_Maxima"
+    manual_ip:
+      static_ip: 192.168.0.1
+      gateway: 192.168.0.1
+      subnet: 255.255.255.0
+captive_portal:
+
+# Enable basic web server
+web_server:
+  port: 80
+  version: 3
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+output:
+#driver 1
+  - platform: ledc
+    id: pwm_output_1_blauw
+    pin: 32
+    frequency: 1000 Hz #down to 0.%
+  - platform: ledc
+    id: pwm_output_1_rood
+    pin: 33
+    frequency: 1000 Hz
+  - platform: ledc
+    id: pwm_output_1_ver_rood
+    pin: 25
+    frequency: 1000 Hz
+#driver 2
+  - platform: ledc
+    id: pwm_output_2_blauw
+    pin: 12
+    frequency: 1000 Hz #down to 0.%
+  - platform: ledc
+    id: pwm_output_2_rood
+    pin: 13
+    frequency: 1000 Hz
+  - platform: ledc
+    id: pwm_output_2_ver_rood
+    pin: 15
+    frequency: 1000 Hz
+#driver 3
+  - platform: ledc
+    id: pwm_output_3_blauw
+    pin: 5 
+    frequency: 1000 Hz #down to 0.%
+  - platform: ledc
+    id: pwm_output_3_rood
+    pin: 18
+    frequency: 1000 Hz
+  - platform: ledc
+    id: pwm_output_3_ver_rood
+    pin: 19
+    frequency: 1000 Hz
+
+globals:
+  - id: pwm_level_1_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_1_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_1_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_2_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_2_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_2_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_3_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_3_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_3_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+
+  - id: pwm_kleur_global_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_kleur_global_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_kleur_global_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+
+    # Backups voor PWM-niveaus bij foutdetectie
+  - id: pwm_level_backup_1_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_1_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_1_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+
+  - id: pwm_level_backup_2_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_2_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_2_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+
+  - id: pwm_level_backup_3_blauw
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_3_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+  - id: pwm_level_backup_3_ver_rood
+    type: float
+    restore_value: no
+    initial_value: '0.0'
+
+
+# vlaggen
+  - id: fade_active
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+  - id: ripple_active
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+
+
+sensor:
+  - platform: adc
+    pin: GPIO34   # pin adc power meting
+    id: shunt_voltage
+    name: "Shunt Voltage"
+    update_interval: 1s
+#    attenuation: 11db  #t afhankelijk van je max meetbereik (3.3V of hoger)
+#    filters:
+#      - multiply: 3.3  # calibreren naar juiste waarde als 1.0 niet klopt
+    filters:
+    - median:
+        window_size: 20
+        send_every: 1
+
+  - platform: template
+    id: stroom
+    name: "Stroom (A)"
+    unit_of_measurement: "A"
+    accuracy_decimals: 2
+    update_interval: 1s
+    lambda: |-
+      return id(shunt_voltage).state / 1.24;
+
+  - platform: template
+    name: "Vermogen (W)"
+    id: vermogen
+    unit_of_measurement: "W"
+    accuracy_decimals: 1
+    update_interval: 1s
+    lambda: |-
+      return 22.0 * id(stroom).state;
+      
+  - platform: total_daily_energy
+    name: "Dagelijks Energieverbruik"
+    power_id: vermogen
+    unit_of_measurement: "kWh"
+    accuracy_decimals: 3
+    filters:
+      - multiply: 0.001
+    icon: mdi:counter
+
+
+
+text_sensor:
+  # Driver 1
+  - platform: template
+    id: ledpg_1_state
+    name: "Driver 1 LEDPG State"
+  - platform: template
+    id: fault_1_state
+    name: "Driver 1 FAULT State"
+  # Driver 2
+  - platform: template
+    id: ledpg_2_state
+    name: "Driver 2 LEDPG State"
+  - platform: template
+    id: fault_2_state
+    name: "Driver 2 FAULT State"
+  # Driver 3
+#  - platform: template
+#    id: ledpg_3_state
+#    name: "Driver 3 LEDPG State"
+# - platform: template
+#    id: fault_3_state
+#    name: "Driver 3 FAULT State"
+
+
+binary_sensor:
+
+  - platform: status
+    name: "Licht Lade 1 Status"
+    id: system_status
+    entity_category: "diagnostic"
+
+  # Driver 1
+  - platform: gpio
+    id: ledpg_1
+    name: "Driver 1 LEDPG"
+    pin: 27
+    internal: true
+    on_state:
+      then:
+        - text_sensor.template.publish:
+            id: ledpg_1_state
+            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 1 LEDPG changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+  - platform: gpio
+    id: fault_1
+    name: "Driver 1 FAULT"
+    pin: 14
+    internal: true
+    on_state:
+      then:
+        - text_sensor.template.publish:
+            id: fault_1_state
+            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 1 FAULT changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+        - if:
+            condition:
+              lambda: 'return !x;'  # LOW = fout
+            then:
+              - script.execute: handle_fault_or_ledpg_low            
+  # Driver 2
+  - platform: gpio
+    id: ledpg_2
+    name: "Driver 2 LEDPG"
+    pin: 4
+    internal: true
+    on_state:
+      then:
+        - text_sensor.template.publish:
+            id: ledpg_2_state
+            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 2 LEDPG changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+  - platform: gpio
+    id: fault_2
+    name: "Driver 2 FAULT"
+    pin: 16
+    internal: true
+    on_state:
+      then:
+        - text_sensor.template.publish:
+            id: fault_2_state
+            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 2 FAULT changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+        - if:
+            condition:
+              lambda: 'return !x;'  # LOW = fout
+            then:
+              - script.execute: handle_fault_or_ledpg_low
+  # Driver 3
+  - platform: gpio
+    id: ledpg_3
+    name: "Driver 3 LEDPG"
+    pin: 23
+    internal: true
+    on_state:
+      then:
+#        - text_sensor.template.publish:
+#            id: ledpg_3_state
+#            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 3 LEDPG changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+  - platform: gpio
+    id: fault_3
+    name: "Driver 3 FAULT"
+    pin: 22
+    internal: true
+    on_state:
+      then:
+#        - text_sensor.template.publish:
+#            id: fault_3_state
+#            state: !lambda 'return x ? "HIGH" : "LOW";'
+        - logger.log:
+            format: "Driver 3 FAULT changed to %s"
+            args: ['x ? "HIGH" : "LOW"']
+        - if:
+            condition:
+              lambda: 'return !x;'  # LOW = fout
+            then:
+              - script.execute: handle_fault_or_ledpg_low
+switch:
+  - platform: gpio
+    id: switch_enable_1
+    name: "Enable Pin 1"
+    internal: true
+    pin: 26
+    restore_mode: ALWAYS_OFF
+  - platform: gpio
+    id: switch_enable_2
+    name: "Enable Pin 2"
+    internal: true
+    pin: 17
+    restore_mode: ALWAYS_OFF
+  - platform: gpio
+    id: switch_enable_3
+    name: "Enable Pin 3"
+    internal: true
+    pin: 21
+    restore_mode: ALWAYS_OFF
+
+script:
+  - id: start_routine
+    then: 
+      - script.execute: all_off
+      - delay: 250ms
+      - lambda: |-
+          id(pwm_kleur_global_blauw) = 0.21;
+      # Voer update uit per kleur over alle drivers
+      - script.execute: update_blauw
+      - delay: 500ms
+      - lambda: |-
+          id(pwm_kleur_global_blauw) = 0;
+          id(pwm_kleur_global_rood) = 0.21;
+      # Voer update uit per kleur over alle drivers
+      - script.execute: update_blauw
+      - script.execute: update_rood
+      - delay: 500ms
+      - lambda: |-
+          id(pwm_kleur_global_rood) = 0;
+          id(pwm_kleur_global_ver_rood) = 0.21;
+      # Voer update uit per kleur over alle drivers
+      - script.execute: update_rood
+      - script.execute: update_ver_rood
+      - delay: 500ms
+# alles uitzetten.
+  - id: all_off
+    then:
+      - if:
+          condition:
+            lambda: "return id(ripple_active);"
+          then:
+            - lambda: "id(ripple_active) = false;"
+            - script.stop: ripple
+            - delay: 250ms
+
+      - if:
+          condition:
+            lambda: "return id(fade_active);"
+          then:
+            - lambda: "id(fade_active) = false;"
+            - script.stop: fade
+            - delay: 250ms
+
+      - lambda: |-
+          id(pwm_level_1_blauw) = 0.0; id(pwm_level_1_rood) = 0.0; id(pwm_level_1_ver_rood) = 0.0;
+          id(pwm_level_2_blauw) = 0.0; id(pwm_level_2_rood) = 0.0; id(pwm_level_2_ver_rood) = 0.0;
+          id(pwm_level_3_blauw) = 0.0; id(pwm_level_3_rood) = 0.0; id(pwm_level_3_ver_rood) = 0.0;
+      - script.execute: control_pwm
+      - script.wait: control_pwm
+      - lambda: |-
+          id(pwm_kleur_global_blauw) = 0.0;
+          id(pwm_kleur_global_rood) = 0.0;
+          id(pwm_kleur_global_ver_rood) = 0.0;
+      # Voer update uit per kleur over alle drivers
+      - script.execute: update_kleuren
+
+#call all control_pwm_X_color scripts
+  - id: control_pwm
+    then:
+# controll enable switch wordt bekeken in de control_pwm_X_color scripts
+      - script.execute: control_pwm_1_blauw
+      - script.execute: control_pwm_1_rood
+      - script.execute: control_pwm_1_ver_rood
+      - script.execute: control_pwm_2_blauw
+      - script.execute: control_pwm_2_rood
+      - script.execute: control_pwm_2_ver_rood
+      - script.execute: control_pwm_3_blauw
+      - script.execute: control_pwm_3_rood
+      - script.execute: control_pwm_3_ver_rood
+
+#makes sure enable is turned on after pwm is set high.
+  - id: handle_fault_or_ledpg_low
+    then:
+      - logger.log: "Fault or LEDPG LOW detected — resetting PWM"
+      - lambda: |-
+          id(pwm_level_backup_1_blauw) = id(pwm_level_1_blauw);
+          id(pwm_level_backup_1_rood) = id(pwm_level_1_rood);
+          id(pwm_level_backup_1_ver_rood) = id(pwm_level_1_ver_rood);
+          id(pwm_level_backup_2_blauw) = id(pwm_level_2_blauw);
+          id(pwm_level_backup_2_rood) = id(pwm_level_2_rood);
+          id(pwm_level_backup_2_ver_rood) = id(pwm_level_2_ver_rood);
+          id(pwm_level_backup_3_blauw) = id(pwm_level_3_blauw);
+          id(pwm_level_backup_3_rood) = id(pwm_level_3_rood);
+          id(pwm_level_backup_3_ver_rood) = id(pwm_level_3_ver_rood);
+
+          id(pwm_level_1_blauw) = 0.0;
+          id(pwm_level_1_rood) = 0.0;
+          id(pwm_level_1_ver_rood) = 0.0;
+          id(pwm_level_2_blauw) = 0.0;
+          id(pwm_level_2_rood) = 0.0;
+          id(pwm_level_2_ver_rood) = 0.0;
+          id(pwm_level_3_blauw) = 0.0;
+          id(pwm_level_3_rood) = 0.0;
+          id(pwm_level_3_ver_rood) = 0.0;
+
+      - script.execute: control_pwm
+      - delay: 500ms
+
+      # Herstel opgeslagen waarden
+      - lambda: |-
+          id(pwm_level_1_blauw) = id(pwm_level_backup_1_blauw);
+          id(pwm_level_1_rood) = id(pwm_level_backup_1_rood);
+          id(pwm_level_1_ver_rood) = id(pwm_level_backup_1_ver_rood);
+          id(pwm_level_2_blauw) = id(pwm_level_backup_2_blauw);
+          id(pwm_level_2_rood) = id(pwm_level_backup_2_rood);
+          id(pwm_level_2_ver_rood) = id(pwm_level_backup_2_ver_rood);
+          id(pwm_level_3_blauw) = id(pwm_level_backup_3_blauw);
+          id(pwm_level_3_rood) = id(pwm_level_backup_3_rood);
+          id(pwm_level_3_ver_rood) = id(pwm_level_backup_3_ver_rood);
+
+      - logger.log: "Restoring PWM after fault recovery"
+      - script.execute: control_pwm
+
+  - id: evaluate_enable_switches
+    then:
+      - if:
+          condition:
+            lambda: "return id(pwm_level_1_blauw) > 0 || id(pwm_level_1_rood) > 0 || id(pwm_level_1_ver_rood) > 0;"
+          then:
+            - switch.turn_on: switch_enable_1
+          else:
+            - switch.turn_off: switch_enable_1
+      - if:
+          condition:
+            lambda: "return id(pwm_level_2_blauw) > 0 || id(pwm_level_2_rood) > 0 || id(pwm_level_2_ver_rood) > 0;"
+          then:
+            - switch.turn_on: switch_enable_2
+          else:
+            - switch.turn_off: switch_enable_2
+      - if:
+          condition:
+            lambda: "return id(pwm_level_3_blauw) > 0 || id(pwm_level_3_rood) > 0 || id(pwm_level_3_ver_rood) > 0;"
+          then:
+#            - switch.turn_on: switch_enable_3
+#         enable switch driver 3 is always off because we don't use this
+            - switch.turn_off: switch_enable_3
+          else:
+            - switch.turn_off: switch_enable_3
+  - id: update_kleuren
+    then:
+      - script.execute: update_blauw
+      - delay: 250ms
+      - script.execute: update_rood
+      - delay: 250ms
+      - script.execute: update_ver_rood
+
+  - id: update_blauw
+    then:
+      - lambda: |-
+          id(pwm_level_1_blauw) = id(pwm_kleur_global_blauw);
+          id(pwm_level_2_blauw) = id(pwm_kleur_global_blauw);
+          id(pwm_level_3_blauw) = id(pwm_kleur_global_blauw);
+      - script.execute: control_pwm_1_blauw
+      - delay: 250ms
+      - script.execute: control_pwm_2_blauw
+      - delay: 250ms
+      - script.execute: control_pwm_3_blauw
+      - delay: 100ms
+      - number.set:
+          id: pwm_kleur_slider_blauw
+          value: !lambda "return id(pwm_kleur_global_blauw);"
+
+  - id: update_rood
+    then:
+      - lambda: |-
+          id(pwm_level_1_rood) = id(pwm_kleur_global_rood);
+          id(pwm_level_2_rood) = id(pwm_kleur_global_rood);
+          id(pwm_level_3_rood) = id(pwm_kleur_global_rood);
+      - script.execute: control_pwm_1_rood
+      - delay: 250ms
+      - script.execute: control_pwm_2_rood
+      - delay: 250ms
+      - script.execute: control_pwm_3_rood
+      - delay: 100ms
+      - number.set:
+          id: pwm_kleur_slider_rood
+          value: !lambda "return id(pwm_kleur_global_rood);" 
+  - id: update_ver_rood
+    then:
+      - lambda: |-
+          id(pwm_level_1_ver_rood) = id(pwm_kleur_global_ver_rood);
+          id(pwm_level_2_ver_rood) = id(pwm_kleur_global_ver_rood);
+          id(pwm_level_3_ver_rood) = id(pwm_kleur_global_ver_rood);
+      - script.execute: control_pwm_1_ver_rood
+      - delay: 250ms
+      - script.execute: control_pwm_2_ver_rood
+      - delay: 250ms
+      - script.execute: control_pwm_3_ver_rood
+      - delay: 100ms
+      - number.set:
+          id: pwm_kleur_slider_ver_rood
+          value: !lambda "return id(pwm_kleur_global_ver_rood);"
+        
+        
+#control_pwm_X_color
+  - id: control_pwm_1_blauw
+    then:
+      - output.set_level: #stuurt pwm pin aan
+          id: pwm_output_1_blauw
+          level: !lambda "return id(pwm_level_1_blauw)*(80.0/100.0);" #max 80% duty cycle
+      - number.set:
+          id: pwm_slider_1_blauw # updates slider in website
+          value: !lambda "return id(pwm_level_1_blauw);"
+      - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_1_rood
+    then:
+      - output.set_level:
+          id: pwm_output_1_rood
+          level: !lambda "return id(pwm_level_1_rood)*(80.0/100.0);"
+      - number.set:
+          id: pwm_slider_1_rood
+          value: !lambda "return id(pwm_level_1_rood);"
+      - delay: 250ms
+      - script.execute: evaluate_enable_switches 
+
+  - id: control_pwm_1_ver_rood
+    then:
+      - output.set_level:
+          id: pwm_output_1_ver_rood
+          level: !lambda "return id(pwm_level_1_ver_rood)*(80.0/100.0);"
+      - number.set:
+          id: pwm_slider_1_ver_rood
+          value: !lambda "return id(pwm_level_1_ver_rood);"
+      - delay: 250ms
+      - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_2_blauw
+    then:
+      - output.set_level:
+          id: pwm_output_2_blauw
+          level: !lambda "return id(pwm_level_2_blauw)*(80.0/100.0);"
+      - number.set:
+          id: pwm_slider_2_blauw
+          value: !lambda "return id(pwm_level_2_blauw);"
+      - delay: 250ms
+      - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_2_rood
+    then:
+      - output.set_level:
+          id: pwm_output_2_rood
+          level: !lambda "return id(pwm_level_2_rood)*(80.0/100.0);"
+      - number.set:
+          id: pwm_slider_2_rood
+          value: !lambda "return id(pwm_level_2_rood);"
+      - delay: 250ms
+      - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_2_ver_rood
+    then:
+      - output.set_level:
+          id: pwm_output_2_ver_rood
+          level: !lambda "return id(pwm_level_2_ver_rood)*(80.0/100.0);"
+      - number.set:
+          id: pwm_slider_2_ver_rood
+          value: !lambda "return id(pwm_level_2_ver_rood);"
+      - delay: 250ms
+      - script.execute: evaluate_enable_switches
+
+#driver 3 is still being called but the driver just stays inactive.
+#when you need driver 3 to be active also uncomment the enable button
+  - id: control_pwm_3_blauw
+    then:
+      - logger.log: "driver 3 niet actief"
+      # - output.set_level:
+      #     id: pwm_output_3_blauw
+      #     level: !lambda "return id(pwm_level_3_blauw)*(80.0/100.0);"
+      # - number.set:
+      #     id: pwm_slider_3_blauw
+      #     value: !lambda "return id(pwm_level_3_blauw);"
+      # - delay: 250ms
+      # - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_3_rood
+    then:
+      - logger.log: "driver 3 niet actief"
+      # - output.set_level:
+      #     id: pwm_output_3_rood
+      #     level: !lambda "return id(pwm_level_3_rood)*(80.0/100.0);"
+      # - number.set: # updates slider in website
+      #     id: pwm_slider_3_rood
+      #     value: !lambda "return id(pwm_level_3_rood);"
+      # - delay: 250ms
+      # - script.execute: evaluate_enable_switches
+
+  - id: control_pwm_3_ver_rood
+    then:
+      - logger.log: "driver 3 niet actief"
+      # - output.set_level:
+      #     id: pwm_output_3_ver_rood
+      #     level: !lambda "return id(pwm_level_3_ver_rood)*(80.0/100.0);"
+      # - number.set:
+      #     id: pwm_slider_3_ver_rood
+      #     value: !lambda "return id(pwm_level_3_ver_rood);"
+      # - delay: 250ms
+      # - script.execute: evaluate_enable_switches
+
+  
+#presets
+  - id: comfort
+    then:
+    - lambda: |-
+        id(pwm_kleur_global_blauw) = 0.1;
+        id(pwm_kleur_global_rood) = 0.1;
+        id(pwm_kleur_global_ver_rood) = 0.1;
+    # Voer update uit per kleur over alle drivers
+    - script.execute: update_kleuren
+
+  - id: optimal_growth
+    then:
+    - delay: 250ms
+    - lambda: |-
+        id(pwm_kleur_global_blauw) = 1;
+        id(pwm_kleur_global_rood) = 1;
+        id(pwm_kleur_global_ver_rood) = 1;
+    # Voer update uit per kleur over alle drivers
+    - script.execute: update_kleuren
+
+  - id: optimal_growth_sla
+#  https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1383100
+# figure 3, R:B van 87.5:12.5 met 50 µmol m-2s-1  voor FR, geeft mooiste sla dat we kunnen hebben
+# normaal was wit licht beter maar dit hebben we niet
+# R:B is verhouding umol (7)
+# 20 rode leds * 0.72 = 14.4 µmols-1
+# blauw moet dus 14.4 * 0.125 / 0.875 = 2.06 µmols-1
+# blauw totaal = 12 * 1.01 = 12.12 µmols-1
+# 2.06 / 12.12 = 0.1705
+# voor ver rood:
+# 16*0.72=11.52 µmols-1
+#11.52 µmols-1/0.173 = 66.59  m-2s-1 => ver rood 0.75 aan 
+    then:
+    - lambda: |-
+        id(pwm_kleur_global_rood) = 1;
+        id(pwm_kleur_global_blauw) = 0.1705;  // = 0.7 × (0.72 / 7 / 1.01)
+        id(pwm_kleur_global_ver_rood) = 0.75;
+    # Voer update uit per kleur over alle drivers
+    - script.execute: update_kleuren
+  - id: optimal_growth_koriander
+    then:
+    - script.execute: all_off
+    - lambda: |-
+        id(pwm_kleur_global_blauw) = 0.1;
+        id(pwm_kleur_global_rood) = 0.1;
+        id(pwm_kleur_global_ver_rood) = 0.1;
+    # Voer update uit per kleur over alle drivers
+    - script.execute: update_kleuren
+
+  - id: night 
+  #bij colruyt gezien, blauw licht met een beetje ver rood
+    then:
+      - logger.log: "activating night"
+      - lambda: |-
+          id(pwm_kleur_global_blauw) = 0.55;
+          id(pwm_kleur_global_rood) = 0.0;
+          id(pwm_kleur_global_ver_rood) = 0.1;
+      - script.execute: update_kleuren
+
+  - id: eco
+    then:
+      - logger.log: "activating eco"
+      - lambda: |-
+          id(pwm_kleur_global_blauw) = 0.5;
+          id(pwm_kleur_global_rood) = 0.5;
+          id(pwm_kleur_global_ver_rood) = 0.5;
+      - script.execute: update_kleuren
+
+  - id: eco_driver1 #alles half fel laten branden, is wss wel voldoende
+    then:
+      # Driver 1
+      - logger.log: "Activating Full 50% Preset driver 1"
+      - lambda: "id(pwm_level_1_blauw) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_1_blauw
+      - lambda: "id(pwm_level_1_rood) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_1_rood
+      - lambda: "id(pwm_level_1_ver_rood) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_1_ver_rood
+  - id: eco_driver2 #alles half fel laten branden, is wss wel voldoende
+    then:
+      # Driver 2
+      - logger.log: "Activating Full 50% Preset driver 2"
+      - lambda: "id(pwm_level_2_blauw) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_2_blauw
+      - lambda: "id(pwm_level_2_rood) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_2_rood
+      - lambda: "id(pwm_level_2_ver_rood) = 0.5;"
+      - script.execute: control_pwm_2_ver_rood
+      - delay: 250ms
+      # Driver 3
+  - id: eco_driver3 #alles half fel laten branden, is wss wel voldoende
+    then:
+      - logger.log: "Activating Full 50% Preset driver 3"
+      - lambda: "id(pwm_level_3_blauw) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_3_blauw
+      - lambda: "id(pwm_level_3_rood) = 0.5;"
+      - delay: 250ms
+      - script.execute: control_pwm_3_rood
+      - lambda: "id(pwm_level_3_ver_rood) = 0.5;"
+      - script.execute: control_pwm_3_ver_rood
+  #golf door de lichtjes
+  - id: ripple
+    then:
+    - script.execute: all_off
+    - lambda: "id(ripple_active) = true;"
+    - while:
+        condition:
+          lambda: "return id(ripple_active);"  # Runs  until stopped by button on the website
+        then:
+          # Driver 1 - Ripple across channels
+          - lambda: "id(pwm_level_1_blauw) = 0.5;"
+          - script.execute: control_pwm_1_blauw
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_blauw) = 0.0;"
+          - script.execute: control_pwm_1_blauw
+          - lambda: "id(pwm_level_1_rood) = 0.5;"
+          - script.execute: control_pwm_1_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_rood) = 0.0;"
+          - script.execute: control_pwm_1_rood
+          - lambda: "id(pwm_level_1_ver_rood) = 0.5;"
+          - script.execute: control_pwm_1_ver_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_ver_rood) = 0.0;"
+          - script.execute: control_pwm_1_ver_rood
+          # Driver 2 - Ripple continues
+          - lambda: "id(pwm_level_2_blauw) = 0.5;"
+          - script.execute: control_pwm_2_blauw
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_blauw) = 0.0;"
+          - script.execute: control_pwm_2_blauw
+          - lambda: "id(pwm_level_2_rood) = 0.5;"
+          - script.execute: control_pwm_2_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_rood) = 0.0;"
+          - script.execute: control_pwm_2_rood
+          - lambda: "id(pwm_level_2_ver_rood) = 0.5;"
+          - script.execute: control_pwm_2_ver_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_ver_rood) = 0.0;"
+          - script.execute: control_pwm_2_ver_rood
+          # Driver 3 - Ripple completes
+#          - lambda: "id(pwm_level_3_blauw) = 0.5;"
+#          - script.execute: control_pwm_3_blauw
+#          - delay: 250ms
+#          - lambda: "id(pwm_level_3_blauw) = 0.0;"
+#          - script.execute: control_pwm_3_blauw
+#          - lambda: "id(pwm_level_3_rood) = 0.5;"
+#          - script.execute: control_pwm_3_rood
+#          - delay: 250ms
+#          - lambda: "id(pwm_level_3_rood) = 0.0;"
+#          - script.execute: control_pwm_3_rood
+#          - lambda: "id(pwm_level_3_ver_rood) = 0.5;"
+#          - script.execute: control_pwm_3_ver_rood
+#          - delay: 250ms
+#          - lambda: "id(pwm_level_3_ver_rood) = 0.0;"
+#          - script.execute: control_pwm_3_ver_rood
+#          - delay: 1s  # Brief pause before restarting the ripple
+          # Driver 3 - Ripple reverse
+#          - lambda: "id(pwm_level_3_rood) = 0.5;"
+#          - script.execute: control_pwm_3_rood
+#          - delay: 250ms
+#          - lambda: "id(pwm_level_3_rood) = 0.0;"
+#          - script.execute: control_pwm_3_rood
+#          - lambda: "id(pwm_level_3_blauw) = 0.5;"
+#          - script.execute: control_pwm_3_blauw
+#          - delay: 250ms
+#          - lambda: "id(pwm_level_3_blauw) = 0.0;"
+#          - script.execute: control_pwm_3_blauw
+          # Driver 2 - Ripple reverse
+          - lambda: "id(pwm_level_2_ver_rood) = 0.5;"
+          - script.execute: control_pwm_2_ver_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_ver_rood) = 0.0;"
+          - script.execute: control_pwm_2_ver_rood
+          - lambda: "id(pwm_level_2_rood) = 0.5;"
+          - script.execute: control_pwm_2_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_rood) = 0.0;"
+          - script.execute: control_pwm_2_rood
+          - lambda: "id(pwm_level_2_blauw) = 0.5;"
+          - script.execute: control_pwm_2_blauw
+          - delay: 250ms
+          - lambda: "id(pwm_level_2_blauw) = 0.0;"
+          - script.execute: control_pwm_2_blauw
+          # Driver 1 - Ripple reverse
+          - lambda: "id(pwm_level_1_ver_rood) = 0.5;"
+          - script.execute: control_pwm_1_ver_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_ver_rood) = 0.0;"
+          - script.execute: control_pwm_1_ver_rood
+          - lambda: "id(pwm_level_1_rood) = 0.5;"
+          - script.execute: control_pwm_1_rood
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_rood) = 0.0;"
+          - script.execute: control_pwm_1_rood
+          - lambda: "id(pwm_level_1_blauw) = 0.5;"
+          - script.execute: control_pwm_1_blauw
+          - delay: 250ms
+          - lambda: "id(pwm_level_1_blauw) = 0.0;"
+          - script.execute: control_pwm_1_blauw
+          - delay: 1s  # Pause before next ripple loop
+
+  - id: fade
+    then:
+      - script.execute: all_off
+      - lambda: "id(fade_active) = true;"
+      - while:
+          condition:
+            lambda: 'return id(fade_active);'  # Runs until stopped
+          then:
+            # Set initial state: Driver 1 Blue, Driver 2 Red, Driver 3 Far Red
+            - lambda: |-
+                id(pwm_level_1_blauw) = 0.5; id(pwm_level_1_rood) = 0.0; id(pwm_level_1_ver_rood) = 0.0;
+                id(pwm_level_2_blauw) = 0.0; id(pwm_level_2_rood) = 0.5; id(pwm_level_2_ver_rood) = 0.0;
+                id(pwm_level_3_blauw) = 0.0; id(pwm_level_3_rood) = 0.0; id(pwm_level_3_ver_rood) = 0.5;
+            - script.execute: control_pwm  # Updates all channels at once
+            - delay: 1s  # Hold initial state briefly
+
+            # Fade Driver 1: Blue → Far Red, Driver 2: Red → Blue, Driver 3: Far Red → Red
+            - repeat:
+                count: 5  # 5 steps from 0.5 to 0.0 (and vice versa) in 0.1 increments
+                then:
+                  - lambda: |-
+                      id(pwm_level_1_blauw) -= 0.1;      // Blue fades out
+                      id(pwm_level_1_ver_rood) += 0.1;   // Far Red fades in
+                      id(pwm_level_2_rood) -= 0.1;       // Red fades out
+                      id(pwm_level_2_blauw) += 0.1;      // Blue fades in
+                      id(pwm_level_3_ver_rood) -= 0.1;   // Far Red fades out
+                      id(pwm_level_3_rood) += 0.1;       // Red fades in
+                  - script.execute: control_pwm
+                  - delay: 250ms  # 2.5s total fade
+
+            # Now at: Driver 1 Far Red, Driver 2 Blue, Driver 3 Red
+            - delay: 1s  # Hold intermediate state
+
+            # Fade back: Driver 1 Far Red → Red, Driver 2 Blue → Far Red, Driver 3 Red → Blue
+            - repeat:
+                count: 5
+                then:
+                  - lambda: |-
+                      id(pwm_level_1_ver_rood) -= 0.1;   // Far Red fades out
+                      id(pwm_level_1_rood) += 0.1;      // Red fades in
+                      id(pwm_level_2_blauw) -= 0.1;      // Blue fades out
+                      id(pwm_level_2_ver_rood) += 0.1;   // Far Red fades in
+                      id(pwm_level_3_rood) -= 0.1;       // Red fades out
+                      id(pwm_level_3_blauw) += 0.1;   // Blue fades in
+                  - script.execute: control_pwm
+                  - delay: 250ms  # 2.5s total fade back
+
+            # Fade back: Driver 1 Red → Blue, Driver 2 Far Red → Red, Driver 3 Blue → Far Red
+            - repeat:
+                count: 5
+                then:
+                  - lambda: |-
+                      id(pwm_level_1_rood) -= 0.1;   // Far Red fades out
+                      id(pwm_level_1_blauw) += 0.1;      // Blue fades in
+                      id(pwm_level_2_ver_rood) -= 0.1;      // Far Red fades out
+                      id(pwm_level_2_rood) += 0.1;       // Red fades in
+                      id(pwm_level_3_blauw) -= 0.1;       // Blue fades out
+                      id(pwm_level_3_ver_rood) += 0.1;   // Far Red fades in
+                  - script.execute: control_pwm
+                  - delay: 250ms  # 2.5s total fade back
+
+            - delay: 1s  # Pause before restarting cycle
+      - lambda: "id(fade_active) = false;"  # Reset when stopped
+
+
+#buttons for presets
+
+button:
+  - platform: template
+    id: comfort_button
+    name: "comfort"
+    on_press:
+      then:
+        - script.execute: comfort
+  - platform: template
+    id: all_off_button
+    name: "All Off"
+    on_press:
+      then:
+        - script.execute: all_off
+  - platform: template
+    name: "Optimal Growth - Sla"
+    on_press:
+      then:
+      - script.execute: optimal_growth_sla     
+  - platform: template
+    id: night_button
+    name: "Night"
+    on_press:
+      then:
+        - script.execute: night
+  - platform: template
+    id: eco_button
+    name: "eco"
+    on_press:
+      then:
+        - script.execute: eco
+
+  - platform: template
+    id: eco_button_driver1
+    name: "eco driver 1"
+    on_press:
+      then:
+        - script.execute: eco_driver1
+  - platform: template
+    id: eco_button_driver2
+    name: "eco driver 2"
+    on_press:
+      then:
+        - script.execute: eco_driver2
+  - platform: template
+    id: eco_button_driver3
+    name: "eco driver 3"
+    on_press:
+      then:
+        - script.execute: eco_driver3    
+
+  - platform: template
+    id: ripple_button
+    name: "Ripple Preset"
+    on_press:
+      then:
+        - if:
+            condition:
+              lambda: 'return id(ripple_active);'
+            then:
+              - lambda: "id(ripple_active) = false;"
+              - script.stop: ripple
+              - delay: 250ms
+              # Reset all PWM to 0 when stopping
+              - lambda: |-
+                  id(pwm_level_1_blauw) = 0.0; id(pwm_level_1_rood) = 0.0; id(pwm_level_1_ver_rood) = 0.0;
+                  id(pwm_level_2_blauw) = 0.0; id(pwm_level_2_rood) = 0.0; id(pwm_level_2_ver_rood) = 0.0;
+                  id(pwm_level_3_blauw) = 0.0; id(pwm_level_3_rood) = 0.0; id(pwm_level_3_ver_rood) = 0.0;
+              - script.execute: control_pwm
+            else:
+              - script.execute: ripple
+        
+  - platform: template
+    id: fade_button
+    name: "Fade Preset"
+    on_press:
+      then:
+        - if:
+            condition:
+              lambda: 'return id(fade_active);'
+            then:
+              - lambda: "id(fade_active) = false;"
+              - script.stop: fade
+              - delay: 250ms
+              # Reset all PWM to 0 when stopping
+              - lambda: |-
+                  id(pwm_level_1_blauw) = 0.0; id(pwm_level_1_rood) = 0.0; id(pwm_level_1_ver_rood) = 0.0;
+                  id(pwm_level_2_blauw) = 0.0; id(pwm_level_2_rood) = 0.0; id(pwm_level_2_ver_rood) = 0.0;
+                  id(pwm_level_3_blauw) = 0.0; id(pwm_level_3_rood) = 0.0; id(pwm_level_3_ver_rood) = 0.0;
+              - script.execute: control_pwm
+            else:
+              - script.execute: fade
+
+  - platform: template
+    id: optimal_growth_button
+    name: "Optimal Growth - gen"
+    on_press:
+        then:
+        - script.execute: optimal_growth
+number:
+  - platform: template
+    id: pwm_kleur_slider_blauw
+    name: "Blauw"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_kleur_global_blauw) = x;"
+        - script.execute: update_blauw
+
+  - platform: template
+    id: pwm_kleur_slider_rood
+    name: "Rood"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_kleur_global_rood) = x;"
+        - script.execute: update_rood
+
+  - platform: template
+    id: pwm_kleur_slider_ver_rood
+    name: "Ver Rood"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_kleur_global_ver_rood) = x;"
+        - script.execute: update_ver_rood
+
+  - platform: template
+    id: pwm_slider_1_blauw
+    name: "PWM Output 1 Blue"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_1_blauw) = x;"
+        - script.execute: control_pwm_1_blauw
+  - platform: template
+    id: pwm_slider_1_rood
+    name: "PWM Output 1 Red"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_1_rood) = x;"
+        - script.execute: control_pwm_1_rood
+  - platform: template
+    id: pwm_slider_1_ver_rood
+    name: "PWM Output 1 Far Red"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_1_ver_rood) = x;"
+        - script.execute: control_pwm_1_ver_rood
+  - platform: template
+    id: pwm_slider_2_blauw
+    name: "PWM Output 2 Blue"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_2_blauw) = x;"
+        - script.execute: control_pwm_2_blauw
+  - platform: template
+    id: pwm_slider_2_rood
+    name: "PWM Output 2 Red"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_2_rood) = x;"
+        - script.execute: control_pwm_2_rood
+  - platform: template
+    id: pwm_slider_2_ver_rood
+    name: "PWM Output 2 Far Red"
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_2_ver_rood) = x;"
+        - script.execute: control_pwm_2_ver_rood
+  - platform: template
+    id: pwm_slider_3_blauw
+    name: "PWM Output 3 Blue"
+    internal: true
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_3_blauw) = x;"
+        - script.execute: control_pwm_3_blauw
+  - platform: template
+    id: pwm_slider_3_rood
+    name: "PWM Output 3 Red"
+    internal: true
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_3_rood) = x;"
+        - script.execute: control_pwm_3_rood
+  - platform: template
+    id: pwm_slider_3_ver_rood
+    name: "PWM Output 3 Far Red"
+    internal: true
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.01
+    optimistic: true
+    restore_value: false
+    on_value:
+      then:
+        - lambda: "id(pwm_level_3_ver_rood) = x;"
+        - script.execute: control_pwm_3_ver_rood
