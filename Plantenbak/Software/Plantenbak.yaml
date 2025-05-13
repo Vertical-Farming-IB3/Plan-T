@@ -39,6 +39,10 @@ i2c:
 web_server:
   version: 3
 
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
 output:
   - platform: gpio
     pin: GPIO32 #Fan
@@ -86,32 +90,26 @@ pn532_i2c:
   on_tag:
     then:
       - lambda: |-
-          // Verkrijg de UID van de gescande tag
           std::vector<unsigned char> tag_uid = tag.get_uid();
-          // Zet de UID om naar een string van hex-waarden
-          char uid_str[33]; // Maximum 32 bytes + null terminator
+          char uid_str[33];
           for (size_t i = 0; i < tag_uid.size(); ++i) {
             snprintf(uid_str + i * 2, 3, "%02X", tag_uid[i]);
           }
           ESP_LOGD("rfid", "UID gescand: %s", uid_str);
-
-          // Maak een mapping van UID naar plantnaam
           std::map<std::string, std::string> uid_to_plant = {
-            {"49FFE4C2", "Paprika"},
-            {"D3FD8D03", "Sla"},
-            {"A378940C", "Tomaat"}
+            {"F3F69102", "Algemeen"},
+            {"8363B303", "Koriander"},
+            {"8368CC02", "Oregano"},
+            {"0E7F030D", "Snijsla"},
+            {"A3DCF302", "Basilicum"},
+            {"D3FD8D03", "Munt"}
           };
-
-          // Zoek de plantnaam op basis van de UID
-          std::string plant_name = "Onbekend";  // Standaardwaarde
+          std::string plant_name = "Onbekend"; 
           if (uid_to_plant.find(uid_str) != uid_to_plant.end()) {
-            plant_name = uid_to_plant[uid_str]; // Haal de plantnaam op
+            plant_name = uid_to_plant[uid_str];
           }
 
-          // Log de plantnaam
           ESP_LOGD("rfid", "Gekoppelde plantnaam: %s", plant_name.c_str());
-
-          // Stuur de plantnaam naar Home Assistant
           id(rfid_uid_sensor).publish_state(plant_name);
 
 # RFID UID als tekstsensor naar Home Assistant sturen
@@ -162,22 +160,40 @@ sensor:
     id: "adcCurrent"
     accuracy_decimals: 3
     unit_of_measurement: 'A'
-    attenuation: 11db
+    attenuation: 12db
     filters:
       - calibrate_linear:
-          - 2.5 -> 0.0   # Pas deze waarden aan afhankelijk van de stroommeter
-          - 0.0 -> 30.0  # Voorbeeld: 3.3V = 10A (pas aan op basis van je sensor)
+          - 2.49 -> 0.638   # Pas deze waarden aan afhankelijk van de stroommeter
+          - 0.0 -> 26.145  # Voorbeeld: 3.3V = 10A (pas aan op basis van je sensor)
       - lambda: if (x < 0) return 0; else return (x);  # Negatieve waarden voorkomen
+      - median:
+         window_size: 3
+         send_every: 2
+         send_first_at: 1
+      - sliding_window_moving_average:
+         window_size: 5
+         send_every: 1
     name: "Stroomverbruik"
-    update_interval: 0.5s
-    force_update: true
+    update_interval: 1s
+    #force_update: true
 
   - platform: template
+    id: vermogen
     accuracy_decimals: 1
     unit_of_measurement: "W"
     lambda: return 12.0 * id(adcCurrent).state;
     name: "Vermogen"
-    update_interval: 0.5s
+    update_interval: 1s
+
+  
+  - platform: total_daily_energy
+    name: "Dagelijks Energieverbruik"
+    power_id: vermogen
+    unit_of_measurement: "kWh"
+    accuracy_decimals: 3
+    filters:
+      - multiply: 0.001
+    icon: mdi:counter
 
   # BH1750 Light Sensor
   - platform: bh1750
@@ -187,9 +203,11 @@ sensor:
     unit_of_measurement: "lx"
     accuracy_decimals: 1
 
+
 binary_sensor:
   - platform: status
     name: "Plantenbak Lade 1 Status"
     id: system_status
     entity_category: "diagnostic"
+
 
