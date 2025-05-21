@@ -209,5 +209,3 @@ binary_sensor:
     name: "Plantenbak Lade 1 Status"
     id: system_status
     entity_category: "diagnostic"
-
-

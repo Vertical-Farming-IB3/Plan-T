@@ -62,7 +62,6 @@ mcp23017:
 ads1115:
   - address: 0x49
 
-
 # OUTPUTS
 switch:
   # ONBOARD LED
@@ -139,7 +138,6 @@ switch:
       number: 3 #A3
       mode:
         output: True
-
 
 # INPUTS
 sensor:
